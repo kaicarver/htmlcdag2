@@ -3,7 +3,29 @@ p {
     font-weight: bold;
 }
 
+div+p {
+    text-decoration: line-through;
+    color: gray;
+    font-size: large;
+    text-align: center;
+    border: 10px pink dotted;
+    border-radius: 100px;
+}
+
 #premier {
     color: green;
     font-family: 'Pixelify Sans', sans-serif;
+    text-align: justify;
+    border-left: 13px green solid;
+}
+
+.cursive {
+    font-family: 'Dancing Script', cursive;
+    font-size: x-small;
+    color: rgb(48, 48, 118);
+    text-align: right;
+    border-top: 1px lightblue solid;
+    border-bottom: 1px lightblue solid;
+    border-bottom-color: purple;
+    border-bottom-width: 20px;
 }
