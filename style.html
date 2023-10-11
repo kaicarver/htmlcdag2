@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styles</title>
-    <link rel="stylesheet" href="style/style.css">
     <style>
-        /* css */
-        p { font-size: 2.8em;}
+        /* CSS ici est decondaire par rapport au CSS du fichier ci-dessous */
+        p {
+            font-size: 2.8em;
+            color: #f01234;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS ici a l'air prioritaire par rapport au CSS du fichier ci-dessus */
+        p {
+            color: #f01234;
+        }
     </style>
 </head>
+
 <body>
     <h1>Styles</h1>
     <div>
-        <div>Paragraphe stylé :</div>
-        <p style="font-weight: bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis necessitatibus aperiam obcaecati exercitationem velit, deserunt quaerat ad molestiae corporis at totam! Amet, sed maiores doloremque quam voluptates expedita officia assumenda.</p>
+        <div>Paragraphes stylés :</div>
+        <p id="premier">Lorem ipsum dolor sit amet consectetur </p>
+        <p style="">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p style="color: rgb(0,255,0);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            necessitatibus
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis necessitatibus
+            aperiam obcaecati exercitationem velit, deserunt quaerat ad molestiae corporis at totam!</p>
+
     </div>
 </body>
+
 </html>

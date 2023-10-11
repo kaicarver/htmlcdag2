@@ -1,1 +1,8 @@
-p { color: green; }
+p {
+    color: orange;
+    font-weight: bold;
+}
+
+#premier {
+    color: green;
+}
