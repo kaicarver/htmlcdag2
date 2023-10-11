@@ -1,0 +1,58 @@
+ul {
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+ul ul {
+    color: gray;
+    font-size: large;
+    text-align: left;
+    font-size: medium;
+}
+
+ul ul ul {
+    color: green;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-align: left;
+    font-size: x-small;
+}
+
+h1 {
+    color: gray;
+    font-size: large;
+    text-align: center;
+    border: 5px pink dotted;
+    border-radius: 100px;
+}
+
+.cursive {
+    font-family: 'Dancing Script', cursive;
+    font-size: x-small;
+    color: rgb(48, 48, 118);
+    text-align: right;
+    border-top: 1px lightblue solid;
+    border-bottom: 1px lightblue solid;
+    border-bottom-color: purple;
+    border-bottom-width: 20px;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: gray;
+}
+ul ul a {
+    color:purple;
+}
+ul ul ul a {
+    color:blueviolet;
+}
+
+figure { 
+    text-align: center;
+    background-color: blueviolet;
+    padding: 1em;
+    color: white;
+}
