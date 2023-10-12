@@ -1,3 +1,31 @@
-table {
+table#t1 {
+    border-collapse: collapse;
+    background-color: aqua;
+    caption-side: bottom;
+}
+table#t1 th, table#t1 td {
+    border:  5px rgb(103, 26, 26) solid;
     color: rgb(117, 77, 3);
+    background-color: bisque;
+
+}
+table#t1 th {
+    color: darkolivegreen;
+    background-color: aquamarine;
+}
+table#t2 {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+}
+table#t2 td {
+    border: 4px black double;
+    text-align: center;
+}
+table#t3 {
+    width: 50%;
+    margin-top: 3em;
+}
+table#t3 td {
+    text-align: center;
 }

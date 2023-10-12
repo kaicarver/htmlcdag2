@@ -8,7 +8,7 @@
 </head>
 <body>
     <div>
-        <table>
+        <table id="t1">
             <caption>Liste des clients</caption>
             <thead>
                 <tr>
@@ -22,14 +22,12 @@
                 <tr>
                     <td>Solene</td>
                     <td>33 ans</td>
-                    <td>75001</td>
-                    <td>Paris</td>
+                    <td rowspan="2">75001</td>
+                    <td rowspan="2">Paris</td>
                 </tr>
                 <tr>
                     <td>Etienne</td>
                     <td>37 ans</td>
-                    <td>75001</td>
-                    <td>Paris</td>
                 </tr>
                 <tr>
                     <td>Lucie</td>
@@ -40,10 +38,33 @@
                 <tr>
                     <td>Nael</td>
                     <td>23 ans</td>
-                    <td>Aucune adresse</td>
-                    <td>Aucune adresse</td>
+                    <td colspan="2">Aucune adresse</td>
                 </tr>
             </tbody>
+        </table>
+    </div>
+    <div>
+        <table id="t2">
+            <tr><td colspan="4">1</td></tr>
+            <tr><td rowspan="3">2</td>
+            <td>3</td>
+            <td>4</td>
+            <td rowspan="3">5</td></tr>
+            <tr><td>6</td>
+            <td>7</td></tr>
+            <tr><td colspan="2">8</td></tr>
+        </table>
+    </div>
+    <div>
+        <table border id="t3">
+            <tr><td colspan="4">1</td></tr>
+            <tr><td rowspan="3">2</td>
+            <td>3</td>
+            <td>4</td>
+            <td rowspan="3">5</td></tr>
+            <tr><td>6</td>
+            <td>7</td></tr>
+            <tr><td colspan="2">8</td></tr>
         </table>
     </div>
 </body>
