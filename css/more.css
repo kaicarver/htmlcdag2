@@ -1,0 +1,36 @@
+div span.animal {
+    border: red 5px solid;
+    border-radius: 30% 0%;
+    padding: 0.2em;
+    color: yellow;
+    background: linear-gradient(to left top, red, blue, green);
+}
+span.animal:hover {
+    color: green;
+    background: pink;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 1em;
+}
+a:focus {
+    color: red;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+a:active {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: purple;
+    font-size: 0.5em;
+}
+p:hover {
+    text-align: justify;
+    border: 1px red dotted;
+    padding: 1em;
+    width: 50%;
+    margin: auto;
+}
+span.code {
+    font-family: 'Courier New', Courier, monospace;
+}
