@@ -1,0 +1,13 @@
+{
+  "name": "color-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "color-generator": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^2.20.0"
+  }
+}
+
