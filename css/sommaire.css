@@ -25,6 +25,7 @@ h1 {
     text-align: center;
     border: 5px pink dotted;
     border-radius: 100px;
+    margin-top: 5em;
 }
 
 .cursive {
@@ -43,16 +44,46 @@ a {
     text-decoration: none;
     color: gray;
 }
+
 ul ul a {
-    color:purple;
-}
-ul ul ul a {
-    color:blueviolet;
+    color: purple;
 }
 
-figure { 
+ul ul ul a {
+    color: blueviolet;
+}
+
+figure {
     text-align: center;
-    background-color: blueviolet;
+    background: linear-gradient(#11ffee1f, #0000001f, rgba(44, 44, 99, 0.6));
     padding: 1em;
-    color: white;
+    color: rgb(30, 30, 90);
+    border-radius: 50%;
+}
+
+#toc {
+    border: 5px purple double;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+h2#titre {
+    color: pink;
+    text-align: center;
+    font-style: italic;
+}
+
+body {
+    background-image: url("../images/papier.jpg");
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+a:hover {
+    font-weight: bold;
+    color: blue;
+}
+
+#conc {
+    margin-bottom: 40em;
 }
