@@ -7,24 +7,50 @@
 </head>
 <body>
     <form method="get" action="index.html">
-        <label for="nom">Nom</label>
-        <input type="text" name="nom" id="nom" placeholder="Nom en majuscules"><br>
-        <label for="prenom">Prenom</label>
-        <input type="text" name="prenom" id="prenom"><br>
-        <label for="age">Age</label>
-        <input type="number" name="age" id="age"><br>
-        <label for="naissance">Naissance</label>
-        <input type="date" name="naissance" id="naissance"><br>
-        <label for="commentaire">Commentaire</label><br>
-        <textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea><br>
-        <label for="">Compétences</label><br>
-        <input type="checkbox" name="competence[]" value="html" id="html"><label for="html">HTML</label><br>
-        <input type="checkbox" name="competence[]" value="css" id="css"><label for="css">CSS</label><br>
-        <input type="checkbox" name="competence[]" value="js" id="js"><label for="js">Javascript</label><br>
-        <input type="checkbox" name="competence[]" value="scrum" id="scrum"><label for="scrum">Agilité</label><br>
-        <label for="sexe">sexe</label>
-        <input type="radio" name="sexe" id="femme" value="f"><label for="femme">Femme</label>
-        <input type="radio" name="sexe" id="homme" value="h"><label for="homme">Homme</label>
+        <fieldset><legend>Informations générales</legend>
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" placeholder="Nom en majuscules" required><br>
+            <label for="prenom">Prenom</label>
+            <input type="text" name="prenom" id="prenom"><br>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age"><br>
+            <label for="naissance">Naissance</label>
+            <input type="date" name="naissance" id="naissance"><br>
+            <label for="commentaire">Commentaire</label><br>
+            <textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea><br>
+            <label for="">Compétences</label><br>
+            <input type="checkbox" name="competence[]" value="html" id="html"><label for="html">HTML</label><br>
+            <input type="checkbox" name="competence[]" value="css" id="css"><label for="css">CSS</label><br>
+            <input type="checkbox" name="competence[]" value="js" id="js"><label for="js">Javascript</label><br>
+            <input type="checkbox" name="competence[]" value="scrum" id="scrum"><label for="scrum">Agilité</label><br>
+            <label>Sexe :</label>
+            <input type="radio" name="sexe" id="femme" value="f"><label for="femme">Femme</label>
+            <input type="radio" name="sexe" id="homme" value="h"><label for="homme">Homme</label>
+            <br>
+            <label for="idpays">Dans quel pays habitez vous ?</label>
+            <select name="pays" id="idpays">
+                <option value="fr">France</option>
+                <option value="es">Espagne</option>
+                <option value="ca">Canada</option>
+                <option value="zh" selected>Chine</option>
+            </select>
+            <br>
+            <label for="idpays2">Dans quel pays allez vous ?</label>
+            <select name="pays2" id="idpays2">
+                <optgroup label="Europe">
+                    <option value="fr">France</option>
+                    <option value="es">Espagne</option>
+                </optgroup>
+                <option value="ca">Canada</option>
+                <optgroup label="Asie">
+                    <option value="zh" selected>Chine</option>
+                </optgroup>
+    
+            </select>
+    
+        </fieldset>
+        <br>
+        <input type="reset" value="Réinitialiser formulaire">
         <br>
         <input type="submit" value="Go">
     </form>
