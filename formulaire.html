@@ -7,8 +7,25 @@
 </head>
 <body>
     <form method="get" action="index.html">
-        <input type="text" name="nom" placeholder="Nom en majuscules">
-        <input type="text" name="prenom">
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" placeholder="Nom en majuscules"><br>
+        <label for="prenom">Prenom</label>
+        <input type="text" name="prenom" id="prenom"><br>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age"><br>
+        <label for="naissance">Naissance</label>
+        <input type="date" name="naissance" id="naissance"><br>
+        <label for="commentaire">Commentaire</label><br>
+        <textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea><br>
+        <label for="">Compétences</label><br>
+        <input type="checkbox" name="competence[]" value="html" id="html"><label for="html">HTML</label><br>
+        <input type="checkbox" name="competence[]" value="css" id="css"><label for="css">CSS</label><br>
+        <input type="checkbox" name="competence[]" value="js" id="js"><label for="js">Javascript</label><br>
+        <input type="checkbox" name="competence[]" value="scrum" id="scrum"><label for="scrum">Agilité</label><br>
+        <label for="sexe">sexe</label>
+        <input type="radio" name="sexe" id="femme" value="f"><label for="femme">Femme</label>
+        <input type="radio" name="sexe" id="homme" value="h"><label for="homme">Homme</label>
+        <br>
         <input type="submit" value="Go">
     </form>
 </body>
