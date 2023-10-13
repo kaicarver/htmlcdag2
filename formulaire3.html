@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de participation compétition de jeux vidéo</title>
+<style>
+    .oblig { color:red; }
+    table td { width: 80px;}
+    div { width: 50%; margin: auto; background: linear-gradient(to left, blue, lightblue);}
+    #idSub { margin-left: 690px; font-weight: bold; color: navy; }
+    fieldset { margin-bottom:15px; border: 5px white double; padding: 10px; }
+    legend { border: 5px white double; padding: 0px 10px; font-weight: bold; color:white; }
+    textarea { resize: none;}
+</style>
+</head>
+<body>
+    <div>
+<h1>Formulaire de participation à la compétition de jeux vidéo</h1>
+<p>Complétez le formulaire. Les champs marqué par <span class="oblig">*</span> sont <span class="oblig">obligatoires</span></p>
+<form method="get" action="index.html">
+    <fieldset>
+        <legend>Informations personnelles</legend>
+        <table>
+            <tr>
+                <td><label for="idNom">Nom <span class="oblig">*</span></label></td>
+                <td><input type="text" name="nom" id="idNom" placeholder="Saisir votre nom" required></td>
+            </tr>
+            <tr>
+                <td><label for="idAge">Age <span class="oblig">*</span></label></td>
+                <td><input type="number" name="prenom" id="idAge" required></td>
+            </tr>
+            <tr>
+                <td><label>Sexe</label></td>
+                <td>
+                    <select name="sexe" id="idSexe">
+                        <option value="femme">Femme</option>
+                        <option value="homme">Homme</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Pourquoi voulez-vous participer à cette compétition ?</td>
+                <td><textarea name="Pourquoi" cols="30" rows="10"></textarea></td>
+            </tr>
+        </table>
+        
+    </fieldset>
+    <fieldset>
+        <legend>Quel framework choisir pour votre projet web ?</legend>
+        <input type="checkbox" name="framework" id="idVueJS" value="vue"><label for="idVueJS">VueJs</label>
+        <input type="checkbox" name="framework" id="idReact" value="react"><label for="idReact">React</label>
+        <!-- TODO -->
+        <input type="checkbox" name="framework" id="idVueJS" value="vue"><label for="idVueJS">Angular</label>
+        <input type="checkbox" name="framework" id="idVueJS" value="vue"><label for="idVueJS">Symfony</label>
+        <input type="checkbox" name="framework" id="idVueJS" value="vue"><label for="idVueJS">Spring</label>
+        <input type="checkbox" name="framework" id="idVueJS" value="vue"><label for="idVueJS">Laravel</label>
+    </fieldset>
+    <fieldset>
+        <legend>Contact</legend>
+        <table>
+        <tr>
+            <td><label for="idTel">Téléphone</label></td>
+            <td><input type="text" name="tel" id="idTel" placeholder="06xxxxxxxx"></td>
+        </tr>
+        <tr>
+            <td><label for="idAge">Email <span class="oblig">*</span></label></td>
+            <td><input type="email" name="email" id="idAge" placeholder="nom.prenom@lagrandeclasse.fr" required></td>
+        </tr>
+    </table>
+    </fieldset>
+    <input id="idSub" type="submit" value="Soumettre">
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <div>
+        <form action="post" action="index.html"></form>
+        <fieldset>
+            <legend>Formulaire d'inscription</legend>
+            <table>
+                <tr>
+                    <td><label for="idNom">Nom</label></td>
+                    <td><input type="text" name="nom" id="idNom" placeholder="Saisir votre nom"></td>
+                </tr>
+                <tr>
+                    <td><label for="idPren">Prénom</label></td>
+                    <td><input type="text" name="prenom" id="idPren" placeholder="Saisir votre prénom"></td>
+                </tr>
+                <tr>
+                    <td><label for="idMail">Email</label></td>
+                    <td><input type="text" name="email" id="idMail" placeholder="Saisir votre Email"></td>
+                </tr>
+                <tr>
+                    <td><label for="idMail">Sexe</label></td>
+                    <td>
+                        <label for="idM">Masculin</label><input type="radio" name="sexe" value="M" id="idM">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+        <br>
+        <input type="reset" value="Réinitialiser formulaire">
+        <br>
+        <input type="submit" value="Go">
+    </form>
+    <!--
+        http://127.0.0.1:3000/index.html?nom=Foo&prenom=&age=&naissance=&commentaire=&competence%5B%5D=html&competence%5B%5D=css&pays=zh&pays2=zh
+    -->
+</body>
+</html>
