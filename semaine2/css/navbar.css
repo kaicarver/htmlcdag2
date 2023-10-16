@@ -23,7 +23,6 @@ footer {
         background-color: green;
     }
 }
-
 /* Équivalent :
 @media (200px <= width <= 1200px) {
     .container {
@@ -31,3 +30,13 @@ footer {
     }
 }
  */
+@media screen {
+    main {
+        background-color: #ececec;
+    }
+}
+@media (1200px <= width <= 1920px) {
+    main {
+        font-size: 24px;
+    }
+}
