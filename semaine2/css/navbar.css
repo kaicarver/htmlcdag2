@@ -40,3 +40,13 @@ footer {
         font-size: 24px;
     }
 }
+@media screen and (width <= 667px) {
+    main {
+        font-weight: bold;
+    }
+}
+@media screen and (768px <= width <= 992px) {
+    main {
+        font-size: 20px;
+    }
+}
