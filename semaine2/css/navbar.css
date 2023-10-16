@@ -35,7 +35,7 @@ footer {
         background-color: #ececec;
     }
 }
-@media (1200px <= width <= 1920px) {
+@media screen and (1200px <= width <= 1920px) {
     main {
         font-size: 24px;
     }
