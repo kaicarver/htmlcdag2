@@ -17,3 +17,17 @@
 footer {
     margin-bottom: 100%;
 }
+
+@media screen and (min-width:200px) and (max-width:1200px) {
+    .container {
+        background-color: green;
+    }
+}
+
+/* Équivalent :
+@media (200px <= width <= 1200px) {
+    .container {
+        background-color: green;
+    }
+}
+ */
