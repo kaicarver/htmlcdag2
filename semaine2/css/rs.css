@@ -1,0 +1,15 @@
+h1 { text-align: center; }
+.containerRS {
+    display: flex;
+    margin: 10%;
+    justify-content: space-around;
+    background-color: lightgray;
+    height: 100px;
+    border-radius: 5px;
+    top: -51px;
+    position:relative;
+}
+img { 
+    width: 100px;
+    border-radius: 20%;
+}
