@@ -6,7 +6,9 @@
 }
 #redbox {
     background-color: red;
-    position: absolute;
-    top: 55px;
-    left: 25px;
+    position: relative;
+    bottom: 48px;
+    left: 116px;
 }
+
+div#redbox {}
