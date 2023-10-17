@@ -1,0 +1,12 @@
+#bluebox{
+    background-color: blue;
+    text-align: center;
+    width: 50%;
+    color: white;
+}
+#redbox{
+    background-color: red;
+    position: static;
+    /* top: 80px; */
+    /* left: 25px; */
+}

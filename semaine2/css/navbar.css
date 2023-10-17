@@ -37,7 +37,7 @@ footer {
 }
 @media screen and (1200px <= width <= 1920px) {
     main {
-        font-size: 24px;
+        font-size: 240px;
     }
 }
 @media screen and (width <= 667px) {
@@ -47,6 +47,6 @@ footer {
 }
 @media screen and (768px <= width <= 992px) {
     main {
-        font-size: 20px;
+        font-size: 2px;
     }
 }

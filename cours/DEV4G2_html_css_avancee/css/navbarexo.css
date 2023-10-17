@@ -1,0 +1,18 @@
+.topnav{
+    background-color: gray;
+    /* text-align: center; */
+    padding: 2%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    /* width: 70%; */
+}
+
+.topnav a{
+    text-decoration: none;
+    color: white;
+    padding: 2%;
+}
+
+.topnav a:hover{
+    background-color: aquamarine;
+}
