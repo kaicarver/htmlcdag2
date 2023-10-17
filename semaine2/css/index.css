@@ -6,8 +6,8 @@
 }
 #redbox {
     background-color: red;
-    position: relative;
-    bottom: 48px;
+    position: absolute;
+    top: 57px;
     left: 116px;
 }
 
