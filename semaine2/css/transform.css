@@ -1,0 +1,21 @@
+section {
+    display: grid;
+    gap: 10px 20px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+}
+nav {
+    background-color:  red;
+    transform: rotate(0.5turn);
+}
+div {
+    background-color:  purple;
+    transform: translate(250px, 210px);
+}
+article {
+    background-color:  yellow;
+
+}
+aside {
+    background-color:  blue;
+}
