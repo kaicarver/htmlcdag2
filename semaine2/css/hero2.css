@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+#hero {
+    background-image: url(../images/clavier.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #CA181F
+}
+#titre {
+    background-color: rgba(202, 194, 194, 0.63);
+    padding: 5% 10%;
+    font-size: 300%;
+}
+nav {
+    background-color: #CA181F;
+    text-align: center;
+    padding: 2%;
+    /* border-radius: 0 0 15px 15px; */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 2%;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav :nth-child(6):hover {
+    font-size: 200%;
+}
