@@ -31,10 +31,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 5px solid black;
 }
 #crooked {
     transform: rotate(15deg);
     color: red;
+}
+#item1, #item3 {
+    z-index: 1;
 }
 .page {
     margin: 800px 200px;
