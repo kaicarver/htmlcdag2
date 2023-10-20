@@ -1,0 +1,66 @@
+body{ background: url(../image/hero.png);
+    
+    background-size: cover;
+}
+
+.content{
+    background-color: #303030;
+    border-radius: 5px;
+    border: solid orange;
+    padding: 3%;
+    color: white;
+    height: 1300px;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    margin: 20% 35%;
+}
+span{
+    color:orange;
+    font-family: Domine;
+    font-style: italic;
+}
+
+.date{
+    font: bold;
+    color: orange;
+    font-family: Domine ;
+    text-decoration: underline;
+}
+.groupe{
+    font: medium;
+    color: orange;
+}
+
+hr.rounded_orange {
+    border-top: 1px solid orange;
+    border-radius: 5px;
+}
+
+hr.rounded {
+    border-top: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+img{ height: 125px;
+    width: 150px;
+    left: 200px ;
+    position: relative;
+}
+
+.animation{ 
+    background-color: #1A1819;
+
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #9b5d00, #ffcf98);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+  }
+
+    

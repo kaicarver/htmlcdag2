@@ -1,0 +1,109 @@
+body{
+    background-image: url(../image/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{display: flex;justify-content: space-between;}
+.logo a{height: 50px;width: 50px;}
+.recherche{width: 90%; margin-top: 6%;}
+#search{font-family: Arial, Helvetica, sans-serif;font-size: 20px;font-weight:bolder;color: rgb(227, 233, 236);}
+.navbar{ background-color: #ad795b94;display:flex;gap: 2%;height: 100px;justify-content: center;align-items: center;border-radius: 20px;padding: 0 30px;
+}
+.navbar a{font-family: Arial, Helvetica, sans-serif;font-size: 20px;font-weight:bolder;color: aliceblue;text-decoration: none;}
+.navbar a:hover{background-color:#663b22;border-radius: 15;}
+
+.all{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 30px;
+}
+
+.container{
+    background-color: #ad795bb2;
+    margin: 10% 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container h1{
+    font-family:  'Domine', serif;
+    font-size: 24px;
+}
+
+.articles{
+    border: 2px solid #AD795B;
+    border-radius: 15px;
+    background-color: #ad795be5;
+    padding: 5px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.articles a {
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    background-color: #ad795b94 ;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+#rs a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#rs img{
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerliens{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20%;
+}
+
+#footerliens a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.partenaires{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#footer {
+    background-color: #ad795b94;
+    margin: 20px 0px;
+    text-align: center;
+}#rs, #footerliens {
+    display: flex;
+    flex-direction: row;
+ }
+#footerliens a{
+    text-decoration: none;    color: white;
+}#footerliens{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}#footerliens a:hover{
+    text-decoration: underline;}#rs {
+    justify-content: space-around;
+}
+#rs img {
+    height: 50px;
+}
