@@ -1,0 +1,16 @@
+
+$main-color: blue !default;
+
+$secondary-color: red;
+
+h1 {
+    background-color: $main-color;
+    text-decoration: underline;
+    text-decoration-color: $secondary-color;
+    color: $secondary-color;
+}
+
+p {
+    color: $main-color;
+    background-color: $secondary-color;
+}
