@@ -1,7 +1,7 @@
 
-$main-color: blue !default;
-
-$secondary-color: red;
+$main-color: rebeccapurple;
+$secondary-color: ivory;
+$third-color: navy;
 
 h1 {
     background-color: $main-color;
@@ -13,4 +13,13 @@ h1 {
 p {
     color: $main-color;
     background-color: $secondary-color;
+}
+
+nav {
+    background-color: $main-color;
+}
+nav div {
+    color: $secondary-color;
+    text-decoration: underline;
+    text-decoration-color: $third-color;
 }
