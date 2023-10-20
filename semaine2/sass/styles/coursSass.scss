@@ -19,12 +19,12 @@ nav {
     background-color: $main-color;
     text-align: center;
     padding: 2%;
-}
 
-nav a {
-    color: $secondary-color;
-    text-decoration: none;
-    padding: 0 2%;
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+        padding: 0 2%;
+    }
 }
 
 nav a:hover {
