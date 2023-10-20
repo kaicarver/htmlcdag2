@@ -12,10 +12,18 @@ p {
 
 nav {
   background-color: rebeccapurple;
+  text-align: center;
+  padding: 2%;
 }
 
-nav div {
+nav a {
   color: ivory;
+  text-decoration: none;
+  padding: 0 2%;
+}
+
+nav a:hover {
   text-decoration: underline;
-  text-decoration-color: navy;
+  text-decoration-color: red;
+  border-bottom: 5px red dotted;
 }/*# sourceMappingURL=coursSass.css.map */

@@ -1,7 +1,7 @@
 
 $main-color: rebeccapurple;
 $secondary-color: ivory;
-$third-color: navy;
+$third-color: red;
 
 h1 {
     background-color: $main-color;
@@ -17,9 +17,18 @@ p {
 
 nav {
     background-color: $main-color;
+    text-align: center;
+    padding: 2%;
 }
-nav div {
+
+nav a {
     color: $secondary-color;
+    text-decoration: none;
+    padding: 0 2%;
+}
+
+nav a:hover {
     text-decoration: underline;
     text-decoration-color: $third-color;
+    border-bottom: 5px $third-color dotted;
 }
