@@ -25,4 +25,17 @@ nav a:hover {
   text-decoration: underline;
   text-decoration-color: red;
   border-bottom: 5px red dotted;
+}
+
+ul {
+  background-color: rebeccapurple;
+  border: 5px solid ivory;
+  border-radius: 15px;
+  width: 25%;
+  margin: auto;
+  list-style: none;
+}
+ul li {
+  color: ivory;
+  text-decoration: underline;
 }/*# sourceMappingURL=coursSass.css.map */

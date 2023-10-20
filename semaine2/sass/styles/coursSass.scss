@@ -32,3 +32,17 @@ nav a:hover {
     text-decoration-color: $third-color;
     border-bottom: 5px $third-color dotted;
 }
+
+ul {
+    background-color: $main-color;
+    border: 5px solid $secondary-color;
+    border-radius: 15px;
+    width: 25%;
+    margin: auto;
+    list-style: none;
+
+    li {
+        color: $secondary-color;
+        text-decoration: underline;
+    }
+}
