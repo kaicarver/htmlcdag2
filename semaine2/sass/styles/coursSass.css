@@ -1,17 +1,17 @@
 h1 {
-  background-color: rebeccapurple;
+  background-color: steelblue;
   text-decoration: underline;
   text-decoration-color: ivory;
   color: ivory;
 }
 
 p {
-  color: rebeccapurple;
+  color: steelblue;
   background-color: ivory;
 }
 
 nav {
-  background-color: rebeccapurple;
+  background-color: steelblue;
   text-align: center;
   padding: 2%;
 }
@@ -28,7 +28,7 @@ nav a:hover {
 }
 
 ul {
-  background-color: rebeccapurple;
+  background-color: steelblue;
   border: 5px solid ivory;
   border-radius: 15px;
   width: 25%;
@@ -38,4 +38,14 @@ ul {
 ul li {
   color: ivory;
   text-decoration: underline;
+}
+
+#liens {
+  xdisplay: flex;
+}
+#liens a {
+  color: steelblue;
+  border: 5px yellow dotted;
+  padding: 0 30px;
+  text-decoration: none;
 }/*# sourceMappingURL=coursSass.css.map */

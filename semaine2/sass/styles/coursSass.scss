@@ -1,5 +1,5 @@
 
-$main-color: rebeccapurple;
+$main-color: steelblue;
 $secondary-color: ivory;
 $third-color: red;
 
@@ -44,5 +44,15 @@ ul {
     li {
         color: $secondary-color;
         text-decoration: underline;
+    }
+}
+
+#liens {
+    xdisplay: flex;
+    a {
+        color: steelblue;
+        border: 5px yellow dotted;
+        padding: 0 30px;
+        text-decoration: none;
     }
 }
