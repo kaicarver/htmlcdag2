@@ -1,0 +1,14 @@
+#containerliens {
+  display: flex;
+  background-color: #333;
+  color: #eee;
+}
+#containerliens a {
+  color: steelblue;
+  border: 5px gold dotted;
+  padding: 0 5%;
+  margin: 0 2px;
+}
+#containerliens a:hover {
+  background-color: violet;
+}/*# sourceMappingURL=exoborder.css.map */

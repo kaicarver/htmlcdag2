@@ -1,0 +1,28 @@
+
+$light: #eee;
+$dark: #333;
+
+@mixin theme($light-theme: true) {
+    @if($light-theme) {
+        background-color: $light;
+        color: $dark;
+    }
+    @else {
+        background-color: $dark;
+        color: $light;
+    }
+}
+
+#containerliens {
+    display: flex;
+    @include theme(false);
+    a {
+        color: steelblue;
+        border: 5px gold dotted;
+        padding: 0 5%;
+        margin: 0 2px;
+        &:hover {
+            background-color: violet;
+        }
+    }
+}
