@@ -46,6 +46,35 @@
     id_a      nom_a    prenom_a  adresse_a          cp_a     ville_a   tel_a            email_a                date_adh_a
     GHJ123    Bennay   Nael      58 quartier marne  75000    Paris     0601020304       bennay.nael@gmail.com  20-03-2022
 
+
+    Gestion de commandes de client
+
+    entités : client, produit
+    association : commander
+
+    Règles :
+
+    un client est identifié par ...
+    un produit est identifé par ...
+    un client achète un produit à une certaine date
+
+    Dictionnaire de données :
+
+    Client :
+    Code            Designation                 Type    Taille  Remarque
+    numero_c        numero unique du client     N       6
+    nom             nom du client               A       30
+    prenom          prenom du client            A       30
+    age             age du client               N       3
+    adresse         adresse du client           AN      50
+    ville           ville du client             A       30
+
+    Produit :
+    Code            Designation                 Type    Taille  Remarque
+    numero_p        numero unique du produit    N       10
+    designation     designation du produit      AN      100
+    prix            prix du produit             N       10
+
     </pre>
 </body>
 </html>
