@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regles de gestion
-
-    </title>
+    <title>Exercices MCD</title>
 </head>
 <body>
     <pre>
@@ -47,7 +45,10 @@
     GHJ123    Bennay   Nael      58 quartier marne  75000    Paris     0601020304       bennay.nael@gmail.com  20-03-2022
 
 
+
+
     Exercice : Gestion de commandes de client
+    =========================================
 
     entités : client, produit
     association : commander
@@ -80,6 +81,34 @@
     Acheter :
     Code            Designation                 Type    Taille  Remarque
     date_achat      date de l'achat             Date            
+
+
+
+
+    Exercice Gestion de l'hôtellerie
+    ================================
+
+    entités : hôtel, chambre, catégorie, client
+    associations : réserver, avoir des chambres, avoir une catégorie
+
+    un client fait une ou plusieurs réservations de chambre d'un hôtel
+    un hotel possède au moins une chambre
+    une chambre a une catégorie
+
+    hotel : id, nom, classe
+    chambre : id, numero
+    categorie : id, nom
+    client : id, nom, prenom, adresse, tel
+
+    reserver : date_resa, date_debut, date_fin
+
+    reserver
+    avoir chambre
+    avoir categorie
+    
+
+
+
     </pre>
 </body>
 </html>
