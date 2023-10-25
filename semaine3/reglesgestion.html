@@ -47,16 +47,18 @@
     GHJ123    Bennay   Nael      58 quartier marne  75000    Paris     0601020304       bennay.nael@gmail.com  20-03-2022
 
 
-    Gestion de commandes de client
+    Exercice : Gestion de commandes de client
 
     entités : client, produit
     association : commander
 
     Règles :
 
-    un client est identifié par ...
-    un produit est identifé par ...
+    un client est identifié par numero unique, at a un nom, prenom, age, adresse, ville
+    un produit est identifé par numero unique, et a une designation et un prix
     un client achète un produit à une certaine date
+    un client peut faire aucun ou plusieurs achats
+    un produit peut être acheté aucun ou plusieurs fois
 
     Dictionnaire de données :
 
@@ -75,6 +77,9 @@
     designation     designation du produit      AN      100
     prix            prix du produit             N       10
 
+    Acheter :
+    Code            Designation                 Type    Taille  Remarque
+    date_achat      date de l'achat             Date            
     </pre>
 </body>
 </html>
