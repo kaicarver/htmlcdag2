@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices MCD</title>
+</head>
+<body>
+<pre>
+Etude de cas :
+
+Institut de formation
+
+entités : modules, groupes, etudiants, enseignants
+
+module a idm, numero, intitule, duree, type
+etudiant a idet, nom, prenom, adresse, date_naissance
+groupe a idg, specialite, nombre etudiants (?)
+enseignant a iden, nom, prenom, adresse
+
+
+un etudiant suit un ou plusieurs modules
+un module a aucun ou plusieurs etudiants
+
+etudiant appartient a un seul groupe
+groupe contient un ou plusieurs etudiants
+
+un enseignant enseigne un ou plusieurs modules 
+un enseignant enseigne un ou plusieurs groupes
+
+un module est enseigne par un ou plusieurs enseignants
+un module concerne un ou plusieurs groupes 
+
+
+Dictionnaire de donnees
+
+Module :
+Code            Designation                 Type    Taille  Remarque
+idm             identifiant module          N       10
+numero          numero utilisateur          N       5
+intitule        intitule utilisateur        A       30
+duree           duree utilisateur           N       5
+type            type utilisateur            A       1       
+
+Etudiant :
+Code            Designation                 Type    Taille  Remarque
+idet            identifiant utilisateur     N       10
+nom             nom utilisateur             A       30
+prenom          prenom utilisateur          A       30
+date_naissance  adresse utilisateur         Date      
+
+Enseignant :
+Code            Designation                 Type    Taille  Remarque
+iden            identifiant utilisateur     N       10
+nom             nom utilisateur             A       30
+prenom          prenom utilisateur          A       30
+adresse         adresse utilisateur         A       100      
+
+
+
+****************************************
+correction regles de gestion
+
+entités :
+
+utilisateur a idu, nom, prenom, adresse mail, login, mot de passe, type (admin ou membre)
+sujet a ids, titre, description
+theme a idt, titre, description
+message a idm, contenu, date_creation, type (question ou reponse)
+
+associations : pour chaque association, deux phrases ! 
+
+un utilisateur peut ajouter un ou plusieurs themes
+le theme peut etre cree par un et un seul utilisateur
+
+un theme peut avoir aucun ou plusieurs sujets
+un sujet est lie a un et un seul theme
+
+un utilisateur peut proposer aucun ou plusieurs sujets
+un sujet est propose par un et un seul utilisateur
+
+un sujet contient aucun ou plusieurs messages
+un message est lie a un unique sujet
+
+(le verbe, c'est un choix, notamment en fonction du sens choisi : client -- acheter ou vendre -- produit)
+
+Dictionnaire de donnees
+
+Utilisateur :
+Code            Designation                 Type    Taille  Remarque
+idu             identifiant utilisateur     N       10
+nom             nom utilisateur             A       30
+prenom          prenom utilisateur          A       30
+adresse         adresse utilisateur         AN      100
+email           adresse mail                AN      50
+login           login utilisateur           AN      20
+motdepasse      mdp utilisateur             AN      20
+type            type utilisateur            A       1       A = admin, M = membre
+
+Sujet :
+Code            Designation                 Type    Taille  Remarque
+ids             identifiant sujet           N       10
+titre           titre sujet                 A       50
+description     description sujet           A       100
+
+Theme :
+Code            Designation                 Type    Taille  Remarque
+idt             identifiant theme           N       10
+titre           titre theme                 A       50
+description     description theme           A       100
+
+Message :
+Code            Designation                 Type    Taille  Remarque
+idm             identifiant message         N       10
+contenu         contenu message             A       200
+date_creation   date creation message       A       100
+type            type message                A       1       Q = question, R = reponse
+
+MLD
+
+Utilisateur(p:idu, nom, prenom, adresse, email, login, motdepasse, type)
+Sujet(p:ids, titre, description, #idu, #idt)
+Theme(p:idt, titre, description, #idu)
+Message(p:idm, contenu, date_creation, type, #ids)
+
+</internaute>
+</pre>
+</body>
+</html>
