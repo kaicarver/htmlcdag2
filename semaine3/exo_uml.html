@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice UML diagramme de cas d'utilisation</title>
+</head>
+<body>
+<pre>
+Énoncé de l'exercice :
+
+Elaborer le diagramme des cas d’utilisation du système suivant :
+
+Tous les personnels de l'entreprise peuvent consulter le système. Toute consultation doit être précédée d'une authentification légère dans laquelle la personne précise son nom et son service à des fins de statistiques ultérieures.
+
+Les ingénieurs peuvent effectuer différentes opérations de mise à jour pour les produits dont ils sont responsables : ajout, retrait, modification des informations sur les produits. Ces opérations doivent être précédées d'une authentification plus approfondie lors de laquelle l'ingénieur précise son nom, son service et donne un mot de passe qui est vérifié en contactant le système de gestion des personnels.
+
+Toutes les opérations (consultation et mise à jour) peuvent optionnellement s'accompagner d'une impression des documents accédés
+
+***
+
+Acteurs : personnel, ingénieurs
+
+ingénieur est une spécialisation de personnel
+
+Actions : 
+
+personnel : consultation
+consultation include authentification légère
+
+ingénieur : mise à jour
+mise à jour généralisation de ajout, retrait, modification
+mise à jour include authentification approfondie
+
+impression extends consultation, mise à jour
+
+
+</pre>
+</body>
+</html>
