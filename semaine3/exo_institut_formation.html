@@ -67,9 +67,7 @@ adresse         adresse enseignant          A       100
 
 MCD
 
-Voir dessin papier
-
-MLD 
+Voir dessin papier dans les notes du cours
 
 MLD
 
@@ -79,13 +77,30 @@ Groupe(p:idg, specialite, nombre_etudiants)
 Enseignant(p:iden, nom, prenom, adresse)
 
 enseigne_groupe(#iden, #idg)
-enseigne_module(#iden, #idm, heures)
+enseigne_module(#iden, #idm, #idg, heures)
 etudie_module(#idet, #idm, evaluation)
 etudie_module_fin(#idet, #idm, note)
 module_groupe(#idm, #idg)
 
 
-****************************************
+Correction MLD:
+
+Etudiant(#idet, )
+EnseignantModule()
+Groupe()
+Enseignant(#iden)
+Module()
+Suivre()
+Enseigner()
+
+pour les notes, une autre entite Note 
+
+Note()
+
+avec Suivre en relation ternaire Etudiant, Module, Note 
+
+Suivre(#idet, #idm, #idn, note)
+
 
 </pre>
 </body>
