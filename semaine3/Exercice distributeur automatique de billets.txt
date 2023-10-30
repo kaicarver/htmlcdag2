@@ -1,0 +1,39 @@
+title Distributeur automatique de billets
+actor Client
+participant DAB
+participant Banque
+activate Client
+activate DAB
+Client->DAB:introduit sa carte bancaire
+DAB->DAB:vérifie la validité de la carte
+DAB->Client:demande le code du client
+DAB<-Client:saisit le code
+activate Banque
+Banque<-DAB:demande autorisation prelevement
+Banque->DAB:solde autorisé à prélever
+deactivate Banque
+destroy Banque
+DAB->Client:propose montants à prelever
+DAB<-Client:saisit montant à retirer
+DAB->DAB:controle par rapport au solde autorisé
+DAB->Client: ticket ?
+Client->DAB: répond ticket oui/non
+DAB->Client: carte éjectée
+Client->DAB: prend carte
+DAB->Client: billets délivrés (avec ticket/ou pas)
+Client->DAB: prend billets (avec ticket/ou pas)
+
+deactivate Client
+deactivate DAB
+note over Banque:Exercice : \nLe déroulement normal d’utilisation d’un distributeur automatique de billets est le suivant :\n•Le client introduit sa carte bancaire\n•La machine vérifie la validité de la carte et demande le code au client\n•Si le code est correct, elle envoie une demande d’autorisation de prélèvement au groupement de banques, Ce dernier renvoie le solde autorisé à prélever.\n•Le distributeur propose plusieurs montants à prélever.\n•Le client saisit le montant à retirer.\n•Après contrôle du montant par rapport au solde autorisé, le distributeur demande au client s’il désire un ticket.\n•Après la réponse du client, la carte est éjectée et récupérée par le client.\n•Les billets sont alors délivrés(ainsi que le ticket)\n•Le client récupérer enfin les billets et son ticket\n\nModéliser cette situation à l’aide d’un diagramme de séquence\n\nhttps://sequencediagram.org/
+note over Client,DAB:Une **alternative** à //détailler//... :
+alt case 1
+Client->DAB:info
+else case 2
+Client->DAB:info
+else case 3
+Client->DAB:info
+end
+note over Banque:Fin
+destroy Client
+destroy DAB
