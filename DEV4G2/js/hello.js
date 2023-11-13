@@ -5,10 +5,5 @@
 
 // alert(typeof(nbVar) + "\n" + typeof(strVar) + " " + typeof(boolOk));
 
-var boolConfirm = confirm("Je peux demander votre prénom ?");
-if (boolConfirm == true) {
-    var prenom = prompt("Veuillez saisir votre prénom");
-    alert("Bonjour, " + prenom + " !");
-} else {
-    alert("ok salut !");
-}
+var prenom = prompt("Veuillez saisir votre prénom");
+alert("Bonjour, " + prenom + " !");
