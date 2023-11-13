@@ -6,4 +6,6 @@
 // alert(typeof(nbVar) + "\n" + typeof(strVar) + " " + typeof(boolOk));
 
 var prenom = prompt("Veuillez saisir votre prénom");
-alert("Bonjour, " + prenom + " !");
+// alert("Bonjour, " + prenom + " !");
+console.log("Bonjour, " + prenom + " !");
+document.write("Bonjour, " + prenom + " !");
