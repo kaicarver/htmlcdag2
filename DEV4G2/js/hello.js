@@ -9,3 +9,6 @@ var prenom = prompt("Veuillez saisir votre prénom");
 // alert("Bonjour, " + prenom + " !");
 console.log("Bonjour, " + prenom + " !");
 document.write("Bonjour, " + prenom + " !");
+
+document.getElementById("demo").innerHTML = "Hello World !";
+
