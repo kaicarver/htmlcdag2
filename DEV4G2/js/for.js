@@ -3,3 +3,6 @@ do {
 } while (nom.length < 4) 
 
 document.getElementById("nom").innerHTML = nom;
+for (var i = 0; i < 10; i++) {
+    console.log(i + ": " + nom)
+}
