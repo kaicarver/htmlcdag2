@@ -38,6 +38,20 @@ document.getElementById("titre").onmousedown = mDown
 document.getElementById("titre").onmouseup = mUp
 document.getElementById("titre3").onmousedown = mDown
 document.getElementById("titre3").onmouseup = mUp
+// document.getElementById("mybox3").onmouseover = mOver
+// document.getElementById("mybox3").onmouseout = mOut
+
+function mOver(obj) {
+    obj.style.backgroundColor = "blue"
+    obj.style.color = "yellow"
+    obj.innerHTML = "mouse over me"
+}
+function mOut(obj) {
+    obj.style.backgroundColor = "yellow"
+    obj.style.color = "blue"
+    obj.innerHTML = "thank u"
+}
+
 
 function mDown(event) {
     event.target.style.backgroundColor = "blue"
