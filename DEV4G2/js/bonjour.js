@@ -6,12 +6,15 @@ function carrefunc(event) {
     console.log(event)
     event.target.innerHTML = "merci davoir survole le carre,  " + nom
 }
-function survol(obj) {
-    console.log(obj)
-    obj.innerHTML = "merci davoir survolé"
+function survol(event) {
+    console.log(event)
+    event.target.innerHTML = "merci davoir survolé"
 }
 
-//document.getElementById("survol").addEventListener("onmouseover", survol)
+document.getElementById("survol").addEventListener("mouseover", survol)
 document.getElementById("stop").onclick = function(){
-    document.getElementById("survol").removeEventListener("onmouseover", survol)
+    document.getElementById("survol").removeEventListener("mouseover", survol)
+}
+document.getElementById("start").onclick = function(){
+    document.getElementById("survol").addEventListener("mouseover", survol)
 }
