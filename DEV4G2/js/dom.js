@@ -32,7 +32,23 @@ function setColor(prenom) {
     document.body.classList.add("class2")
 } */
 
-document.getElementById("titre").onclick = changeText
+//document.getElementById("titre").onclick = changeText
+
+document.getElementById("titre").onmousedown = mDown
+document.getElementById("titre").onmouseup = mUp
+document.getElementById("titre3").onmousedown = mDown
+document.getElementById("titre3").onmouseup = mUp
+
+function mDown(event) {
+    event.target.style.backgroundColor = "blue"
+    event.target.style.color = "yellow"
+    event.target.innerHTML = "click down"
+}
+function mUp(event) {
+    event.target.style.backgroundColor = "red"
+    event.target.style.color = "white"
+    event.target.innerHTML = "click up"
+}
 
 function changeText(event) {
     console.log(event)
