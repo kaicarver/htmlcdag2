@@ -1,13 +1,13 @@
-console.log(document.getElementById("box").innerHTML)
-console.log(document.getElementById("box").innerText)
-document.getElementById("box").style.color = "brown"
-//document.getElementById("box").style.backgroundColor = "pink"
-document.getElementById("box").style.fontFamily = "Calibri"
-var prenom = prompt("Prenom", "Dupond")
-document.getElementById("prenom").value = prenom
-var titre = document.getElementById("titre")
+// console.log(document.getElementById("box").innerHTML)
+// console.log(document.getElementById("box").innerText)
+// document.getElementById("box").style.color = "brown"
+// //document.getElementById("box").style.backgroundColor = "pink"
+// document.getElementById("box").style.fontFamily = "Calibri"
+// var prenom = prompt("Prenom", "Dupond")
+// document.getElementById("prenom").value = prenom
+// var titre = document.getElementById("titre")
 
-setColor(prenom)
+//setColor(prenom)
 
 // do {
 //     prenom = document.getElementById("prenom").value
@@ -25,3 +25,9 @@ function setColor(prenom) {
 
 document.getElementById("box").classList.toggle("bgBlue")
 document.getElementById("titre").classList.toggle("bgBlue")
+
+if (confirm("choix")) {
+    document.body.classList.add("class1")
+} else {
+    document.body.classList.add("class2")
+}
