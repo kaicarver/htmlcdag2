@@ -26,8 +26,15 @@ function setColor(prenom) {
 // document.getElementById("box").classList.toggle("bgBlue")
 // document.getElementById("titre").classList.toggle("bgBlue")
 
-if (confirm("choix")) {
+/* if (confirm("choix")) {
     document.body.classList.add("class1")
 } else {
     document.body.classList.add("class2")
+} */
+
+document.getElementById("titre").onclick = changeText
+
+function changeText(event) {
+    console.log(event)
+    event.target.innerHTML += ' Ooops 2'
 }
