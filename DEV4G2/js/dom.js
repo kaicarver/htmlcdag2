@@ -23,8 +23,8 @@ function setColor(prenom) {
         titre.style.color = "darkblue"
 }
 
-document.getElementById("box").classList.toggle("bgBlue")
-document.getElementById("titre").classList.toggle("bgBlue")
+// document.getElementById("box").classList.toggle("bgBlue")
+// document.getElementById("titre").classList.toggle("bgBlue")
 
 if (confirm("choix")) {
     document.body.classList.add("class1")
