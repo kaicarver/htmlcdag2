@@ -9,11 +9,19 @@ var titre = document.getElementById("titre")
 
 setColor(prenom)
 
+// do {
+//     prenom = document.getElementById("prenom").value
+//     setColor(prenom)
+// } while (prenom)
+
 function setColor(prenom) {
-    if (prenom == "John")
+    if (prenom.toLowerCase() == "john")
         titre.style.color = "red"
     else if (prenom == "Dupond")
         titre.style.color = "green"
     else
         titre.style.color = "darkblue"
 }
+
+document.getElementById("box").classList.toggle("bgBlue")
+document.getElementById("titre").classList.toggle("bgBlue")
