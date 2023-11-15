@@ -1,12 +1,11 @@
-var lorem = document.getElementById("lorem")
-lorem.onclick = adjustsize
-var age = prompt("age", 77)
+document.getElementById("lorem").onclick = adjustsize
 function adjustsize(event) {
+    var age = prompt("age", 77)
     if (age > 60) {
-        lorem.style.fontSize = "70px"
+        event.target.style.fontSize = "70px"
     } else if (age > 12) {
-        lorem.style.fontSize = "24px"
+        event.target.style.fontSize = "24px"
     } else {
-        lorem.style.fontSize = "12px"
+        event.target.style.fontSize = "12px"
     }
 }
