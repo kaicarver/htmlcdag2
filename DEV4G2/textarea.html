@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire de contact</Textarea></title>
+    <link rel="stylesheet" href="css/textarea.css">
 </head>
+
 <body>
     <form action="">
-        <div>
-    <div>Nom* <input type="text" name="" id=""></div>
-    <div>Prénom* <input type="text" name="" id=""></div>
-    <div>Profession* <input type="text" name="" id=""></div>
-    <div>Email* <input type="text" name="" id=""></div>
-    <div>
-    <textarea name="" id="myTextarea" cols="30" rows="10" maxlength="140"></textarea>
-    </div>
-    <div id="log">allez y tapez</div>
-    <input type="submit" name="" id="" value="Submit">
-
-</div>
+        <div class="container">
+            <div><label for="nom">Nom* <input type="text" name="" id="nom" required></label></div>
+            <div><label for="prenom">Prénom* <input type="text" name="" id="prenom" required></label></div>
+            <div>Profession <input type="text" name="" id=""></div>
+            <div>Email* <input type="email" name="" id="" required></div>
+            <div>
+                <textarea name="" id="myTextarea" cols="30" rows="10" maxlength="140"></textarea>
+            </div>
+            <div id="log">allez y tapez</div>
+            <input type="submit" name="" id="" value="Submit">
+        </div>
     </form>
     <script src="js/textarea.js"></script>
 </body>
+
 </html>

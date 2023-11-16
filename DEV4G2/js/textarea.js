@@ -5,6 +5,7 @@ document.getElementById("myTextarea").addEventListener('input', function () {
     if (longueurCourante >= longueurMax) {
         log.innerHTML = "oups vous ne pouvez plus taper"
     } else {
-        log.innerHTML = longueurMax - longueurCourante + " caracteres restants"
+        log.innerHTML =
+            longueurMax - longueurCourante + " caracteres restants"
     }
 })
