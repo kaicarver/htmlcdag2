@@ -1,0 +1,13 @@
+.container {
+    margin: 0 30%;
+}
+
+input {
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type=submit] {
+    background-color: aquamarine;
+    height: 40px;
+}
