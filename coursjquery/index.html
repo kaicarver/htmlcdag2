@@ -9,17 +9,34 @@
     <!-- Integration CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- mes scripts peuvent etre en tete dans la balise head 
+         car tout est dans $(document).ready(function() { ... } -->
+    <script src="js/index.js"></script>
+
     <title>jQuery premières fonctions</title>
 </head>
 
 <body>
-<h1>Gros titre</h1>
-<p>Texte caché avec
-<pre>$("#lorem").hide();</pre>
-ici :
-</p>
-<p id="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores laboriosam, officiis aut doloremque numquam pariatur repellat tempora repudiandae esse temporibus dolore hic. Nobis rem aliquid perspiciatis saepe a delectus ab.</p>
-<script src="js/index.js"></script>
+    <h1>Gros titre</h1>
+    <p>Texte caché avec
+    <pre>$("#lorem").hide();</pre>
+    ici :
+    </p>
+    <p id="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores laboriosam, officiis aut doloremque
+        numquam pariatur repellat tempora repudiandae esse temporibus dolore hic. Nobis rem aliquid perspiciatis saepe a
+        delectus ab.</p>
+        <p>Texte caché avec
+            <pre>$(".container p").hide();</pre>
+            ici :
+            </p>
+        <div class="container">
+            <p>coucou</p>
+            <p>kiki</p>
+        </div>
+        <div class="sdf">
+            <p>coucou</p>
+            <p>kiki</p>
+        </div>
 </body>
 
 </html>
