@@ -4,6 +4,13 @@ $(document).ready(function() {
     $("p").css("background-color", "chocolate");
     $("p").css("color", "white");
     $("p").css({ "background-color": "chocolate", "color": "white" });
+
+    $("h1").click(function () {
+        alert("Hello");
+     })
+     $("h2").dblclick(function () {
+        alert("Double!");
+     })
 })
 
 function dim() {
