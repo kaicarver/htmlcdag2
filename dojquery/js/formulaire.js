@@ -2,8 +2,10 @@ $(document).ready(function () {
     $("#soutien").click(function () {
         if ($("#soutien").is(":checked")) {
             $("#merci").text("Merci bcp!");
+            $("#merci").css("background-color", "aquamarine");
         } else {
-            $("#merci").text("Non merci bcp!");
+            $("#merci").text("");
+            $("#merci").css("background-color", "white");
         }
     })
 });
