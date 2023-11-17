@@ -1,0 +1,10 @@
+.bgRed {
+    background-color: red;
+}
+#d {
+    height: 300px;
+    width: 300px;
+    border: black 1px solid;
+    margin: 20px;
+    background-color: pink;
+}
