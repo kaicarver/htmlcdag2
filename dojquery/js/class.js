@@ -12,7 +12,7 @@ function dim() {
 function bg() {
     $("#d").css({ "background-color": "chocolate", "color": "white"	});
 }
+var width = 5;
 function border() {
-    $("#d").css({ border: 'solid red 5px' });
-
+    $("#d").css({ border: 'solid red '+ (width+=2*width) +'px' });
 }
