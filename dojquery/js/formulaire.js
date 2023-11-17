@@ -12,16 +12,25 @@ $(document).ready(function () {
         event.preventDefault();
         $("body").css("background-color", "black");
         $("body").css("color", "white");
+        $("#dark").hide();
+        $("#lite").show();
     })    
     $("#lite").click(function (event) {
         $("body").css("background-color", "white");
         $("body").css("color", "black");
+        $("#lite").hide();
+        $("#dark").show();
     })
     $(".button").mouseover(function (event) {
         $(this).css("color", "red");
     });
-    $(".button").mouseout(function (event) {
+    $("#dark").mouseout(function (event) {
         $(this).css("color", "black");
     });
+    $("#lite").mouseout(function (event) {
+        $(this).css("color", "white");
+    });
+
+    $("#lite").hide();
 });
 
