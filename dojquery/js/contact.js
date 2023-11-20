@@ -7,4 +7,13 @@ $(document).ready(function () {
     else
       $('#butt').text('-')
   })
+  $('#butt2').click(function () {
+    $('#extra').slideToggle()
+    if ($('#butt2').text() == '-')
+      $('#butt2').text('+')
+    else
+      $('#butt2').text('-')
+  })
+
+
 });
