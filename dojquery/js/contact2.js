@@ -8,4 +8,7 @@ $(document).ready(function () {
     $('#util').fadeIn()
     $('#pref').fadeOut()
   })
+  $("#butt, #butt2").mouseover(function () {
+    $(this).css("cursor", "pointer");
+  });
 });
