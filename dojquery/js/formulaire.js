@@ -22,13 +22,13 @@ $(document).ready(function () {
         $("#dark").show();
     })
     $(".button").mouseover(function (event) {
-        $(this).css("color", "red");
+        $(this).css("border-color", "red");
     });
     $("#dark").mouseout(function (event) {
-        $(this).css("color", "black");
+        $(this).css("border-color", "black");
     });
     $("#lite").mouseout(function (event) {
-        $(this).css("color", "white");
+        $(this).css("border-color", "white");
     });
 
     $("#lite").hide();
