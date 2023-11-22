@@ -6,14 +6,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 var path = require('path');
 
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
     console.log(path.resolve('index.html'));
-  res.sendFile(path.resolve('index.html'));
+    res.sendFile(path.resolve('index.html'));
 });
 
 app.post('/submit-student-data', function (req, res) {
-    res.send('POST Request');
+    console.log("Prénom :", req.body.firstName);
+    var name = req.body.firstName + " " + req.body.lastName;
+    res.send('Merci de avoir rempli le formulaire, ' + name);
 });
+
 var server = app.listen(5000, function () {
-    console.log('Express server listening on port '+ server.address().port);
+    console.log('Express server listening on port ' + server.address().port);
 });
