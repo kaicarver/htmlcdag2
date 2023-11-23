@@ -17,10 +17,10 @@ mongoose.connect(url)
 app.set('view engine', 'ejs');
 
 // models
-var Contact = require('./models/Contact'); // majuscule car c'est un Modèle
+var instanceContact = require('./models/Contact'); // majuscule car c'est un Modèle
 
 app.get('/', function (req, res) {
-    Contact.find().then(data => {
+    instanceContact.find().then(data => {
         console.log(data);
         res.render('Home', {data: data});
     }).catch(err => console.log(err));
