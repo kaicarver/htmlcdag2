@@ -17,6 +17,12 @@ app.post('/submit-student-data', function (req, res) {
     res.send('Merci de avoir rempli le formulaire, ' + name);
 });
 
+app.post('/submit-form-data', function (req, res) {
+    console.log("Prénom :", req.body.firstName);
+    var name = req.body.firstName + " " + req.body.lastName;
+    res.send('Bonjour ' + name + ',<p>Merci de nous avoir contacté.<p>Nous reviendrons vers vous à cette adresse : ' + req.body.email);
+});
+
 var server = app.listen(5000, function () {
     console.log('Express server listening on port ' + server.address().port);
 });

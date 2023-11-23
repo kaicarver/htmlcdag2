@@ -6,10 +6,15 @@
     <title>Un fichier pour POST</title>
 </head>
 <body>
-    <form action="/submit-student-data" method="post">
-        first name <input type="text" name="firstName"><br>
-        last name <input type="text" name="lastName"><br>
-        <input type="submit" value="Envoyer ma donnée">
+    <form action="/submit-form-data" method="post">
+        first name <input type="text" name="firstName" value="Foo"><br>
+        last name <input type="text" name="lastName" value="Bar"><br>
+        email <input type="email" name="email" value="f@foo.com"><br>
+        message <textarea name="message">Foo foo
+bar bar!
+        </textarea><br>
+
+        <input type="submit" value="Envoyer mes infos">
     </form>
 </body>
 </html>
