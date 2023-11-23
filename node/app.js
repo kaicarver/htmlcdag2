@@ -22,10 +22,10 @@ app.get('/', function (req, res) {
 });
 
 app.post('/submit-form-data', function (req, res) {
-    console.log("Prénom :", req.body.firstName);
+    console.log("Prénom :", req.body.firstname);
     const Data = new Contact({
-        firstName: req.body.firstName,
-        lastName: req.body.lastName,
+        firstname: req.body.firstname,
+        lastname: req.body.lastname,
         email: req.body.email,
         message: req.body.message
     });
