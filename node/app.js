@@ -13,6 +13,8 @@ mongoose.connect(url)
 .then(console.log('Mongodb est connecté'))
 .catch(err => console.log(err));
 
+app.set('view engine', 'ejs');
+
 // models
 var Contact = require('./models/Contact'); // majuscule car c'est un Modèle
 
@@ -20,7 +22,7 @@ app.get('/', function (req, res) {
     Contact.find().then(data => {
         console.log(data);
     }).catch(err => console.log(err));
-    res.sendFile(path.resolve('index.html'));
+    res.render('Home');
 });
 
 app.post('/submit-form-data', function (req, res) {
