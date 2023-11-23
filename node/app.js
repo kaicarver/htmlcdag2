@@ -28,7 +28,7 @@ app.get('/', function (req, res) {
 
 app.post('/submit-form-data', function (req, res) {
     console.log("Prénom :", req.body.firstname);
-    const Data = new Contact({
+    const Data = new instanceContact({
         firstname: req.body.firstname,
         lastname: req.body.lastname,
         email: req.body.email,
