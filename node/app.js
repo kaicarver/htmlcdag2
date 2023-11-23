@@ -17,7 +17,9 @@ mongoose.connect(url)
 var Contact = require('./models/Contact'); // majuscule car c'est un Modèle
 
 app.get('/', function (req, res) {
-    console.log(path.resolve('index.html'));
+    Contact.find().then(data => {
+        console.log(data);
+    }).catch(err => console.log(err));
     res.sendFile(path.resolve('index.html'));
 });
 
