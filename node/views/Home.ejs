@@ -7,6 +7,9 @@
 </head>
 <body>
     <h1>Bienvenue sur Home.ejs</h1>
-    <%= data %>
+    <% data.forEach((contact) => { %>
+        <h2><%= contact.firstname %></h2>
+        <h3><%= contact.email %></h3>
+    <% }); %>
 </body>
 </html>
