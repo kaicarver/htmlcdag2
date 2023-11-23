@@ -13,22 +13,28 @@ mongoose.connect(url)
 .then(console.log('Mongodb est connecté'))
 .catch(err => console.log(err));
 
+// models
+var Contact = require('./models/Contact'); // majuscule car c'est un Modèle
+
 app.get('/', function (req, res) {
     console.log(path.resolve('index.html'));
     res.sendFile(path.resolve('index.html'));
 });
 
-app.post('/submit-student-data', function (req, res) {
-    console.log("Prénom :", req.body.firstName);
-    var name = req.body.firstName + " " + req.body.lastName;
-    res.send('Merci de avoir rempli le formulaire, ' + name);
-});
-
 app.post('/submit-form-data', function (req, res) {
     console.log("Prénom :", req.body.firstName);
-    var name = req.body.firstName + " " + req.body.lastName;
-    res.send('Bonjour ' + name + ',<p>Merci de nous avoir contacté.<p>Nous reviendrons vers vous à cette adresse : ' + req.body.email +
-    '<p>Votre message était : <pre>' + req.body.message);
+    const Data = new Contact({
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        email: req.body.email,
+        message: req.body.message
+    });
+    Data.save()
+    .then(()=>{
+        console.log("Data enregistrée !");
+        res.redirect('/');
+    })
+    .catch(err => console.log(err));
 });
 
 var server = app.listen(5000, function () {
