@@ -20,7 +20,8 @@ app.post('/submit-student-data', function (req, res) {
 app.post('/submit-form-data', function (req, res) {
     console.log("Prénom :", req.body.firstName);
     var name = req.body.firstName + " " + req.body.lastName;
-    res.send('Bonjour ' + name + ',<p>Merci de nous avoir contacté.<p>Nous reviendrons vers vous à cette adresse : ' + req.body.email);
+    res.send('Bonjour ' + name + ',<p>Merci de nous avoir contacté.<p>Nous reviendrons vers vous à cette adresse : ' + req.body.email +
+    '<p>Votre message était : <pre>' + req.body.message);
 });
 
 var server = app.listen(5000, function () {
