@@ -6,6 +6,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 var path = require('path');
 
+var mongoose = require('mongoose');
+
+const url = "mongodb+srv://kaicarver:Stwotk9dbieqH9xt@cluster0.2rnu6yz.mongodb.net/?retryWrites=true&w=majority";
+mongoose.connect(url)
+.then(console.log('Mongodb est connecté'))
+.catch(err => console.log(err));
+
 app.get('/', function (req, res) {
     console.log(path.resolve('index.html'));
     res.sendFile(path.resolve('index.html'));
