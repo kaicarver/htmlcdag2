@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Pox</title>
+</head>
+<body>
+    <form action="/editpox/<%= %>?_method=PUT" method="post">
+        <input type="hidden" name="_method" value="PUT">
+        Titre <input type="text" name="titre" value="<%= data.titre %>"><br>
+        Auteur <input type="text" name="auteur" value="<%= data.auteur %>"><br>
+        Description <textarea name="description"></textarea><br>
+        <input type="submit" value="Envoyer Pox">
+    </form>
+    <form action="/deletepox/<%= %>?_method=DELETE" method="post">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="Supprimer Pox">
+    </form>
+</body>
+</html>

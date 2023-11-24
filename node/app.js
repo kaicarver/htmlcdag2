@@ -153,3 +153,70 @@ app.post('/submit-blog-data', function (req, res) {
 var server = app.listen(5000, function () {
     console.log('Express server listening on port ' + server.address().port);
 });
+
+// Correction exercice -- pox = post
+var Pox = require('./models/Pox');
+
+// Read Lire tous les poxes
+app.get('/allpoxes', function (req, res) {
+    Pox.find().then(data => {
+        console.log(data);
+        res.render('AllPoxes', { data: data });
+    }).catch(err => console.log(err));
+});
+
+app.get('/formulairepox/', function (req, res) {
+    res.render('FormulairePox');
+});
+
+app.get('/pox/:id', (req, res) => {
+    console.log("id=", req.params.id);
+    Pox.findOne({
+        _id: req.params.id
+    }).then(data => {
+        res.render('EditPox', { data: data });
+    })
+   .catch(err => console.log(err));
+});
+
+// Create Créer un pox
+app.post('/newpox', function (req, res) {
+    const Data = new Pox({
+        titre: req.body.titre,
+        auteur: req.body.auteur,
+        description: req.body.description,
+    });
+    Data.save()
+        .then(() => {
+            console.log("Pox enregistré !");
+            res.redirect('/allpoxes');
+        })
+        .catch(err => { console.log(err) });
+});
+
+// Update Mise à jour un pox
+app.put('/editpox/:id', function (req, res) {
+    const Data = {
+        titre: req.body.titre,
+        auteur: req.body.auteur,
+        description: req.body.description
+    };
+    Pox.updateOne(
+        { _id: req.params.id },
+        { $set: Data })
+        .then(data => {
+            console.log("Pox modifié");
+            res.redirect('/allpoxes');
+        }).catch(err => console.log(err));
+});
+
+// Delete Suppression d'un pox
+app.delete('/deletepox/:id', function (req, res) {
+    Pox.findOneAndDelete({
+        _id: req.params.id
+    }).then(() => {
+        console.log("Pox supprimé");
+        res.redirect('/allpoxes');
+    })
+   .catch(err => console.log(err));
+});
