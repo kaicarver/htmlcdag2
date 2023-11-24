@@ -17,11 +17,11 @@
         Auteur <input type="text" name="auteur" value="<%= data.auteur %>"><br>
         description
         <textarea name="description" cols="60" rows="15"><%= data.description %></textarea><br>
-        <input type="submit" value="Mettre à jour mes infos">
+        <input type="submit" value="Mettre à jour le post">
     </form>
     <form action="/delete2/<%= data._id %>?_method=DELETE" method="post">
         <input type="hidden" name="_method" value="DELETE" method="post">
-        <input type="submit" value="Supprimer mes infos" onclick="return confirm('sûr ?')">
+        <input type="submit" value="Supprimer le post" onclick="return confirm('sûr ?')">
     </form>
     <p>
         <a href="/">Home</a>

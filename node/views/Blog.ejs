@@ -12,7 +12,10 @@
             <h2><a href="post/<%=post._id%>"><%= post.titre %></a>, par
             <%= post.auteur %></h2>
             <%= post.description %></a>
-                <button>Supprimer le post</button>
+            <form action="/delete2/<%= post._id %>?_method=DELETE" method="post">
+                <input type="hidden" name="_method" value="DELETE" method="post">
+                <input type="submit" value="Supprimer le post" onclick="return confirm('sûr ?')">
+            </form>
         </div>
     <% }); %>
     <p>
