@@ -33,13 +33,30 @@ app.get('/formulaire', function (req, res) {
 });
 
 app.get('/formulaire/:id', (req, res) => {
-    console.log(req.params.id);
+    console.log("id=", req.params.id);
     Contact.findOne({
         _id: req.params.id
     }).then(data => {
         res.render('Edit', { data: data });
     })
     .catch(err => console.log(err));
+});
+
+app.put('/edit/:id', function (req, res) {
+    const Data = {
+        firstname: req.body.firstname,
+        lastname: req.body.lastname,
+        email: req.body.email,
+        message: req.body.message
+    };
+    Contact.updateOne(
+        { _id: req.params.id }, 
+        { $set: Data })
+        .then(data => {
+            console.log("Data modifiée :");
+            console.log(data);
+            res.redirect('/');
+        }).catch(err => console.log(err));  
 });
 
 app.post('/submit-form-data', function (req, res) {
