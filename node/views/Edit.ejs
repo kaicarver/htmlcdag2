@@ -6,6 +6,23 @@
     <title>Edit</title>
 </head>
 <body>
-    <%= data %>
+
+    <%#= data %>
+    <h1>Utlisateur : </h1>
+    <h2><%= data.firstname %></h2>
+    <h2><%= data.lastname %></h2>
+    <p><%= data.email %></p>
+    <p><%= data.message %></p>
+    
+    <form action="/submit-form-data" method="post">
+        first name : <input type="text" name="firstname" value="Foo"><br>
+        last name <input type="text" name="lastname" value="Bar"><br>
+        email <input type="email" name="email" value="f@foo.com"><br>
+        message <textarea name="message">Foo foo
+bar bar!
+        </textarea><br>
+
+        <input type="submit" value="Envoyer mes infos">
+    </form>
 </body>
 </html>

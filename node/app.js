@@ -15,6 +15,8 @@ mongoose.connect(url)
     .catch(err => console.log(err));
 
 app.set('view engine', 'ejs');
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
 
 // models
 var Contact = require('./models/Contact'); // majuscule car c'est un Modèle
