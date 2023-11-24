@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    <h1>Bienvenue au Blog</h1>
+    <% data.forEach((post) => { %>
+        <div>
+            <h2><a href="post/<%=post._id%>"><%= post.titre %></a>, par
+            <%= post.auteur %></h2>
+            <%= post.description %></a>
+                <button>Supprimer le post</button>
+        </div>
+    <% }); %>
+    <p>
+        <a href="blogform">Créer post</a>
+    </p>
+    <p>
+        <a href="/">Home</a>
+    </p>
+</body>
+</html>

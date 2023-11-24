@@ -6,14 +6,19 @@
     <title>Home.ejs</title>
 </head>
 <body>
-    <h1>Bienvenue sur Home.ejs</h1>
+    <h1>Bienvenue sur Contacts et Blog</h1>
+    <h2>Contacts</h2>
     <% data.forEach((contact) => { %>
         <div>
             <a href="formulaire/<%=contact._id%>"><%= contact.firstname %></a>
         </div>
     <% }); %>
     <p>
-        <a href="formulaire">Créer</a>
+        <a href="formulaire">Créer contact</a>
+    </p>
+    <h2>Blog</h2>
+    <p>
+        <a href="blog">Tous les posts du blog</a>
     </p>
 </body>
 </html>
