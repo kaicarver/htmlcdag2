@@ -23,5 +23,9 @@
         <textarea name="message" cols="60" rows="15"><%= data.message %></textarea><br>
         <input type="submit" value="Mettre à jour mes infos">
     </form>
+    <form action="/delete/<%= data._id %>?_method=DELETE" method="post">
+        <input type="hidden" name="_method" value="DELETE" method="post">
+        <input type="submit" value="Supprimer mes infos">
+    </form>
 </body>
 </html>

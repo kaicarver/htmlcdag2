@@ -53,10 +53,21 @@ app.put('/edit/:id', function (req, res) {
         { _id: req.params.id }, 
         { $set: Data })
         .then(data => {
-            console.log("Data modifiée :");
+            console.log("Donnée modifiée :");
             console.log(data);
             res.redirect('/');
         }).catch(err => console.log(err));  
+});
+
+app.delete('/delete/:id', function (req, res) {
+    // Contact.deleteOne({
+    Contact.findOneAndDelete({
+        _id: req.params.id
+    }).then(() => {
+        console.log("Donnée supprimée");
+        res.redirect('/');
+    })
+    .catch(err => console.log(err));
 });
 
 app.post('/submit-form-data', function (req, res) {
