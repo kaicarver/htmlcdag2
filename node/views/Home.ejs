@@ -8,8 +8,9 @@
 <body>
     <h1>Bienvenue sur Home.ejs</h1>
     <% data.forEach((contact) => { %>
-        <h2><%= contact.firstname %></h2>
-        <h3><%= contact.email %></h3>
+        <div>
+            <a href="formulaire/<%= contact._id %>"><%= contact.firstname %></a>
+        </div>
     <% }); %>
 </body>
 </html>

@@ -17,12 +17,12 @@ mongoose.connect(url)
 app.set('view engine', 'ejs');
 
 // models
-var modContact = require('./models/Contact'); // majuscule car c'est un Modèle
+var Contact = require('./models/Contact'); // majuscule car c'est un Modèle
 
 app.get('/', function (req, res) {
-    modContact.find().then(data => {
+    Contact.find().then(data => {
         console.log(data);
-        res.render('Home', {data: data});
+        res.render('Home', { data: data });
     }).catch(err => console.log(err));
 });
 
@@ -30,20 +30,30 @@ app.get('/formulaire', function (req, res) {
     res.render('Formulaire');
 });
 
+app.get('/formulaire/:id', (req, res) => {
+    console.log(req.params.id);
+    Contact.findOne({
+        _id: req.params.id
+    }).then(data => {
+        res.render('Edit', { data: data });
+    })
+    .catch(err => console.log(err));
+});
+
 app.post('/submit-form-data', function (req, res) {
     console.log("Prénom :", req.body.firstname);
-    const Data = new modContact({
+    const Data = new Contact({
         firstname: req.body.firstname,
         lastname: req.body.lastname,
         email: req.body.email,
         message: req.body.message
     });
     Data.save()
-    .then(()=>{
-        console.log("Data enregistrée !");
-        res.redirect('/');
-    })
-    .catch(err => console.log(err));
+        .then(() => {
+            console.log("Data enregistrée !");
+            res.redirect('/');
+        })
+        .catch(err => console.log(err));
 });
 
 var server = app.listen(5000, function () {
