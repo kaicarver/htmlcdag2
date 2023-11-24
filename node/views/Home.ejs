@@ -9,8 +9,11 @@
     <h1>Bienvenue sur Home.ejs</h1>
     <% data.forEach((contact) => { %>
         <div>
-            <a href="formulaire/<%= contact._id %>"><%= contact.firstname %></a>
+            <a href="formulaire/<%=contact._id%>"><%= contact.firstname %></a>
         </div>
     <% }); %>
+    <p>
+        <a href="formulaire">Créer</a>
+    </p>
 </body>
 </html>
