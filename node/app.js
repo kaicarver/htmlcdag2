@@ -5,16 +5,21 @@ var bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }));
 
 var path = require('path');
+require('dotenv').config();
 
 var mongoose = require('mongoose');
 
-const url = "mongodb+srv://kaicarver:Stwotk9dbieqH9xt@cluster0.2rnu6yz.mongodb.net/?retryWrites=true&w=majority";
+const url = process.env.DATABASE_URL;
+console.log("process.env.DATABASE_URL = " + url);
 
 mongoose.connect(url)
     .then(console.log('Mongodb est connecté'))
     .catch(err => console.log(err));
 
 app.set('view engine', 'ejs');
+
+app.use(express.static(__dirname + '/public'));
+
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 
@@ -26,6 +31,14 @@ app.get('/', function (req, res) {
     Contact.find().then(data => {
         console.log(data);
         res.render('Home', { data: data });
+    }).catch(err => console.log(err));
+});
+
+
+app.get('/blogpost', function (req, res) {
+    Post.find().then(data => {
+        console.log(data);
+        res.render('Blog', { data: data });
     }).catch(err => console.log(err));
 });
 
