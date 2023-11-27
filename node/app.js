@@ -233,3 +233,44 @@ app.delete('/deletepox/:id', function (req, res) {
     })
    .catch(err => console.log(err));
 });
+
+// Partie User
+
+var User = require('./models/User');
+
+app.post('/api/inscription', function (req, res) {
+    const Data = new User({
+        username: req.body.username,
+        email: req.body.email,
+        password: req.body.password,
+        admin: false,
+    });
+    Data.save()
+        .then(() => {
+            console.log("User inscrit !");
+            res.redirect('/');
+        })
+        .catch(err => console.log(err));
+});
+app.get('/forminscription', function (req, res) {
+    res.render('Inscription');
+});
+app.get('/connexion', function (req, res) {
+    res.render('Connexion');
+});
+app.post('/api/connexion', function (req, res) {
+    User.findOne({
+        username: req.body.username
+    }).then(user => {
+        if (!user) {
+            return res.status(404).send('User not found');
+        }
+        console.log(user);
+        if (user.password !== req.body.password) {
+            return res.status(404).send('Wrong password');
+        }
+        User.find().then(all => {
+            res.render('UserPage', { data: user, all: all }); // page profil
+        }).catch(err => console.log(err));
+    }).catch(err => console.log(err));
+});
