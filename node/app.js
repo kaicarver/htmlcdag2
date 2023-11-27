@@ -23,7 +23,7 @@ app.use(express.static(__dirname + '/public'));
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 
 // models
 var Contact = require('./models/Contact'); // majuscule car c'est un Modèle
@@ -268,7 +268,8 @@ app.post('/api/connexion', function (req, res) {
             return res.status(404).send('User not found');
         }
         console.log(user);
-        if (user.password !== req.body.password) {
+        // if (user.password !== req.body.password) {
+        if (!bcrypt.compareSync(req.body.password, user.password)) {
             return res.status(404).send('Wrong password');
         }
         User.find().then(all => {
