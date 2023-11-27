@@ -23,6 +23,8 @@ app.use(express.static(__dirname + '/public'));
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 
+const bcrypt = require('bcryptjs');
+
 // models
 var Contact = require('./models/Contact'); // majuscule car c'est un Modèle
 var Post = require('./models/Post');
@@ -242,7 +244,7 @@ app.post('/api/inscription', function (req, res) {
     const Data = new User({
         username: req.body.username,
         email: req.body.email,
-        password: req.body.password,
+        password: bcrypt.hashSync(req.body.password, 10),
         admin: false,
     });
     Data.save()
