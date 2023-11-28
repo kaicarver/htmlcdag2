@@ -31,7 +31,7 @@ var Post = require('./models/Post');
 
 app.get('/', function (req, res) {
     Contact.find().then(data => {
-        console.log(data);
+        //console.log(data);
         res.render('Home', { data: data });
     }).catch(err => console.log(err));
 });
@@ -39,14 +39,14 @@ app.get('/', function (req, res) {
 
 app.get('/blogpost', function (req, res) {
     Post.find().then(data => {
-        console.log(data);
+        //console.log(data);
         res.render('Blog', { data: data });
     }).catch(err => console.log(err));
 });
 
 app.get('/blog', function (req, res) {
     Post.find().then(data => {
-        console.log(data);
+        //console.log(data);
         res.render('Blog', { data: data });
     }).catch(err => console.log(err));
 });
@@ -175,7 +175,7 @@ var Pox = require('./models/Pox');
 // Read Lire tous les poxes
 app.get('/allpoxes', function (req, res) {
     Pox.find().then(data => {
-        console.log(data);
+        //console.log(data);
         res.render('AllPoxes', { data: data });
     }).catch(err => console.log(err));
 });
