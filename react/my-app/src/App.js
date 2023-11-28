@@ -7,10 +7,10 @@ function App() {
   return (
     <div className="App">
       <h1>Hello React !</h1>
-      <Greet prenom = "Thomas" />
-      <Greet prenom = "Kék" />
-      <Greet prenom = "Xi Jinping 习近平" />
-    <Welcome></Welcome>
+      <Greet prenom="Thomas" age="23" />
+      <Greet prenom="Kék" age="3" />
+      <Greet prenom="Xi Jinping 习近平" age="72" />
+      <Welcome></Welcome>
     </div>
   );
 }
