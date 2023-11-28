@@ -8,6 +8,8 @@ function App() {
     <div className="App">
       <h1>Hello React !</h1>
       <Greet prenom = "Thomas" />
+      <Greet prenom = "Kék" />
+      <Greet prenom = "Xi Jinping 习近平" />
     <Welcome></Welcome>
     </div>
   );
