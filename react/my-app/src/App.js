@@ -10,8 +10,11 @@ function App() {
         Thomas adore React !
         Et c'est cool !
       </Greet>
-      <Greet prenom="Kék" age="3" />
-      <Greet prenom="Xi Jinping 习近平" age="72" />
+      <Greet prenom="Bruce" alias="Batman" age="3" />
+      <Greet prenom="Clark" alias="Superman" age="3" />
+      <Greet prenom="Diana" alias="Wonder Woman" age="150" />
+      <Greet prenom="Kék" alias="Hulk" age="3" />
+      <Greet prenom="Xi Jinping 习近平" alias="Winnie" age="70" />
       <Welcome></Welcome>
     </div>
   );
