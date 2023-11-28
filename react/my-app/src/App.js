@@ -15,7 +15,8 @@ function App() {
       <Greet prenom="Diana" alias="Wonder Woman" age="150" />
       <Greet prenom="Kék" alias="Hulk" age="3" />
       <Greet prenom="Xi Jinping 习近平" alias="Winnie" age="70" />
-      <Welcome></Welcome>
+      <Welcome prenom="Tom" age="3"></Welcome>
+      <Welcome prenom="Max" age="5"></Welcome>
     </div>
   );
 }
