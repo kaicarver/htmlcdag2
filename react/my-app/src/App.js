@@ -1,10 +1,13 @@
 import './App.css';
 import Greet from './components/Greet';
 import Welcome from './components/Welcome';
+import Message from './components/Message';
 
 function App() {
   return (
     <div className="App">
+      <Message />
+      {/* 
       <h1>Hello React !</h1>
       <Greet prenom="Thomas" age="23">
         Thomas adore React !
@@ -17,6 +20,7 @@ function App() {
       <Greet prenom="Xi Jinping 习近平" alias="Winnie" age="70" />
       <Welcome prenom="Tom" age="3"></Welcome>
       <Welcome prenom="Max" age="5"></Welcome>
+      */}
     </div>
   );
 }
