@@ -2,11 +2,13 @@ import './App.css';
 import Greet from './components/Greet';
 import Welcome from './components/Welcome';
 import Message from './components/Message';
+import Counter from './components/Counter';
 
 function App() {
   return (
     <div className="App">
       <Message />
+      <Counter />
       {/* 
       <h1>Hello React !</h1>
       <Greet prenom="Thomas" age="23">
