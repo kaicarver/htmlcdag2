@@ -245,8 +245,13 @@ app.post('/api/inscription', function (req, res) {
         username: req.body.username,
         email: req.body.email,
         password: bcrypt.hashSync(req.body.password, 10),
-        admin: false,
+        admin: req.body.admin,
     });
+    console.log(Object.keys(req.body.password).length)
+    console.log(req.body.password.length)
+    if (req.body.password.length < 12) {
+        return res.status(404).send('Mot de passe trop court !');
+    }
     Data.save()
         .then(() => {
             console.log("User inscrit !");
