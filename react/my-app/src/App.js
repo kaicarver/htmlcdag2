@@ -8,7 +8,8 @@ function App() {
   return (
     <div className="App">
       <Message />
-      <Counter />
+      <Counter value={10}/>
+      <Counter value={42}/>
       {/* 
       <h1>Hello React !</h1>
       <Greet prenom="Thomas" age="23">
