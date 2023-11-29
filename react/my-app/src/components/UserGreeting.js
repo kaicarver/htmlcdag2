@@ -15,13 +15,6 @@ class UserGreeting extends Component {
     };
     render() {
         return this.state.isLoggedIn? <div>Hello logged in</div> : <div>Hello Guest <button onClick={() => this.clickHandler()}>Connect</button></div>
-        if (this.state.isLoggedIn) {
-            return <div>Hello logged in</div>
-        } else {
-            return <div>Hello Guest
-                <button onClick={() => this.clickHandler()}>Connect</button>
-            </div>
-        }
     }
 }
 
