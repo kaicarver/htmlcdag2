@@ -6,10 +6,12 @@ import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import UserGreeting from './components/UserGreeting';
+import AdminTest from './components/AdminTest';
 
 function App() {
   return (
     <div className="App">
+      <AdminTest/>
       <UserGreeting/>
       <FunctionClick/>
       <ClassClick/>
