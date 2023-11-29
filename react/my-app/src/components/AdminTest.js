@@ -14,6 +14,7 @@ export class AdminTest extends Component {
       this.state.admin ?
         <div>
           Welcome Admin
+          <button>Edit</button>
           {button}
         </div> :
         <div>
