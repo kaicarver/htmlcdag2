@@ -9,18 +9,19 @@ class UserGreeting extends Component {
     }
     clickHandler() {
         this.setState({
-            isLoggedIn: true
+            isLoggedIn: false
         })
         console.log(this.isLoggedIn);
     };
     render() {
-            if (this.state.isLoggedIn) {
-                return <div>Hello logged in</div>
-            } else {
-                return <div>Hello Guest
-                    <button onClick={() => this.clickHandler()}>Connect</button>
-                    </div>
-            }
+        return this.state.isLoggedIn? <div>Hello logged in</div> : <div>Hello Guest <button onClick={() => this.clickHandler()}>Connect</button></div>
+        if (this.state.isLoggedIn) {
+            return <div>Hello logged in</div>
+        } else {
+            return <div>Hello Guest
+                <button onClick={() => this.clickHandler()}>Connect</button>
+            </div>
+        }
     }
 }
 

@@ -8,15 +8,17 @@ export class AdminTest extends Component {
     }
   }
   render() {
+    var button = <button onClick={() => this.setState({ admin: !this.state.admin })}>Toggle!</button>
+
     return (
       this.state.admin ?
         <div>
-          <button onClick={() => this.setState({ admin: !this.state.admin })}>Toggle</button>
           Welcome Admin
+          {button}
         </div> :
         <div>
-          <button onClick={() => this.setState({ admin: !this.state.admin })}>Toggle</button>
           Veuillez vous connecter en tant qu'admin
+          {button}
         </div>
     )
   }
