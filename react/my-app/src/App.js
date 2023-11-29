@@ -7,10 +7,12 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import UserGreeting from './components/UserGreeting';
 import AdminTest from './components/AdminTest';
+import NameList from './components/NameList';
 
 function App() {
   return (
     <div className="App">
+      <NameList/>
       <AdminTest/>
       <UserGreeting/>
       <FunctionClick/>
