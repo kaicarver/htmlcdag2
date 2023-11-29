@@ -11,8 +11,9 @@ function App() {
       <Counter value="10"/>
       <Counter value={42}/>
       <Counter value={-42}/>
-      {/* 
+      
       <h1>Hello React !</h1>
+
       <Greet prenom="Thomas" age="23">
         Thomas adore React !
         Et c'est cool !
@@ -22,6 +23,7 @@ function App() {
       <Greet prenom="Diana" alias="Wonder Woman" age="150" />
       <Greet prenom="Kék" alias="Hulk" age="3" />
       <Greet prenom="Xi Jinping 习近平" alias="Winnie" age="70" />
+      {/* 
       <Welcome prenom="Tom" age="3"></Welcome>
       <Welcome prenom="Max" age="5"></Welcome>
       */}
