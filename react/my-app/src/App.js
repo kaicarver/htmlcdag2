@@ -1,4 +1,6 @@
 import './App.css';
+import { useReducer } from 'react';
+
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
 // import Message from './components/Message';
@@ -9,14 +11,29 @@ import './App.css';
 // import AdminTest from './components/AdminTest';
 // import NameList from './components/NameList';
 // import Stylesheets from './components/Stylesheets';
-import Form from './components/Form';
-import InscriptionForm from './components/InscriptionForm';
+// import Form from './components/Form';
+// import InscriptionForm from './components/InscriptionForm';
 
 function App() {
+  const initialState = 0;
+  const reducer = (state, action) => {
+    switch (action) {
+      case 'increment':
+        return state + 1;
+      case 'decrement':
+        return state - 1;
+      case 'reset':
+        return initialState;
+      default:
+        return state;
+    }
+  }
+  const [count, dispatch] = useReducer(reducer, initialState);
+
   return (
     <div className="App">
-            <Form/>
-            <InscriptionForm/>
+{/*             <Form/>
+            <InscriptionForm/> */}
 
 {/*       <Stylesheets primary={true} />
       <NameList/>
