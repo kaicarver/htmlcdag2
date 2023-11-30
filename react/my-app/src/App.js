@@ -64,8 +64,7 @@ function App() {
       <Welcome prenom="Tom" age="3"></Welcome>
       <Welcome prenom="Max" age="5"></Welcome>
 */}
-      <CountContext.Provider
-        value={{ countState: count, countDispatch: dispatch }}>
+      <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
         <ComponentA />
       </CountContext.Provider>
     </div>
