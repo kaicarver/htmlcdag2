@@ -1,5 +1,5 @@
 import './App.css';
-import { useReducer } from 'react';
+import React, { useReducer } from 'react';
 
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
@@ -13,6 +13,8 @@ import { useReducer } from 'react';
 // import Stylesheets from './components/Stylesheets';
 // import Form from './components/Form';
 // import InscriptionForm from './components/InscriptionForm';
+
+export const CountContext = React.createContext();
 
 function App() {
   const initialState = 0;
@@ -29,6 +31,11 @@ function App() {
     }
   }
   const [count, dispatch] = useReducer(reducer, initialState);
+
+  <CountContext.Provider 
+    value={{countState: count, countDispatch: dispatch}}>
+  </CountContext.Provider>
+
 
   return (
     <div className="App">
