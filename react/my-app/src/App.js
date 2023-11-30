@@ -10,11 +10,13 @@ import './App.css';
 // import NameList from './components/NameList';
 // import Stylesheets from './components/Stylesheets';
 import Form from './components/Form';
+import InscriptionForm from './components/InscriptionForm';
 
 function App() {
   return (
     <div className="App">
             <Form/>
+            <InscriptionForm/>
 
 {/*       <Stylesheets primary={true} />
       <NameList/>
