@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useReducer } from 'react';
+import ComponentA from './components/ComponentA';
 
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
@@ -32,11 +33,6 @@ function App() {
   }
   const [count, dispatch] = useReducer(reducer, initialState);
 
-  <CountContext.Provider 
-    value={{countState: count, countDispatch: dispatch}}>
-  </CountContext.Provider>
-
-
   return (
     <div className="App">
 {/*             <Form/>
@@ -68,6 +64,10 @@ function App() {
       <Welcome prenom="Tom" age="3"></Welcome>
       <Welcome prenom="Max" age="5"></Welcome>
 */}
+      <CountContext.Provider
+        value={{ countState: count, countDispatch: dispatch }}>
+        <ComponentA />
+      </CountContext.Provider>
     </div>
   );
 }
