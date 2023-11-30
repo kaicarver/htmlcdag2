@@ -21,6 +21,10 @@ class Form extends Component {
         console.log(event.target.value);
         this.setState({ topic: event.target.value });
     }
+    handleSubmit = event => {
+        event.preventDefault();
+        alert(`user "${this.state.username}" submitted "${this.state.comments}" on topic "${this.state.topic}"`);
+    }
     render() {
         const { username, comments, topic } = this.state;
         return (
@@ -32,6 +36,7 @@ class Form extends Component {
                     <input type="text" value={comments} onChange={this.handleCommentsChange} />
                     <label>Topic</label>
                     <input type="text" value={topic} onChange={this.handleTopicChange} />
+                    <input type="submit" value="Submit" />
                 </form>
             </div>
         )
