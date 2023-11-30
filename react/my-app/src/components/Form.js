@@ -30,11 +30,11 @@ class Form extends Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <label>Username</label>
+                    <label> Username </label>
                     <input type="text" value={username} onChange={this.handleUsernameChange} />
-                    <label>Comments</label><span> </span>
+                    <label> Comments </label>
                     <input type="text" value={comments} onChange={this.handleCommentsChange} />
-                    <label>Topic</label>
+                    <label> Topic </label>
                     {/* <input type="text" value={topic} onChange={this.handleTopicChange} /> */}
                     <select value={topic} onChange={this.handleTopicChange}>
                         <option>React</option>
