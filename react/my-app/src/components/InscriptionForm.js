@@ -27,14 +27,18 @@ class InscriptionForm extends Component {
     }
     render() {
         const { nom, prenom, email } = this.state;
-        const styleKo = { border : '3px solid red' };
-        const styleOk = { border : '3px solid green' };
-        let style = {};
+        let howRed = 255 * (3-this.state.nom.length) /3
+        let howGreen = 255 * (this.state.nom.length-3) /3;
+        let color = 'rgb('+howRed+','+howGreen+',0)'
+        let style
+        const styleKo = { border : '30px solid rgb(255,0,0)' };
+        const styleOk = { border : '30px solid rgb(0,255,0)' };
         if (this.state.nom.length > 3) {
             style = styleOk;
         } else {
             style = styleKo;
         }
+        style = { border : '30px solid '+color};
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
