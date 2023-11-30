@@ -9,17 +9,29 @@ class Form extends Component {
             topic: 'react'
         }
     }
+    handleUsernameChange = event => {
+        console.log(event.target.value);
+        this.setState({ username: event.target.value });
+    }
+    handleCommentsChange = event => {
+        console.log(event.target.value);
+        this.setState({ comments: event.target.value });
+    }
+    handleTopicChange = event => {
+        console.log(event.target.value);
+        this.setState({ topic: event.target.value });
+    }
     render() {
         const { username, comments, topic } = this.state;
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <label>Username</label>
-                    <input type="text" value={username} onChange={e => this.setState({ username: e.target.value })} />
+                    <input type="text" value={username} onChange={this.handleUsernameChange} />
                     <label>Comments</label>
-                    <input type="text" value={comments} onChange={e => this.setState({ comments: e.target.value })} />
+                    <input type="text" value={comments} onChange={this.handleCommentsChange} />
                     <label>Topic</label>
-                    <input type="text" value={topic} onChange={e => this.setState({ topic: e.target.value })} />
+                    <input type="text" value={topic} onChange={this.handleTopicChange} />
                 </form>
             </div>
         )
