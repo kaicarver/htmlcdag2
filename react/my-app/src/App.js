@@ -8,10 +8,12 @@ import ClassClick from './components/ClassClick';
 import UserGreeting from './components/UserGreeting';
 import AdminTest from './components/AdminTest';
 import NameList from './components/NameList';
+import Stylesheets from './components/Stylesheets';
 
 function App() {
   return (
     <div className="App">
+      <Stylesheets primary={true} />
       <NameList/>
       <AdminTest/>
       <UserGreeting/>
