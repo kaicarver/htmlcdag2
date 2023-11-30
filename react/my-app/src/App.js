@@ -9,11 +9,14 @@ import UserGreeting from './components/UserGreeting';
 import AdminTest from './components/AdminTest';
 import NameList from './components/NameList';
 import Stylesheets from './components/Stylesheets';
+import Form from './components/Form';
 
 function App() {
   return (
     <div className="App">
-      <Stylesheets primary={true} />
+            <Form/>
+
+{/*       <Stylesheets primary={true} />
       <NameList/>
       <AdminTest/>
       <UserGreeting/>
@@ -22,7 +25,7 @@ function App() {
       <Message />
       <Counter value="10"/>
       <Counter value={42}/>
-      <Counter value={-42}/>
+      <Counter value={-42}/> 
       
       <h1>Hello React !</h1>
 
@@ -38,7 +41,7 @@ function App() {
    
       <Welcome prenom="Tom" age="3"></Welcome>
       <Welcome prenom="Max" age="5"></Welcome>
-
+*/}
     </div>
   );
 }
