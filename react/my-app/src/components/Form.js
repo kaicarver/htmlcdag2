@@ -32,10 +32,15 @@ class Form extends Component {
                 <form onSubmit={this.handleSubmit}>
                     <label>Username</label>
                     <input type="text" value={username} onChange={this.handleUsernameChange} />
-                    <label>Comments</label>
+                    <label>Comments</label><span> </span>
                     <input type="text" value={comments} onChange={this.handleCommentsChange} />
                     <label>Topic</label>
-                    <input type="text" value={topic} onChange={this.handleTopicChange} />
+                    {/* <input type="text" value={topic} onChange={this.handleTopicChange} /> */}
+                    <select value={topic} onChange={this.handleTopicChange}>
+                        <option>React</option>
+                        <option>VueJS</option>
+                        <option>Angular</option>
+                    </select>
                     <input type="submit" value="Submit" />
                 </form>
             </div>
