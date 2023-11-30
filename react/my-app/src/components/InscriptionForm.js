@@ -27,11 +27,19 @@ class InscriptionForm extends Component {
     }
     render() {
         const { nom, prenom, email } = this.state;
+        const styleKo = { border : '3px solid red' };
+        const styleOk = { border : '3px solid green' };
+        let style = {};
+        if (this.state.nom.length > 3) {
+            style = styleOk;
+        } else {
+            style = styleKo;
+        }
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <label> nom </label>
-                    <input type="text" value={nom} onChange={this.handleNomChange} />
+                    <input type="text" value={nom} onChange={this.handleNomChange} id="nomfamille" style={style}/>
                     <label> prenom </label>
                     <input type="text" value={prenom} onChange={this.handlePrenomChange} />
                     <label> email </label>
