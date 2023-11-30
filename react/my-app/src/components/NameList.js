@@ -24,7 +24,7 @@ function NameList() {
         }
     ];
     let personList = persons.map(person => (
-        <Person person={person} />  
+        <Person person={person} textcolor="red"/>  
 ))
     return (
         <div>
