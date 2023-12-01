@@ -8,7 +8,7 @@ function DataFetchingOne() {
     // Recuperation des données
     const [post, setPost] = useState({});
     useEffect(() => {
-        axios.get('https://jsonplaceholder.typicode.com/posts/1')
+        axios.get('https://jsonplaceholder.typicode.com/posts/101')
             .then(response => {
                 setLoading(false);
                 setError('');
@@ -16,13 +16,16 @@ function DataFetchingOne() {
             })
             .catch(error => {
                 setLoading(false);
-                setError('Something went wrong!');
+                setError('Something went wrong: ' + error.message);
+                console.log(error.message);
                 setPost({});
             })
-    }, [])
+    }, []) // ne pas le refaire 
     return (
         <div>
-            {loading ? 'Loading...' : post.title }
+            <h1>{loading ? 'Loading...' : post.title }</h1>
+            {loading ? 'Loading...' : post.title }<br/>
+            user id: {post.userId}
             {error ? error : null }
         </div>
     )
