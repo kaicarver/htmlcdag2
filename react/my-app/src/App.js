@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useReducer } from 'react';
 import ComponentA from './components/ComponentA';
+import DataFetchingOne from './components/DataFetchingOne';
 
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
@@ -64,9 +65,10 @@ function App() {
       <Welcome prenom="Tom" age="3"></Welcome>
       <Welcome prenom="Max" age="5"></Welcome>
 */}
-      <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
+{/*       <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
         <ComponentA />
-      </CountContext.Provider>
+      </CountContext.Provider> */}
+      <DataFetchingOne/>
     </div>
   );
 }
