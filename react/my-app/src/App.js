@@ -12,7 +12,8 @@ import DataTodos from './components/DataTodos';
 import DataTodosReducer from './components/DataTodosReducer';
 import DataBlogsReducer from './components/DataBlogsReducer';
 import Home from './components/Home/Home';
-
+import Services from './components/Services/Services';
+import Profil from './components/Profil/Profil';
 
 // require('dotenv').config();
 // console.log(process.env);
@@ -51,7 +52,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<Home/>} />
+        <Route path='/' element={<Home />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/profil/:id' element={<Profil />} />
       </Routes>
 
       {/*             <Form/>
@@ -91,7 +94,7 @@ function App() {
       {/*       <UserProvider value="LGC">
         <ComponentC />
       </UserProvider> */}
-{/*       <h1>DataFetchAll :</h1>
+      {/*       <h1>DataFetchAll :</h1>
       <DataFetchAll />
       <DataTodos /> */}
       {/* <DataTodosReducer /> */}
