@@ -1,5 +1,7 @@
 import './App.css';
 import React, { useReducer } from 'react';
+import { Routes, Route } from 'react-router-dom';
+
 import ComponentA from './components/ComponentA';
 import ComponentC from './components/ComponentC';
 import DataFetchingOne from './components/DataFetchingOne';
@@ -9,6 +11,7 @@ import DataFetchAll from './components/DataFetchAll';
 import DataTodos from './components/DataTodos';
 import DataTodosReducer from './components/DataTodosReducer';
 import DataBlogsReducer from './components/DataBlogsReducer';
+import Home from './components/Home/Home';
 
 
 // require('dotenv').config();
@@ -47,6 +50,10 @@ function App() {
 
   return (
     <div className="App">
+      <Routes>
+        <Route path='/' element={<Home/>} />
+      </Routes>
+
       {/*             <Form/>
             <InscriptionForm/> */}
 
@@ -88,7 +95,7 @@ function App() {
       <DataFetchAll />
       <DataTodos /> */}
       {/* <DataTodosReducer /> */}
-      <DataBlogsReducer />  
+      {/* <DataBlogsReducer />   */}
     </div>
   );
 }
