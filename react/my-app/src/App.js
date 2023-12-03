@@ -6,6 +6,7 @@ import DataFetchingOne from './components/DataFetchingOne';
 import DataFilm from './components/DataFilm';
 import { UserProvider } from './components/userContext';
 import DataFetchAll from './components/DataFetchAll';
+import DataTodos from './components/DataTodos';
 
 
 // require('dotenv').config();
@@ -44,10 +45,10 @@ function App() {
 
   return (
     <div className="App">
-{/*             <Form/>
+      {/*             <Form/>
             <InscriptionForm/> */}
 
-{/*       <Stylesheets primary={true} />
+      {/*       <Stylesheets primary={true} />
       <NameList/>
       <AdminTest/>
       <UserGreeting/>
@@ -73,17 +74,17 @@ function App() {
       <Welcome prenom="Tom" age="3"></Welcome>
       <Welcome prenom="Max" age="5"></Welcome>
 */}
-{/*       <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
+      {/*       <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
         <ComponentA />
       </CountContext.Provider> */}
       {/* <DataFetchingOne/> */}
       {/* <DataFilm/> */}
-{/*       <UserProvider value="LGC">
+      {/*       <UserProvider value="LGC">
         <ComponentC />
       </UserProvider> */}
       <h1>DataFetchAll :</h1>
       <DataFetchAll />
-
+      <DataTodos />
     </div>
   );
 }
