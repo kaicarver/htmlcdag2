@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bienvenue sur Home.ejs</h1>
+    
+    <% data.forEach(contact => { %>
+        <p><%=contact._id%></p>
+        
+        <a href="/formulaire/<%= contact._id %>">
+            <h2><%=contact.firstName%></h2>
+        </a>
+        <h2><%=contact.lastName%></h2>
+        <p><%=contact.email%></p>
+    <% 
+        }); 
+    %>
+
+  
+
+</body>
+</html>
