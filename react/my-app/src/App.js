@@ -1,7 +1,15 @@
 import './App.css';
 import React, { useReducer } from 'react';
 import ComponentA from './components/ComponentA';
+import ComponentC from './components/ComponentC';
 import DataFetchingOne from './components/DataFetchingOne';
+import DataFilm from './components/DataFilm';
+import { UserProvider } from './components/userContext';
+import DataFetchAll from './components/DataFetchAll';
+
+
+// require('dotenv').config();
+// console.log(process.env);
 
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
@@ -68,7 +76,14 @@ function App() {
 {/*       <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
         <ComponentA />
       </CountContext.Provider> */}
-      <DataFetchingOne/>
+      {/* <DataFetchingOne/> */}
+      {/* <DataFilm/> */}
+{/*       <UserProvider value="LGC">
+        <ComponentC />
+      </UserProvider> */}
+      <h1>DataFetchAll :</h1>
+      <DataFetchAll />
+
     </div>
   );
 }

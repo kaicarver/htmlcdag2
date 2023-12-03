@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
+
 function DataFetchingOne() {
     // Loading et error
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
     // Recuperation des données
     const [post, setPost] = useState({});
+    // const url = process.env.DATABASE_URL;
     useEffect(() => {
-        axios.get('https://jsonplaceholder.typicode.com/posts/101')
+        axios.get('https://www.omdbapi.com/?i=tt3896198&apikey=71e50205')
             .then(response => {
                 setLoading(false);
                 setError('');
@@ -23,9 +25,10 @@ function DataFetchingOne() {
     }, []) // ne pas le refaire 
     return (
         <div>
-            <h1>{loading ? 'Loading...' : post.title }</h1>
-            {loading ? 'Loading...' : post.title }<br/>
-            user id: {post.userId}
+            <h1>{loading ? 'Loading...' : post.Title }</h1>
+            annee : {post.Year}<br/>
+            boxoffice : {post.BoxOffice}<br/>
+            <img src={loading ? 'Loading...' : post.Poster }></img>
             {error ? error : null }
         </div>
     )

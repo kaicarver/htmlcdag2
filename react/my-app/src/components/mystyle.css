@@ -1,3 +1,9 @@
 .primary{
     color: orange;
 }
+.todo {
+    background-color: red ;
+}
+.done {
+    background-color: green ;
+}
