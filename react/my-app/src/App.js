@@ -7,6 +7,8 @@ import DataFilm from './components/DataFilm';
 import { UserProvider } from './components/userContext';
 import DataFetchAll from './components/DataFetchAll';
 import DataTodos from './components/DataTodos';
+import DataTodosReducer from './components/DataTodosReducer';
+import DataBlogsReducer from './components/DataBlogsReducer';
 
 
 // require('dotenv').config();
@@ -82,9 +84,11 @@ function App() {
       {/*       <UserProvider value="LGC">
         <ComponentC />
       </UserProvider> */}
-      <h1>DataFetchAll :</h1>
+{/*       <h1>DataFetchAll :</h1>
       <DataFetchAll />
-      <DataTodos />
+      <DataTodos /> */}
+      {/* <DataTodosReducer /> */}
+      <DataBlogsReducer />  
     </div>
   );
 }

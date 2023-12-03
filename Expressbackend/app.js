@@ -105,7 +105,8 @@ var Post = require('./models/Post');
 app.get('/allposts', function(req, res) {
     Post.find().then(data =>{
         console.log(data);
-        res.render('AllPosts' , {data: data});
+        // res.render('AllPosts' , {data: data});
+        res.json('AllPosts' , {data: data});
     })
     .catch(err =>{console.log(err)});
 });
