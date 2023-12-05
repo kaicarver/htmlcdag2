@@ -14,6 +14,8 @@ import DataBlogsReducer from './components/DataBlogsReducer';
 import Home from './components/Home/Home';
 import Services from './components/Services/Services';
 import Profil from './components/Profil/Profil';
+import NotFound from './components/NotFound/NotFound';
+import Navbar from './components/Navbar/Navbar';
 
 // require('dotenv').config();
 // console.log(process.env);
@@ -51,10 +53,12 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/services' element={<Services />} />
         <Route path='/profil/:id' element={<Profil />} />
+        <Route path='/*' element={<NotFound />} />
       </Routes>
 
       {/*             <Form/>
