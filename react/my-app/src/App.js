@@ -22,6 +22,7 @@ import Admin from './components/Admin/Admin';
 import Dashboard from './components/Admin/Dashboard/Dashboard';
 import GestionPost from './components/Admin/GestionPost/GestionPost';
 import FetchOneContact from './components/Contact/FetchOneContact';
+import FetchAllContacts from './components/Contact/FetchAllContacts';
 
 // require('dotenv').config();
 // console.log(process.env);
@@ -60,7 +61,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <FetchOneContact/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/services' element={<Services />} >
@@ -72,6 +72,7 @@ function App() {
           <Route path='/admin/gestionpost' element={<GestionPost />} />
         </Route>
         <Route path='/profil/:id' element={<Profil />} />
+        <Route path='/contact/' element={<FetchAllContacts />} />
         <Route path='/contact/:id' element={<FetchOneContact />} />
         <Route path='/*' element={<NotFound />} />
       </Routes>

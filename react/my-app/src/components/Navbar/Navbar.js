@@ -8,6 +8,8 @@ function Navbar() {
             <Link to="/services">Services</Link>&nbsp;
             <Link to="/admin">Admin</Link>&nbsp;
             <Link to="/profil/max">Profil de max</Link>&nbsp;
+            <Link to="/contact/">Contacts</Link>&nbsp;
+            <Link to="/contact/655f6809168f83f808f55562">Contact X</Link>&nbsp;
             <Link to="/inconnu">Inconnu</Link>&nbsp;
             <a href="/inconnu">Inconnu 2</a>
         </nav>)
