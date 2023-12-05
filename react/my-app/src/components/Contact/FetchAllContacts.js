@@ -48,7 +48,7 @@ function FetchAllContacts() {
                 return (
                     <div key={index}>
                         <div className={contact.completed ? 'done' : 'contact'}>
-                        <h2><Link to={contact._id}>{contact.firstname} {contact.lastname}</Link></h2>
+                        <h2><Link to={'/contact/' + contact._id}>{contact.firstname} {contact.lastname}</Link></h2>
                             <p>userid : {contact._id}</p>
                             <p>email : {contact.email}</p>
                         </div>
