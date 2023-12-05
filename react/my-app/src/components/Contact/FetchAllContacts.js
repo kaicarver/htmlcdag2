@@ -2,6 +2,8 @@ import React, { useReducer, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom';
 
+import { RedButton, GreenButton, BlueButton, PurpleButton } from '../Button.style';
+
 function FetchAllContacts() {
     const initialState = {
         loading: true,
@@ -52,6 +54,10 @@ function FetchAllContacts() {
                             <p>userid : {contact._id}</p>
                             <p>email : {contact.email}</p>
                         </div>
+                        <RedButton>Foo</RedButton>
+                        <GreenButton>Foo</GreenButton>
+                        <BlueButton>Bar</BlueButton>
+                        <PurpleButton>Baz</PurpleButton>
                         <hr></hr>
                     </div>
                 )
