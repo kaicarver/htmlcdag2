@@ -16,6 +16,11 @@ import Services from './components/Services/Services';
 import Profil from './components/Profil/Profil';
 import NotFound from './components/NotFound/NotFound';
 import Navbar from './components/Navbar/Navbar';
+import Marketing from './components/Services/Marketing/Marketing';
+import Developpement from './components/Services/Developpement/Developpement';
+import Admin from './components/Admin/Admin';
+import Dashboard from './components/Admin/Dashboard/Dashboard';
+import GestionPost from './components/Admin/GestionPost/GestionPost';
 
 // require('dotenv').config();
 // console.log(process.env);
@@ -56,7 +61,14 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/services' element={<Services />} />
+        <Route path='/services' element={<Services />} >
+          <Route path='/services/marketing' element={<Marketing />} />
+          <Route path='/services/developpement' element={<Developpement />} />
+        </Route>
+        <Route path='/admin' element={<Admin />} >
+          <Route path='/admin/dashboard' element={<Dashboard />} />
+          <Route path='/admin/gestionpost' element={<GestionPost />} />
+        </Route>
         <Route path='/profil/:id' element={<Profil />} />
         <Route path='/*' element={<NotFound />} />
       </Routes>

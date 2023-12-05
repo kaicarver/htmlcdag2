@@ -1,9 +1,19 @@
 import React from 'react'
+import { Link, Outlet, useLocation } from 'react-router-dom'
 
 function Services() {
-  return (
-    <div>Services</div>
-  )
+    const location = useLocation()
+    console.log(location)
+    return (
+        <div>
+            Services
+            <nav>
+                <Link to="/services/marketing">Marketing</Link>&nbsp;
+                <Link to="/services/developpement">Developpement</Link>
+            </nav>
+            <Outlet />
+        </div>
+    )
 }
 
 export default Services
