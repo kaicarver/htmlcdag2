@@ -66,7 +66,7 @@ app.get('/formulaire/:id', function(req, res){
     Contact.findOne({
         _id : req.params.id
     }).then(data =>{
-        res.render('Edit', {data:data})
+        res.json(data)
     })
     .catch(err => console.log(err));
 })
