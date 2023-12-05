@@ -23,6 +23,8 @@ import Dashboard from './components/Admin/Dashboard/Dashboard';
 import GestionPost from './components/Admin/GestionPost/GestionPost';
 import FetchOneContact from './components/Contact/FetchOneContact';
 import FetchAllContacts from './components/Contact/FetchAllContacts';
+import { AppContainer } from './components/AppContainer.style';
+import NewContact from './components/Contact/NewContact';
 
 // require('dotenv').config();
 // console.log(process.env);
@@ -61,21 +63,24 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/services' element={<Services />} >
-          <Route path='/services/marketing' element={<Marketing />} />
-          <Route path='/services/developpement' element={<Developpement />} />
-        </Route>
-        <Route path='/admin' element={<Admin />} >
-          <Route path='/admin/dashboard' element={<Dashboard />} />
-          <Route path='/admin/gestionpost' element={<GestionPost />} />
-        </Route>
-        <Route path='/profil/:id' element={<Profil />} />
-        <Route path='/contact/' element={<FetchAllContacts />} />
-        <Route path='/contact/:id' element={<FetchOneContact />} />
-        <Route path='/*' element={<NotFound />} />
-      </Routes>
+      <AppContainer>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/services' element={<Services />} >
+            <Route path='/services/marketing' element={<Marketing />} />
+            <Route path='/services/developpement' element={<Developpement />} />
+          </Route>
+          <Route path='/admin' element={<Admin />} >
+            <Route path='/admin/dashboard' element={<Dashboard />} />
+            <Route path='/admin/gestionpost' element={<GestionPost />} />
+          </Route>
+          <Route path='/profil/:id' element={<Profil />} />
+          <Route path='/contact/' element={<FetchAllContacts />} />
+          <Route path='/contact/:id' element={<FetchOneContact />} />
+          <Route path='/newcontact/' element={<NewContact />} />
+          <Route path='/*' element={<NotFound />} />
+        </Routes>
+      </AppContainer>
 
       {/*             <Form/>
             <InscriptionForm/> */}
