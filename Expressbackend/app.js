@@ -235,6 +235,11 @@ app.get('/logout', (req, res) => {
     res.redirect('http://localhost:3000/');
 });
 
+// get JWT : mettre à disposition le token
+app.get('/getJWT', (req, res) => {
+    res.json(req.cookies.accessToken);
+});
+
 var server = app.listen(5000, function () {
     console.log("Node server is listening on port 5000");
 });
