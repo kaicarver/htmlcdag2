@@ -40,7 +40,7 @@ var Contact = require('./models/Contact');
 
 
 
-app.get('/', function (req, res) {
+app.get('/', validateToken, function (req, res) {
     Contact.find().then(data => {
         console.log(data);
         // res.render('Home', {data: data});
