@@ -48,8 +48,8 @@ app.get('/formulaire', function(req, res) {
 
 app.post('/submit-form-data', function(req, res) {
     const Data = new Contact({
-        firstName : req.body.firstName,
-        lastName : req.body.lastName,
+        firstname : req.body.firstname,
+        lastname : req.body.lastname,
         email : req.body.email,
         message : req.body.message
     })
@@ -74,8 +74,8 @@ app.get('/formulaire/:id', function(req, res){
 //Mise a jour de ma donnée : Edit
 app.put('/edit/:id', function(req, res){
     const Data = {
-        firstName : req.body.firstName,
-        lastName : req.body.lastName,
+        firstname : req.body.firstname,
+        lastname : req.body.lastname,
         email : req.body.email,
         message : req.body.message
     }
@@ -83,7 +83,7 @@ app.put('/edit/:id', function(req, res){
     .then(data =>{
         console.log("Donnée mise à jour :");
         console.log(data);
-        res.redirect('/');
+        res.redirect('http://localhost:3000/contact/');
     })
     .catch(err =>{console.log(err);})
 });
