@@ -229,8 +229,11 @@ app.post('/api/connexion', function (req, res) {
         .catch(err => console.log(err));
 });
 
-
-
+// deconnexion
+app.get('/logout', (req, res) => {
+    res.clearCookie("accessToken");
+    res.redirect('http://localhost:3000/');
+});
 
 var server = app.listen(5000, function () {
     console.log("Node server is listening on port 5000");
