@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 require('dotenv').config();
 
 var cors = require('cors');
-app.use(cors());
+app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
 
 var mongoose = require('mongoose');
 
@@ -236,8 +236,9 @@ app.get('/logout', (req, res) => {
 });
 
 // get JWT : mettre à disposition le token
+const { jwtDecode } = require('jwt-decode');
 app.get('/getJWT', (req, res) => {
-    res.json(req.cookies.accessToken);
+    res.json(jwtDecode(req.cookies.accessToken));
 });
 
 var server = app.listen(5000, function () {

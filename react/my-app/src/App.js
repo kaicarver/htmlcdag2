@@ -27,6 +27,7 @@ import { AppContainer } from './components/AppContainer.style';
 import NewContact from './components/Contact/NewContact';
 import Inscription from './components/User/Inscription';
 import Connexion from './components/User/Connexion';
+import UserPage from './components/User/UserPage';
 
 // require('dotenv').config();
 // console.log(process.env);
@@ -82,6 +83,7 @@ function App() {
           <Route path='/newcontact/' element={<NewContact />} />
           <Route path='/inscription/' element={<Inscription />} />
           <Route path='/connexion/' element={<Connexion />} />
+          <Route path='/userpage/' element={<UserPage />} />
           <Route path='/*' element={<NotFound />} />
         </Routes>
       </AppContainer>
