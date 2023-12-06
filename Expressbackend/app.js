@@ -222,8 +222,9 @@ app.post('/api/connexion', function (req, res) {
                 maxAge: 1000 * 60 * 60 * 24 * 30, // 30 jours en ms
                 httpOnly: true
             });
-            res.json('LOGGED IN');
+            // res.json('LOGGED IN');
             // res.render('UserPage', {data : user});
+            res.redirect('http://localhost:3000');
         })
         .catch(err => console.log(err));
 });
