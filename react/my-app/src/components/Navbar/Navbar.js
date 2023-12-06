@@ -11,6 +11,8 @@ function Navbar() {
             <Link to="/contact/">Contacts</Link>&nbsp;
             <Link to="/contact/655f6809168f83f808f55562">Contact X</Link>&nbsp;
             <Link to="/inconnu">Inconnu</Link>&nbsp;
+            <Link to="/connexion">Connexion</Link>&nbsp;
+            <Link to="http://localhost:5000/logout">Se deconnecter</Link>&nbsp;
             <a href="/inconnu">Inconnu 2</a>
         </nav>)
 }
