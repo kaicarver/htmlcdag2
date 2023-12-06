@@ -51,6 +51,10 @@ function FetchOneContact() {
                 <textarea name="message" id="" cols="30" rows="10" value={message} onChange={handlemessage}/><br />
                 <input type="submit" value="Editer ma donnée" /><br />
             </form>
+            <form action={`http://localhost:5000/delete/${params.id}?_method=DELETE`} method="post">
+                <input type="hidden" name="_method" value="DELETE" />
+                <input type="submit" value="Supprimer" /><br />
+            </form>
 
         </div>
     )

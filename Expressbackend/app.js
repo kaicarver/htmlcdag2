@@ -93,7 +93,7 @@ app.delete('/delete/:id', function(req, res) {
     Contact.findOneAndDelete({_id:req.params.id})
     .then(() =>{
         console.log("Donnée supprimée.");
-        res.redirect('/');
+        res.redirect('http://localhost:3000/contact/');
     })
     .catch(err =>{console.log(err);});
 });
