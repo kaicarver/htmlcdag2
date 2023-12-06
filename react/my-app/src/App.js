@@ -25,6 +25,8 @@ import FetchOneContact from './components/Contact/FetchOneContact';
 import FetchAllContacts from './components/Contact/FetchAllContacts';
 import { AppContainer } from './components/AppContainer.style';
 import NewContact from './components/Contact/NewContact';
+import Inscription from './components/User/Inscription';
+import Connexion from './components/User/Connexion';
 
 // require('dotenv').config();
 // console.log(process.env);
@@ -78,6 +80,8 @@ function App() {
           <Route path='/contact/' element={<FetchAllContacts />} />
           <Route path='/contact/:id' element={<FetchOneContact />} />
           <Route path='/newcontact/' element={<NewContact />} />
+          <Route path='/inscription/' element={<Inscription />} />
+          <Route path='/connexion/' element={<Connexion />} />
           <Route path='/*' element={<NotFound />} />
         </Routes>
       </AppContainer>
