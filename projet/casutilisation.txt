@@ -1,0 +1,29 @@
+cas d'utilisation (à détailler dans des diagrammes de séquence ?) :
+
+
+0 Authentification du User
+
+Le User saisit login et mot de passe. Si ces informations sont correctes, le User a accès aux fonctionnalités du système. Sinon, le système lui demande de saisir des informations correctes. Le User peut demander une aide pour se connecter, qui lui est envoyée à son adresse email.
+
+
+1 Le User crée et rédige un TextFragment dans une ou plusieurs Category spécifique(s).
+
+Pendant la rédaction du texte, les Template en rapport avec la ou les Category sont affichés disponibles, et les Measure en rapport avec la ou les Category sont affichés.
+
+
+2 Le User fait une recherche dans les TextFragment par date ou par pattern.
+
+Les TextFragment sont affichés de plusieurs manières : compact, plein texte, pour mise à jour, ou pour affichage (impression ou visualisation en ligne partagée ou non).
+
+
+3 Le User fait une mise à jour d'un TextFragment.
+
+La mise à jour peut se faire de la même manière que le User fait la rédaction du texte lors de la création. Les différentes versions du TextFragment sont préservées avec leur date de dernière modification.
+
+
+4 Le User fait une suppression d'un TextFragment.
+
+La suppression se fait après confirmation. Une fois supprimé, le TextFragment n'apparaît plus dans les recherches par date et par pattern. On pourra, pendant un certain temps, récupérer les TextFragment supprimés en les cherchant dans une "corbeille".
+
+
+À 16h, Sana me donne le feedback : transformer en diagrammes de séquence avant de les détailler !

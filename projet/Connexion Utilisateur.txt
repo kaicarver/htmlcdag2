@@ -1,0 +1,41 @@
+title Connexion Utilisateur
+
+participant Utilisateur
+participant NavigateurWeb
+participant ServeurWeb
+participant BaseDeDonnées
+
+note over Utilisateur: Visite le site web et clique sur "Se connecter"
+
+Utilisateur->NavigateurWeb: Accéder à la page de connexion
+
+activate NavigateurWeb
+
+note over NavigateurWeb: Affiche le formulaire de connexion
+
+Utilisateur->NavigateurWeb: Saisit le nom d'utilisateur et le mot de passe
+Utilisateur->NavigateurWeb: Clique sur "Envoyer"
+
+NavigateurWeb->ServeurWeb: POST /login {nom_utilisateur, mot_de_passe}
+
+activate ServeurWeb
+
+note over ServeurWeb: Valide les informations d'identification de l'utilisateur
+
+ServeurWeb->BaseDeDonnées: Requête des informations d'utilisateur
+activate BaseDeDonnées
+
+note over BaseDeDonnées: Vérifie le nom d'utilisateur et le mot de passe
+
+BaseDeDonnées-->ServeurWeb: Données de l'utilisateur
+
+note over ServeurWeb: Génère un jeton de session
+
+ServeurWeb-->NavigateurWeb: Set-Cookie: jeton_session
+
+deactivate BaseDeDonnées
+deactivate ServeurWeb
+deactivate NavigateurWeb
+
+note over Utilisateur: Redirige vers la page d'accueil après une connexion réussie
+Utilisateur->NavigateurWeb: Accéder à la page d'accueil
