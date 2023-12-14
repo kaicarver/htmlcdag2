@@ -14,3 +14,6 @@ select prof, avg(sal) from departements, employes where departements.DNO = emplo
 select dnom, count(ENO) from departements, employes where departements.DNO = employes.Dno group by dnom;
 -- 6 salaire moyen par profession le plus bas
 select prof, avg(sal) from departements, employes where departements.DNO = employes.Dno group by prof order by avg(sal) asc LIMIT 1;
+select avgsal, prof from (select prof, avg(sal) avgsal from departements, employes where departements.DNO = employes.Dno group by prof) as t;
+-- meilleure solution si plusieurs professions ont le salaire moyen le plus bas :
+select prof, min(avgsal) from (select prof, avg(sal) avgsal from departements, employes where departements.DNO = employes.Dno group by prof) as t;
