@@ -1,3 +1,6 @@
+-- base avec deux tables :
+--   departements ( DNO, DNOM, VILLE )
+--   employes ( ENO, ENOM, PROF, DATEEMB, SAL, COMM, #DNO )
 use gestionentreprise;
 -- 1 employes avec commission
 select * from employes where comm=1;
