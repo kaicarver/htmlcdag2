@@ -16,12 +16,12 @@
         <div class="card">
             <div class="card-header"><h3 class="text-center">Ajouter étudiant</h3></div>
             <div class="card-body">
-                <form method="post" action="">
+                <form enctype="multipart/form-data" method="post" action="saveEtudiant.php">
                     <div class="form-group">
                         <div><label for="nom" class="form-label">Nom</label><input type="text" class="form-control" name="nom" id="nom"></div>
                         <div><label for="email">Email</label><input type="email" class="form-control" name="email" id="email"></div>
                         <div><label for="photo">Photo</label><input type="file" class="form-control" name="photo" id="photo"></div>
-                        <div><input type="submit" name="soumettre" value="Ajouter" class="btn btn-primary mt-2"></div>
+                        <div><input type="submit" value="Ajouter" class="btn btn-primary mt-2" name="soumettre" ></div>
                     </div>
                 </form>
             </div>

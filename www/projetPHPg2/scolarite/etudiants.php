@@ -34,7 +34,7 @@ $ps->execute();
                             <td><?php echo $etudiant['code'] ?></td>
                             <td><?php echo $etudiant['nom'] ?></td>
                             <td><?php echo $etudiant['email'] ?></td>
-                            <td><img src="<?php echo $etudiant['photo'] ?>" alt="<?php echo $etudiant['photo'] ?>"></td>
+                            <td><img src="images/<?php echo $etudiant['photo'] ?>" alt="<?php echo $etudiant['photo'] ?>"></td>
                         </tr>
                     <?php } ?>
                 </table>
