@@ -1,7 +1,7 @@
 <?php
 require_once "connexion.php";
 // prepare statement
-$ps = $pdo->prepare("SELECT * FROM etudiants;");
+$ps = $pdo->prepare("SELECT * FROM etudiants ORDER BY code;");
 $ps->execute();
 ?>
 <!DOCTYPE html>
@@ -10,6 +10,8 @@ $ps->execute();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"> -->
     <title>Liste d'étudiants</title>
 </head>
 <body>
@@ -28,13 +30,16 @@ $ps->execute();
                         <td>Nom</td>
                         <td>Email</td>
                         <td>Photo</td>
+                        <td colspan=2>...</td>
                     </tr>
                     <?php while ($etudiant = $ps->fetch()) { ?>
                         <tr>
                             <td><?php echo $etudiant['code'] ?></td>
                             <td><?php echo $etudiant['nom'] ?></td>
                             <td><?php echo $etudiant['email'] ?></td>
-                            <td><img src="images/<?php echo $etudiant['photo'] ?>" alt="<?php echo $etudiant['photo'] ?>"></td>
+                            <td><img src="images/<?php echo $etudiant['photo'] ?>" alt="<?php echo $etudiant['photo'] ?>" class="img-thumbnail img-fluid w-5" width="50" height="50" xstyle="width: 50px; height: 50px;"></td>
+                            <td><a href="saisirEtudiant.php?code=<?php echo $etudiant['code'] ?>" class="btn btn-warning">Modifier <i class="bi bi-pencil"></i></a></td>
+                            <td><a href="supprimerEtudiant.php?code=<?php echo $etudiant['code'] ?>" class="btn btn-danger">Supprimer <i class="bi bi-trash"></i></a></td>
                         </tr>
                     <?php } ?>
                 </table>
