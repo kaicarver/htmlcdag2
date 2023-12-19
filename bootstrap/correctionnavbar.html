@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous">
+    <title>Barre de navigation nike</title>
+    <style>
+        .icon-rtl {
+        background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+        background-size: 20px;
+        }
+    </style>
+</head>
+<body style="height: 1500px;">
+   <header>
+    <!-- création de la barre de navigation avec un point de transition de 576px-->
+        <nav class=" row navbar  fixed-top navbar-expand-sm navbar-light ">
+                <div class="col-2 justify-content-start">
+                    <!-- liens-->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-brand" href="#">
+                                <img src="nikeLogo.png" alt="logo" style="width: 80px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 offset-2 justify-content-center">
+                    <!-- liens-->
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a  class="nav-link" href="#">Nouveautés</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a  class="nav-link" href="#">Homme</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Femme</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Enfant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Promotions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Collections</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2 justify-content-end ">
+                    <!-- liens-->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <input  class="nav-link active rounded-pill bg-light px-4  icon-rtl"  placeholder="Rechercher" type="search"/>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+   </header>
+</body>
+</html>
