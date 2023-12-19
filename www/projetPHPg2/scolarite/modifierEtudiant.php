@@ -14,11 +14,9 @@ move_uploaded_file($tmpphoto, "./images/".$nomphoto);
 require_once "connexion.php";
 
 // preparer
-$sql = "UPDATE etudiants SET nom = ?, email = ? WHERE code = ?";
-echo $sql;
+$sql = "UPDATE etudiants SET nom = ?, email = ?, photo = ? WHERE code = ?";
 $ps = $pdo->prepare($sql);
-// $params = array($nom, $email, $nomphoto);
-$params = array($nom, $email, $code);
+$params = array($nom, $email, $nomphoto, $code);
 
 // executer
 $ps->execute($params);

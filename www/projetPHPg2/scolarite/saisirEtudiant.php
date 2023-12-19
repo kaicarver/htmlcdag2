@@ -20,6 +20,8 @@ if (isset($_GET['code'])) {
     $nomphoto = $etudiant['photo'];
     $actionName = "Modifier";
     $action = "modifierEtudiant.php";
+    $imgfile = "./images/".$nomphoto;
+    $imghtml = "<img src=\"images/$nomphoto\" alt=\"$nomphoto\" class=\"img-thumbnail img-fluid w-5\" width=\"50\" height=\"50\" >";
 } else {
     $code = "";
     $nom = "";
@@ -27,6 +29,8 @@ if (isset($_GET['code'])) {
     $nomphoto = "";
     $actionName = "Ajouter";
     $action = "saveEtudiant.php";
+    $imgfile = "./images/".$nomphoto;
+    $imghtml = "";
 }
 ?>
 <!DOCTYPE html>
@@ -52,7 +56,7 @@ if (isset($_GET['code'])) {
                         <input type="hidden" name="code" value="<?php echo $code ?>">
                         <div><label for="nom" class="form-label">Nom</label><input type="text" class="form-control" name="nom" id="nom" value="<?php echo $nom ?>"></div>
                         <div><label for="email">Email</label><input type="email" class="form-control" name="email" id="email" value="<?php echo $email ?>"></div>
-                        <div><label for="photo">Photo</label><input type="file" class="form-control" name="photo" id="photo" value="<?php echo $nomphoto ?>"></div>
+                        <div><label for="photo">Photo</label><input type="file" class="form-control" name="photo" id="photo" value="<?php echo $nomphoto ?>"> <?php echo $imghtml ?></div>
                         <div><input type="submit" value="<?php echo $actionName ?>" class="btn btn-primary mt-2" name="<?php echo $actionName ?>" ></div>
                     </div>
                 </form>
