@@ -3,12 +3,12 @@
 $code = $_GET['code'];
 // connecter
 require_once "connexion.php";
-// preparer
-$ps = $pdo->prepare("DELETE FROM etudiants WHERE code = ?");
 $params = array($code);
-// executer
+$psSelect = $pdo->prepare("select * FROM etudiants WHERE code = ?");
+$psSelect->execute($params);
+$photo = $psSelect->fetch()['photo'];
+$ps = $pdo->prepare("DELETE FROM etudiants WHERE code = ?");
 $ps->execute($params);
-//$ps->execute([$code]); // marche aussi
-// rediriger
+unlink("./images/$photo");
 header("location: etudiants.php")
 ?>
