@@ -1,4 +1,5 @@
 <?php
+require_once "securite.php";
 if (isset($_GET['code'])) {
     // recuperer
     $code = $_GET['code'];

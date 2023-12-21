@@ -1,4 +1,5 @@
 <?php
+require_once "securite.php";
 require_once "connexion.php";
 // prepare statement
 $ps = $pdo->prepare("SELECT * FROM etudiants ORDER BY code;");
