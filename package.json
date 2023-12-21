@@ -7,7 +7,7 @@
     "color-generator": "./index.js"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.11.2",
     "commander": "^2.20.0"
   }
 }
-
