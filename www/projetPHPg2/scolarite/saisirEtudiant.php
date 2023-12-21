@@ -1,5 +1,9 @@
 <?php
 require_once "securite.php";
+// si pas admin, ne pas permettre saisir, rester dans la page précédente
+if (!($SESSION['PROFILE']['role'] == 'admin')) {
+    header("location: ".$SERVER['HTTP_REFERER']);
+}
 if (isset($_GET['code'])) {
     // recuperer
     $code = $_GET['code'];

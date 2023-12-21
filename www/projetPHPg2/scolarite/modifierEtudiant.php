@@ -1,4 +1,5 @@
 <?php
+require_once ('securite.php');
 // recuperer
 $code = $_POST['code'];
 $nom = $_POST['nom'];
