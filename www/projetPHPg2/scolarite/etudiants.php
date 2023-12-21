@@ -39,8 +39,13 @@ $ps->execute();
                             <td><?php echo $etudiant['nom'] ?></td>
                             <td><?php echo $etudiant['email'] ?></td>
                             <td><img src="images/<?php echo $etudiant['photo'] ?>" alt="<?php echo $etudiant['photo'] ?>" class="img-thumbnail img-fluid w-5" width="50" height="50" xstyle="width: 50px; height: 50px;"></td>
-                            <td><a href="saisirEtudiant.php?code=<?php echo $etudiant['code'] ?>" class="btn btn-warning">Modifier <i class="bi bi-pencil"></i></a></td>
-                            <td><a href="supprimerEtudiant.php?code=<?php echo $etudiant['code'] ?>" class="btn btn-danger">Supprimer <i class="bi bi-trash"></i></a></td>
+                            <?php if ($_SESSION['PROFILE']['role'] == 'admin') { ?>
+                                <td><a href="saisirEtudiant.php?code=<?php echo $etudiant['code'] ?>" class="btn btn-warning">Modifier <i class="bi bi-pencil"></i></a></td>
+                                <td><a href="supprimerEtudiant.php?code=<?php echo $etudiant['code'] ?>" class="btn btn-danger">Supprimer <i class="bi bi-trash"></i></a></td>
+                            <?php } else { ?>
+                                <td></td>
+                                <td></td>
+                            <?php } ?>
                         </tr>
                     <?php } ?>
                 </table>
