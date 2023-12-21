@@ -1,4 +1,5 @@
 <?php
+require_once "securite.php";
 if (isset($_GET['id'])) {
     $libaction = "Modifier";
     $id = $_GET['id'];
@@ -32,6 +33,7 @@ if (isset($_GET['id'])) {
     <style>img:hover { transform: scale(20); }</style>
 </head>
 <body>
+<?php require_once "header.php"; ?>
     <h1><?php echo $libaction ?> client</h1>
     <form enctype="multipart/form-data" action="saveclient.php" method="post">
         <input type="hidden" name="id" value="<?php echo $id ?>">
