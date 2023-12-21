@@ -14,11 +14,13 @@
         <div class="card">
             <div class="card-header"><h3 class="text-center">Se connecter</h3></div>
             <div class="card-body">
+                <h2>login not ok ? :</h2>
                 <form method="post" action="authentifier.php">
                     <div><label for="login" class="form-label">Login</label><input type="text" class="form-control" name="login" id="login"></div>
                     <div><label for="password">Password</label><input type="password" class="form-control" name="password" id="password"></div>
                     <div><input type="submit" value="Se connecter" class="btn btn-primary mt-2"></div>
                 </form>
+                <h2>login ok :</h2>
                 <form method="post" action="authok.php">
                     <div><label for="login" class="form-label">Login</label><input type="text" class="form-control" name="login" id="login"></div>
                     <div><label for="password">Password</label><input type="password" class="form-control" name="password" id="password"></div>
