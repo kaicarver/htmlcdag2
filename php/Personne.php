@@ -17,23 +17,13 @@ class Personne {
         $this->age = $a;
         $this->foo = "attribut non déclaré de valeur Foo!";
     }
-    // getter permet de recupérer la valeur d'un attribut privé
-    function getNom() {
-        return $this->nom;
+    public function __destruct() {
+        echo "la personne $this->nom n'existe plus\n";
     }
-    function getPrenom() {
-        return $this->prenom;
-    }
-    function getEmail() {
-        return $this->email;
-    }
-    function getAge() {
-        return $this->age;
-    }
-    // setter affecter une valeur à un attribut privé
-    function setNom($n) {
-        $this->nom = $n;
-    }
+    // getters/setters
+    function __get($var) { return $this->$var; }
+    function __set($var, $val) { $this->$var = $val; }
+
     function afficher() {
         echo "nom = $this->nom\n";
         echo "prenom = $this->prenom\n";
