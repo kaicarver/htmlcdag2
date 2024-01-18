@@ -6,6 +6,7 @@ class Personne {
     private $prenom;
     private $email;
     public $age;
+    const NATION = "FR";
 
     // méthodes = fonctions
     // constructeur
