@@ -1,15 +1,20 @@
 <?php
 class Rectangle {
+    // attributs
     private $longueur;
     private $largeur;
-    function getLongueur() { return $this->longueur; }
-    function getLargeur() { return $this->largeur; }
-    function setLongueur($x) { $this->longueur = $x; }
-    function setLargeur($x) { $this->largeur = $x; }
+    // constructeur
     function __construct($long = 0, $larg = 0) {
         $this->setLongueur($long);
         $this->setLargeur($larg);
     }
+    // getters
+    function getLongueur() { return $this->longueur; }
+    function getLargeur() { return $this->largeur; }
+    // setters
+    function setLongueur($x) { $this->longueur = $x; }
+    function setLargeur($x) { $this->largeur = $x; }
+    // autres fonctions en option
     function toString() { return "$this->longueur x $this->largeur"; }
     function affiche() { echo $this->getLongueur() . " x " . $this->getLargeur() . "\n"; }
 }
@@ -29,3 +34,4 @@ $r2->affiche();
 $r2->setLongueur($long);
 $r2->setLargeur($long);
 $r2->affiche();
+?>
