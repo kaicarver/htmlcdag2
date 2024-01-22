@@ -1,13 +1,25 @@
 c'est ici que sont les sources du projet Jourdebord
 
-mais ces sources sont hébergées chez Gitlab, pas GitHub :
+mais ces sources sont hébergées dans des repos privés chez Gitlab, pas dans GitHub :
 
-dans le répertoire back :
+il y a le répertoire back :
 
-  https://gitlab.com/kaicarver/jdback
-  git@gitlab.com:kaicarver/jdback.git
+  * https://gitlab.com/kaicarver/jdback
+  
+      `git@gitlab.com:kaicarver/jdback.git`
 
-dans le répertoire front :
+  * géré sur Render https://dashboard.render.com/
 
-  https://gitlab.com/kaicarver/jdfront
-  git@gitlab.com:kaicarver/jdfront.git
+il y a le répertoire front :
+
+  * https://gitlab.com/kaicarver/jdfront
+  
+    `git@gitlab.com:kaicarver/jdfront.git`
+
+  * géré sur Vercel https://vercel.com/dashboard
+
+il y a aussi une base MongoDB :
+
+  * Project 0, Database Deployments, Browse Collections
+
+  * gérée sur MongoDB Atlas https://cloud.mongodb.com/
