@@ -10,6 +10,10 @@ il y a le répertoire back :
 
   * géré sur Render https://dashboard.render.com/
 
+  * lancé en local avec :
+    * `cd back; nodemon app.js`
+    * et par exemple : http://localhost:5000/allposts
+
 il y a le répertoire front :
 
   * https://gitlab.com/kaicarver/jdfront
