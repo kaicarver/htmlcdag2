@@ -22,8 +22,14 @@ il y a le répertoire front :
 
   * géré sur Vercel https://vercel.com/dashboard
 
+  * lancé en local avec :
+    * `cd front; ...`
+    * et : http://localhost:3000/
+
 il y a aussi une base MongoDB :
 
   * Project 0, Database Deployments, Browse Collections
 
   * gérée sur MongoDB Atlas https://cloud.mongodb.com/
+
+  * pas encore déterminé comment faire tourner la base en local...
