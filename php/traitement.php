@@ -29,6 +29,8 @@ var_dump($p1);
 //     echo "xx $key = $val\n";
 // }
 
+echo "serialize() : ", serialize($p1), "\n";
+
 $p2 = new Personne("Waka", "Zuba", "zuba@gmail.com", 81);
 $p3 = new Personne("Waka2", "Zuba", "zuba2@gmail.com", 81);
 unset($p1);
