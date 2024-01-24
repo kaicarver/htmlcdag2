@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+</head>
+<body>
+
+    <%#= data %>
+    <h2><%= data.titre %>, par <%= data.auteur %></h2>
+    <p><%= data.description %></p>
+    
+    <form action="/edit2/<%= data._id %>?_method=PUT" method="post">
+        <input type="hidden" name="_method" value="PUT">
+        Titre : <input type="text" name="titre" value="<%= data.titre %>"><br>
+        Auteur <input type="text" name="auteur" value="<%= data.auteur %>"><br>
+        description
+        <textarea name="description" cols="60" rows="15"><%= data.description %></textarea><br>
+        <input type="submit" value="Mettre à jour le post">
+    </form>
+    <form action="/delete2/<%= data._id %>?_method=DELETE" method="post">
+        <input type="hidden" name="_method" value="DELETE" method="post">
+        <input type="submit" value="Supprimer le post" onclick="return confirm('sûr ?')">
+    </form>
+    <p>
+        <a href="/">Home</a>
+    </p>
+</body>
+</html>

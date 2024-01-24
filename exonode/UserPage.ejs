@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+</head>
+<body>
+    <%= data %><br>
+    <% if (data.admin) { %>
+        <h1>Hello ADMIN</h1>
+    <% } 
+    else { %>
+        <h1>Welcom non-admin</h1>
+    <% } %>
+    <div>
+        <div>Username <%= data.username %></div>
+        <div>Email <%= data.email %></div>
+        <div>Password <%= data.password %></div>
+        <div>Admin <%= data.admin %></div>
+    </div>
+    <p>D'autres personnes :</p>
+    <% all.forEach(u => { %>
+        <% if (u.username != data.username) { %>
+        <div>
+            <%= u.username %> <%= u.email %> <%= u.password %> <div%= u.admin %> 
+        </div>
+        <% } %>
+    <% }) %>
+</body>
+</html>

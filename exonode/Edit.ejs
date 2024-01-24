@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+
+    <%#= data %>
+    <h1>Utilisateur : </h1>
+    <h2><%= data.firstname %></h2>
+    <h2><%= data.lastname %></h2>
+    <p><%= data.email %></p>
+    <p><%= data.message %></p>
+    
+    <form action="/edit/<%= data._id %>?_method=PUT" method="post">
+        <input type="hidden" name="_method" value="PUT">
+        first name : <input type="text" name="firstname" value="<%= data.firstname %>"><br>
+        last name <input type="text" name="lastname" value="<%= data.lastname %>"><br>
+        email <input type="email" name="email" value="<%= data.email %>"><br>
+        message
+        <textarea name="message" cols="60" rows="15"><%= data.message %></textarea><br>
+        <input type="submit" value="Mettre à jour mes infos">
+    </form>
+    <form action="/delete/<%= data._id %>?_method=DELETE" method="post">
+        <input type="hidden" name="_method" value="DELETE" method="post">
+        <input type="submit" value="Supprimer mes infos" onclick="return confirm('sûr ?')">
+    </form>
+    <p>
+        <a href="/">Home</a>
+    </p>
+</body>
+</html>

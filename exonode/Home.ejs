@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="allposts.css">
+    <title>Home.ejs</title>
+</head>
+<body>
+    <h1>Bienvenue sur Contacts et Blog</h1>
+    <h2>Contacts</h2>
+    <% data.forEach((contact) => { %>
+        <div>
+            <a href="formulaire/<%=contact._id%>"><%= contact.firstname %></a>
+        </div>
+    <% }); %>
+    <p>
+        <a href="formulaire">Créer contact</a>
+    </p>
+    <h2>Blog</h2>
+    <p>
+        <a href="blog">Tous les posts du blog</a>
+    </p>
+    <h2>Blox</h2>
+    <p>
+        <a href="allpoxes">Tous les pox du blox</a>
+    </p>
+    <div><a href="/forminscription">inscription</a></div>
+    <div><a href="/connexion">connexion</a></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire EJS</title>
+</head>
+<body>
+    <h1>Formulaire EJS</h1>
+    <form action="/submit-form-data" method="post">
+        first name <input type="text" name="firstname" value="?"><br>
+        last name <input type="text" name="lastname" value="!"><br>
+        email <input type="email" name="email" value="@"><br>
+        message <textarea name="message">...</textarea><br>
+
+        <input type="submit" value="Envoyer mes infos">
+    </form>
+    <p>
+        <a href="/">Home</a>
+    </p>
+</body>
+</html>
