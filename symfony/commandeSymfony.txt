@@ -1,0 +1,125 @@
+Créer un projet symfony : symfony new nom_projet --webapp --version="7.0.*"
+-------------------------------------
+Configuration de la base de données dans le fichier .env :
+	DATABASE_URL="mysql://root:@127.0.0.1:3306/ArticleCrud"
+
+// lancer le server MySQL (wampServer)
+Ajouter la BD dans le Serveur MySQL : symfony console doctrine:database:create  ou bien symfony console d:d:c
+-------------------------------
+Créer une entité Article :
+symfony console make:entity Article
+>>titre>>string>>80>>yes>>
+>>description>>text>>yes
+>>touche clavier "entrée"..
+Générer le script SQL pour l'entité Article  : symfony console make:migration
+Exécuter le script SQL : symfony console doctrine:migrations:migrate>>yes
+----------------------------
+Générer le CRUD de l'entité Article :
+1/ Importer bootstrap CDN dans la template base.html.twig : 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+2/ Installer la dépendence WEB PACK : c'est un outil qu'on utilise pour importer/configurer des frameworks
+    composer require symfony/webpack-encore-bundle
+    >> npm install
+    >> npm run watch 
+     ((commenter l'importe du bootstrap dans Asset/app.js))
+    >>ctrl+c >>O
+3/ Ajouter CRUD pour l'entité Article
+    symfony console make:crud Article
+    >>ArticleController>>no(on ne veut pas générer un ficher pour testing)>>....
+-----------------------------------
+Lancer le server Symfony : symfony server:start -d
+  [ rmq : Arreter le serveur symfony : symfony server:stop]
+
+lien navigateur : 
+
+  Liste des articles : https://127.0.0.1:8000/article/ => vérification du chemin dans ArticleController
+  Ajouter un article : https://127.0.0.1:8000/article/new
+----------------------------------------------------------------------------------------------------
+//Ajouter le processus de l'authentification dans l'application :
+
+1/ Ajouter l'entité Utilisateur : 
+symfony console make:user Utilisateur>>yes>>email(unique value)>>entrée... // cette commande génére l'entité Utilisateur avec les attributs suivants: id, email, password, roles
+
+Pour ajouter l'attribut nom à l'entité utilisateur, on utilise la commande suivante :symfony console make:entity Utilisateur>> nom>>string>>80>>yes
+Générer le script SQL de l'entité Utilisateur : symfony console make:migration
+Exécuter le script SQL : symfony console doctrine:migrations:migrate
+
+2/ Générer le crud pour l'entité Utilisateur :
+
+- symfony console make:crud>>Utilisateur>>UtilisateurController>>no(pour ne pas générer le fichier de test)
+
+ Accèder à la page https://127.0.0.1:8000/utilisateur/
+
+3/ Inscription => Modifier le contenu des fichiers suivants  :
+  src/Form/UtilisateurType => formulaire de l'utilisateur ( ajouter un menu déroulant pour les roles, cacher le mot de passe ....)
+  src/Controller/UtilisateurController => hasher le mot de passe dans la fonction "/new"
+
+4/ Générer la connexion de l'application notamment (login, logout, vérification des données dans la base de données,....)
+symfony console make:auth >>1>>AppArticleAuthenticator>>SecurityController>>yes(logout)[>>yes>>1 : remeber me]
+
+5/ travailler la redirection :
+
+      inscription vers login => $this->redirectToRoute("app_login") dans le src/Controller/UtilisateurController >>"/new"
+
+      login >> liste article(app_article_index) 
+       src/Security/AppArticleAuthenticator >> 
+       onAuthenticationSuccess(...){
+         ....
+         return new RedirectResponse($this->urlGenerator->generate('app_article_index'));
+        //throw new \Exception('TODO: provide a valid redirect inside '.__FILE__);
+    
+      logout>>login => config/packages/security.yaml , décommentez la target de logout :
+            logout:
+                path: app_logout
+                # where to redirect after logout
+                target: app_login
+---------------------------------------------------
+Authorisation : Gesion des rôles 
+  1/Configurer les rôles dans config/packages/security.yaml :
+    role_hierarchy:
+        ROLE_CLIENT: [ROLE_USER]
+        ROLE_ADMIN: [ROLE_USER,ROLE_X]
+        ROLE_SUPER_ADMIN: [ROLE_USER,ROLE_CLIENT,ROLE_ADMIN]
+
+  2/Donner accès aux diff ressources (pages) en fonction de rôles de chacun => Controller
+    // imporet le packages en haut de la page : use Symfony\Component\Security\Http\Attribute\IsGranted;
+
+    #[Route(...)]
+    #[IsGranted('ROLE_ADMIN')]
+     //action
+
+
+rmq :
+    #[IsGranted('ROLE_USER')] => tous les utilisateurs qui ont un  compte
+   -----------------------------
+    #[Route('/new', name: 'app_article_new', methods: ['GET', 'POST'])]
+    #[IsGranted(new Expression('is_granted("ROLE_ADMIN") or is_granted("ROLE_CLIENT")'))]
+    public function new(Request $request, EntityManagerInterface $entityManager): Response
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
