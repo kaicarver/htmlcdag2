@@ -1,0 +1,11 @@
+c'est ici que se trouve le cours Symfony
+avec différents projets Symfony, qui ont chacun leur repo sur GitHub :
+  courssymfony/
+    l'exemple utilisé en cours
+  etudiantsymfony/
+    le projet pour les exercices
+  crudsymfony/
+    un exemple de la réalisation d'un CRUD
+  localsymfony/
+    ma tentative de faire un projet en local sur mon PC
+
