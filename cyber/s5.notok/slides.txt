@@ -1,0 +1,60 @@
+# Sécurité des Systèmes d'Information
+
+## Introduction
+- La sécurité des systèmes d'information
+- S5: A standards-based slide show system.
+
+## Quelques termes de séurité Web
+- ANSSI
+- CNIL
+- OWASP
+- ...
+
+## ANSSI
+- ...
+
+## CNIL
+- ...
+
+## OWASP
+- ...
+
+## Autres termes de sécurité
+- ...
+
+## Une attaque courante pour les applications Web
+
+RFI : Remote File Inclusion
+
+cible un site Web en faisant inclure un fichier distant
+en exécutant un script sur le serveur Web.
+La vulnérabilité est due à l'utilisation de données fournies par l'utilisateur sans validation. 
+Ça peut permettre d'exécuter du code ne faisant pas partie de l'application.
+Ce code peut être exécuté sur le serveur ou sur le client.
+
+LFI : Local File Inclusion, une attaque où le serveur inclut l'un de ses propres fichiers
+
+C'est similaire et permet de récupérer des informations censées être confidentielles
+
+## Exemple d'attaque RFI
+
+Comment faire exécuter du code sur un serveur PHP mal sécurisé.
+
+Si le code de l'application Web utilise les variables magiques PHP comme $_GET et $_POST sans les valider...
+
+## Exemple de solution
+
+Valider avant d'utiliser !
+
+Par exemple avec du whitelisting
+
+...
+
+## Failles de sécurité d'application Web hors CSRF, XSS, RFI, Injection SQL
+
+...
+
+
+## Conclusion
+- ...
+
