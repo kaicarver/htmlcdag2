@@ -3,17 +3,20 @@ Présentation orale projet pour examen final
   mettre lien officiel du RNCP vers la formation RNCP37873
 
 Sommaire
-  Présentation en 11 parties :
+  Présentation en 3 parties :
     Introduction
-    Expression de besoins
-    Problématique
-    Objectif de l'application
-    Étude concurrentielle :
-    Gestion de projet
-    Maquettage
-    Conception
-    Technologies choisies
-    Démo
+    1 Préalable à la conception et au développement :
+        Expression de besoins
+        Problématique
+        Objectif de l'application
+        Étude concurrentielle
+    2 Réalisation du projet :
+        Gestion de projet
+        Maquettage
+        Conception
+        Technologies choisies
+    3 Résultat :
+        Démo
     Conclusion / Perspective
 
 Introduction
