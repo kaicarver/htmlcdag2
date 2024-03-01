@@ -25,27 +25,51 @@ Introduction
     2 illustrer l'application de cette compétence dans mon projet
 
 Expression de besoins
+  avoir une appli qui permet de prendre des note privées
 
 Problématique
  ?
 
 Objectif de l'application
+  Sécurisé
+  Confiance
+  Privé
+  Possibilité de facilement partager certaines notes
 
 Étude concurrentielle :
  tableau sur une slide avec avantages et inconvénients
+ permet de définir comment se situe l'application dans l'univers de ce qui est disponible
+ Jour de bord, outil de rédaction, se situe dans un milieu concurrentiel chargé
+ je choisis 3 exemples de concurrents de Jourdebord :
+   Google Docs
+   Notion
+   750words.com
 
 Gestion de projet
  1 Gantt
+   qu'est-ce qu'un GANTT
+   qu'est-ce qui le rend utile
+     en général
+       coordination d'une équipe
+       prévoir, anticiper, gérer problèmes, retards
+     qu'est-ce qui l'a rendu utile pour moi (tout seul)
+       planifier mes développements
+       être réaliste
+       éviter d'avancer à l'aveugle
  2 méthodologie Agile
 
 Maquettage
+ permet, avant de commencer la conception et le développement,
+   qu'on répond au besoins et attentes du client
+   de faire des itérations rapides avant de s'engager sur un développement coûteux
+   que le client sait à qui s'attendre
  1 zoning : zones des pages, header, footer, etc 
  2 wireframes : squelettes de toutes les pages, sans contenu ni styles 
  3 (mini) charte graphique : styles avec couleurs et polices 
  4 maquettes : à quoi ressembleront toutes les pages 
  5 prototype : une maquette interactive 
  Outil utilisé pour faire tout ça : Figma
-   un outil de conception collaboratif avec :
+   un outil de conception collaboratif avec les parties prenantes (stakeholders) :
      designers
      autres développeurs
      product owner
@@ -72,13 +96,19 @@ Conception
 Technologies choisies
   PHP - langage
   Symfony - framework backend
+    à quoi sert un framework ?
+      sécurité
+      bonnes pratiques
+      évite de réinventer la rajouter
+      maintenabilité
   Bootstrap - framework CSS donc frontend
   MySQL - base de données relationnelle
-  git, VS Code, shell Bash ou Powershell, Windows et Unix
+  outils de développement :
+    git, VS Code, shell : Bash ou Powershell, Windows et Unix
 
 Démo
   lien vers mon appli déployée en ligne :
-  https://main-bvxea6i-s4litt2o4idri.eu-5.platformsh.site/en/blog/
+    https://main-bvxea6i-s4litt2o4idri.eu-5.platformsh.site/en/blog/
 
 Conclusion / Perspective
   j'avais 2 objectifs avec ce cursus :
@@ -90,3 +120,11 @@ Conclusion / Perspective
   j'ai hâte d'appliquer ce que j'ai appris concrètement :
     1 dans le monde du travail
     2 sur mon projet Jourdebord
+
+Notes de choses à rajouter à la présentation 
+    où parler de ces sujets ?
+        sécurité
+        devops
+        tests
+        déploiement
+        ... autre chose qui manque ?
