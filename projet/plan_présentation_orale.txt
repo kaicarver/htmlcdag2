@@ -1,6 +1,7 @@
 Présentation orale projet pour examen final 
   certification : Concepteur développeur d'applications
   mettre lien officiel du RNCP vers la formation RNCP37873
+  https://www.francecompetences.fr/recherche/rncp/37873/#:~:text=Comp%C3%A9tences%20attest%C3%A9es
 
 Sommaire
   Présentation en 3 parties :
@@ -130,4 +131,5 @@ Notes de choses à rajouter à la présentation
         devops
         tests
         déploiement
+        localisation https://symfony.com/doc/current/the-fast-track/en/28-intl.html
         ... autre chose qui manque ?
