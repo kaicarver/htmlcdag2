@@ -5,6 +5,7 @@ Cursus du lundi 9 octobre 2023 jusqu'au vendredi 23 février 2024
 1/5 des dates
 
 lun. 09/oct./23 Accueil - Lancement du projet personnel Equipe LGC 7 7 
+
 mar. 10/oct./23 Les bases HTML / CSS Sana 7 14 
 mer. 11/oct./23 Les bases HTML / CSS Sana 7 21 
 jeu. 12/oct./23 Les bases HTML / CSS Sana 7 28 
@@ -20,14 +21,70 @@ lun. 23/oct./23 Présentation projet full stack Sana 7 77
 mar. 24/oct./23 Conception des applications web : MERISE Sana 7 84 
 mer. 25/oct./23 Conception des applications web : MERISE Sana 7 91 
 jeu. 26/oct./23 Conception des applications web : MERISE Sana 7 98 
-ven. 27/oct./23 Conception des applications web : UML Sana 7 105 
 
+ven. 27/oct./23 Conception des applications web : UML Sana 7 105 
 lun. 30/oct./23 Conception des applications web : UML Sana 7 112 
 mar. 31/oct./23 Conception des applications web : UML Sana 7 119 
+
 mer. 01/nov./23 Toussaint 
 
-jeu. 02/nov./23 Mise en pratique sur le projet : Conception Sana 7 126 ven. 03/nov./23 Algorithmie Sana 7 133 sam. 04/nov./23 133 dim. 05/nov./23 133 lun. 06/nov./23 133 mar. 07/nov./23 133 mer. 08/nov./23 133 jeu. 09/nov./23 133 ven. 10/nov./23 133 sam. 11/nov./23 133 dim. 12/nov./23 133 lun. 13/nov./23 JavaScript : les bases du langage navigateur Fréderic 7 140 mar. 14/nov./23 JavaScript : les bases du langage navigateur Fréderic 7 147 mer. 15/nov./23 JavaScript : les bases du langage navigateur Fréderic 7 154 jeu. 16/nov./23 JavaScript : le framework Jquery Fréderic 7 161 ven. 17/nov./23 JavaScript : le framework Jquery Fréderic 7 168 sam. 18/nov./23 168 dim. 19/nov./23 168 lun. 20/nov./23 JavaScript : le framework Jquery Fréderic 7 175 mar. 21/nov./23 Nodejs Fréderic 7 182 mer. 22/nov./23 MongoDB/Framework express Fréderic 7 189 jeu. 23/nov./23 MongoDB/Framework express Fréderic 7 196 ven. 24/nov./23 MongoDB/Framework express Fréderic 7 203 sam. 25/nov./23 203 dim. 26/nov./23 203 lun. 27/nov./23 MongoDB/Framework express Fréderic 7 210 mar. 28/nov./23 React Fréderic 7 217 mer. 29/nov./23 React Fréderic 7 224 jeu. 30/nov./23 React Fréderic 7 231 ven. 01/déc./23 React Fréderic 7 238 sam. 02/déc./23 238 dim. 03/déc./23 238 lun. 04/déc./23 React Fréderic 7 245 Page of 
+jeu. 02/nov./23 Mise en pratique sur le projet : Conception Sana 7 126 
+ven. 03/nov./23 Algorithmie Sana 7 133 
 
-mar. 05/déc./23 React Fréderic 7 252 mer. 06/déc./23 Projet personnel : présentation de l'avancement Fréderic 7 259 jeu. 07/déc./23 PHP : les bases du langage serveur Sana 7 266 ven. 08/déc./23 PHP : les bases du langage serveur Sana 7 273 sam. 09/déc./23 273 dim. 10/déc./23 273 lun. 11/déc./23 PHP : les bases du langage serveur Sana 7 280 mar. 12/déc./23 Intéraction avec la base de donnée : SQL Sana 7 287 mer. 13/déc./23 Intéraction avec la base de donnée : SQL Sana 7 294 jeu. 14/déc./23 Intéraction avec la base de donnée : SQL Sana 7 301 ven. 15/déc./23 Intéraction avec la base de donnée : SQL Sana 7 308 sam. 16/déc./23 308 dim. 17/déc./23 308 lun. 18/déc./23 Intéraction avec la base de donnée(PHP & SQL) Sana 7 315 mar. 19/déc./23 Intéraction avec la base de donnée(PHP & SQL) Sana 7 322 mer. 20/déc./23 Intéraction avec la base de donnée(PHP & SQL) Sana 7 329 jeu. 21/déc./23 prototypages UX / UI - Design Sana 7 336 ven. 22/déc./23 prototypages UX / UI - Design Sana 7 343 sam. 23/déc./23 343 dim. 24/déc./23 343 lun. 25/déc./23 Vacances 343 mar. 26/déc./23 343 mer. 27/déc./23 343 jeu. 28/déc./23 343 ven. 29/déc./23 343 sam. 30/déc./23 v 343 dim. 31/déc./23 v 343 lun. 01/janv./24 343 mar. 02/janv./24 Bootstrap et Responsive Design Sana 7 350 mer. 03/janv./24 Gestionnaire de versions décentralisé : GIT Sana 7 357 jeu. 04/janv./24 Atelier CV Sana 7 364 ven. 05/janv./24 Projet personnel : présentation de l'avancement prototypage Sana 7 371 sam. 06/janv./24 371 
 
-dim. 07/janv./24 371 lun. 08/janv./24 Devops Fréderic 7 378 mar. 09/janv./24 Devops Fréderic 7 385 mer. 10/janv./24 Devops Fréderic 7 392 jeu. 11/janv./24 Devops Fréderic 7 399 ven. 12/janv./24 Devops Fréderic 7 406 sam. 13/janv./24 406 dim. 14/janv./24 406 lun. 15/janv./24 La veille technique et concurrentielle sur internet Fréderic 7 413 mar. 16/janv./24 Archirtecture de l'information - Ergonomie - Livrables - UI/UX - tendances du design Fréderic 7 420 mer. 17/janv./24 Gestion de projet : Agilité et Scrum Fréderic 7 427 jeu. 18/janv./24 Gestion de projet : Agilité et Scrum Fréderic 7 434 ven. 19/janv./24 Gestion de projet : WBS, planning, budgetisation Fréderic 7 441 sam. 20/janv./24 441 dim. 21/janv./24 441 lun. 22/janv./24 PHP : avancé Sana 7 448 mar. 23/janv./24 PHP : avancé Sana 7 455 mer. 24/janv./24 PHP : Présentation du framework symfony Sana 7 462 jeu. 25/janv./24 PHP : Présentation du framework symfony Sana 7 469 ven. 26/janv./24 PHP : Présentation du framework symfony Sana 7 476 sam. 27/janv./24 476 dim. 28/janv./24 476 lun. 29/janv./24 PHP : Présentation du framework symfony Sana 7 483 mar. 30/janv./24 PHP : Présentation du framework symfony Sana 7 490 mer. 31/janv./24 PHP : Présentation du framework symfony Sana 7 497 jeu. 01/févr./24 PHP : Présentation du framework symfony Sana 7 504 ven. 02/févr./24 PHP : Présentation du framework symfony Sana 7 511 sam. 03/févr./24 511 dim. 04/févr./24 511 lun. 05/févr./24 Projet personnel : présentation de l'avancement Sana 7 518 mar. 06/févr./24 Intro cybersécu/reseaux Sana 7 525 mer. 07/févr./24 Cryptographie Sana 7 532 jeu. 08/févr./24 Cryptographie Sana 7 539 ven. 09/févr./24 Révision Générale Sana 7 546 sam. 10/févr./24 546 dim. 11/févr./24 546 lun. 12/févr./24 Révision Générale Sana 7 553 mar. 13/févr./24 Projet personnel / avancement dossier professionnel Fréderic 7 560 mer. 14/févr./24 Préparation examen Fréderic 7 567 jeu. 15/févr./24 Préparation examen Fréderic 7 574 ven. 16/févr./24 Préparation examen Fréderic 7 581 sam. 17/févr./24 581 dim. 18/févr./24 581 lun. 19/févr./24 Préparation examen Fréderic 7 588 mar. 20/févr./24 Préparation examen Fréderic 7 595 mer. 21/févr./24 Préparation examen Fréderic 7 602 jeu. 22/févr./24 Examen blanc : entretiens Sana & Frédéric 7 609 ven. 23/févr./24 Examen blanc : entretiens + Débrief Sana & Frédéric 7 616 sam. 24/févr./24 616 dim. 25/févr./24 616 lun. 26/févr./24 Début de stage en entreprise 
+lun. 06/nov./23 133 mar. 07/nov./23 133 mer. 08/nov./23 133 jeu. 09/nov./23 133 ven. 10/nov./23 133 
+
+
+lun. 13/nov./23 JavaScript : les bases du langage navigateur Fréderic 7 140 mar. 14/nov./23 JavaScript : les bases du langage navigateur Fréderic 7 147 mer. 15/nov./23 JavaScript : les bases du langage navigateur Fréderic 7 154 jeu. 16/nov./23 JavaScript : le framework Jquery Fréderic 7 161 ven. 17/nov./23 JavaScript : le framework Jquery Fréderic 7 168 
+
+
+lun. 20/nov./23 JavaScript : le framework Jquery Fréderic 7 175 mar. 21/nov./23 Nodejs Fréderic 7 182 mer. 22/nov./23 MongoDB/Framework express Fréderic 7 189 jeu. 23/nov./23 MongoDB/Framework express Fréderic 7 196 ven. 24/nov./23 MongoDB/Framework express Fréderic 7 203 
+
+
+lun. 27/nov./23 MongoDB/Framework express Fréderic 7 210 mar. 28/nov./23 React Fréderic 7 217 mer. 29/nov./23 React Fréderic 7 224 jeu. 30/nov./23 React Fréderic 7 231 ven. 01/déc./23 React Fréderic 7 238 
+
+
+lun. 04/déc./23 React Fréderic 7 245 Page of 
+
+mar. 05/déc./23 React Fréderic 7 252 
+
+mer. 06/déc./23 Projet personnel : présentation de l'avancement Fréderic 7 259 
+
+jeu. 07/déc./23 PHP : les bases du langage serveur Sana 7 266 
+ven. 08/déc./23 PHP : les bases du langage serveur Sana 7 273 
+lun. 11/déc./23 PHP : les bases du langage serveur Sana 7 280 
+
+mar. 12/déc./23 Intéraction avec la base de donnée : SQL Sana 7 287 mer. 13/déc./23 Intéraction avec la base de donnée : SQL Sana 7 294 jeu. 14/déc./23 Intéraction avec la base de donnée : SQL Sana 7 301 ven. 15/déc./23 Intéraction avec la base de donnée : SQL Sana 7 308 
+
+
+lun. 18/déc./23 Intéraction avec la base de donnée(PHP & SQL) Sana 7 315 mar. 19/déc./23 Intéraction avec la base de donnée(PHP & SQL) Sana 7 322 mer. 20/déc./23 Intéraction avec la base de donnée(PHP & SQL) Sana 7 329 jeu. 21/déc./23 prototypages UX / UI - Design Sana 7 336 ven. 22/déc./23 prototypages UX / UI - Design Sana 7 343 
+
+
+lun. 25/déc./23 Vacances 343 mar. 26/déc./23 343 mer. 27/déc./23 343 jeu. 28/déc./23 343 ven. 29/déc./23 343 
+
+
+343 lun. 01/janv./24 343 mar. 02/janv./24 Bootstrap et Responsive Design Sana 7 350 mer. 03/janv./24 Gestionnaire de versions décentralisé : GIT Sana 7 357 jeu. 04/janv./24 Atelier CV Sana 7 364 ven. 05/janv./24 Projet personnel : présentation de l'avancement prototypage Sana 7 371 
+
+
+371 lun. 08/janv./24 Devops Fréderic 7 378 mar. 09/janv./24 Devops Fréderic 7 385 mer. 10/janv./24 Devops Fréderic 7 392 jeu. 11/janv./24 Devops Fréderic 7 399 ven. 12/janv./24 Devops Fréderic 7 406 
+
+
+6 lun. 15/janv./24 La veille technique et concurrentielle sur internet Fréderic 7 413 mar. 16/janv./24 Archirtecture de l'information - Ergonomie - Livrables - UI/UX - tendances du design Fréderic 7 420 mer. 17/janv./24 Gestion de projet : Agilité et Scrum Fréderic 7 427 jeu. 18/janv./24 Gestion de projet : Agilité et Scrum Fréderic 7 434 ven. 19/janv./24 Gestion de projet : WBS, planning, budgetisation Fréderic 7 441 
+
+
+1 lun. 22/janv./24 PHP : avancé Sana 7 448 mar. 23/janv./24 PHP : avancé Sana 7 455 mer. 24/janv./24 PHP : Présentation du framework symfony Sana 7 462 jeu. 25/janv./24 PHP : Présentation du framework symfony Sana 7 469 ven. 26/janv./24 PHP : Présentation du framework symfony Sana 7 476 
+
+
+6 lun. 29/janv./24 PHP : Présentation du framework symfony Sana 7 483 mar. 30/janv./24 PHP : Présentation du framework symfony Sana 7 490 mer. 31/janv./24 PHP : Présentation du framework symfony Sana 7 497 jeu. 01/févr./24 PHP : Présentation du framework symfony Sana 7 504 ven. 02/févr./24 PHP : Présentation du framework symfony Sana 7 511 
+
+
+1 lun. 05/févr./24 Projet personnel : présentation de l'avancement Sana 7 518 mar. 06/févr./24 Intro cybersécu/reseaux Sana 7 525 mer. 07/févr./24 Cryptographie Sana 7 532 jeu. 08/févr./24 Cryptographie Sana 7 539 ven. 09/févr./24 Révision Générale Sana 7 546 
+
+
+6 lun. 12/févr./24 Révision Générale Sana 7 553 mar. 13/févr./24 Projet personnel / avancement dossier professionnel Fréderic 7 560 mer. 14/févr./24 Préparation examen Fréderic 7 567 jeu. 15/févr./24 Préparation examen Fréderic 7 574 ven. 16/févr./24 Préparation examen Fréderic 7 581 
+
+
+1 lun. 19/févr./24 Préparation examen Fréderic 7 588 mar. 20/févr./24 Préparation examen Fréderic 7 595 mer. 21/févr./24 Préparation examen Fréderic 7 602 jeu. 22/févr./24 Examen blanc : entretiens Sana & Frédéric 7 609 ven. 23/févr./24 Examen blanc : entretiens + Débrief Sana & Frédéric 7 616 
+
+
+6 lun. 26/févr./24 Début de stage en entreprise 
