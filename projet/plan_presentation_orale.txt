@@ -1,6 +1,6 @@
 Présentation orale projet pour examen final 
   certification : Concepteur développeur d'applications
-  mettre lien officiel du RNCP vers la formation RNCP37873
+  lien vers la page officielle définissant la formation RNCP37873
   https://www.francecompetences.fr/recherche/rncp/37873/#:~:text=Comp%C3%A9tences%20attest%C3%A9es
 
 Sommaire
@@ -10,9 +10,11 @@ Sommaire
         Expression de besoins
         Problématique
         Objectif de l'application
+        Cible et acteurs
+        Fonctionnalités
         Étude concurrentielle
     2 Réalisation du projet :
-        Gestion de projet
+        Gestion et suivi du projet
         Maquettage
         Conception
         Technologies choisies
@@ -29,16 +31,64 @@ Introduction
     2 illustrer l'application de cette compétence dans mon projet
 
 Expression de besoins
-  avoir une appli qui permet de prendre des note privées
+  avoir une appli qui permet de prendre des notes privées
 
 Problématique
- ?
+  par ex. : si on n'a pas l'application, on va passer beaucoup de temps 
+    pour chercher/trouver l'information
+  ...
 
 Objectif de l'application
   Sécurisé
   Confiance
   Privé
-  Possibilité de facilement partager certaines notes
+  Facile
+  Rapide
+  Possibilité de partager certaines notes
+
+Cible et acteurs
+  ...
+
+Fonctionnalités
+  La méthode MoSCoW :
+    moyen de prioriser les tâches à accomplir
+    termes plus parlants pour communiquer avec le client
+    M must :   doit être fait, important mais pas indispensable
+    S should : à faire mais app livrble même si non réalisé
+    C could :  à faire si on a le temps
+    W won't :  ne sera pas fait -- cette fois-ci
+  Fonctionnalités MoSCoW :
+
+    * Must have :
+
+    Authentification, inscription, login, logout
+    Création de catégories, consultation, mise à jour, suppression
+    Création de texte, consultation, mise à jour, suppression
+    Recherche de texte :
+      recherche par date, par mot ou phrase
+      tous les textes, textes d’une certaine date
+      résultats ordonnés par date de création, date de dernière mise à jour
+
+    * Should have :
+
+    Affichages de texte : 
+      afficher le texte par heure, jour, semaine, mois, total
+      afficher texte complet, fragment de texte
+    Partage de texte : rendre un texte public avec une URL
+    Statistiques de texte :
+      nombre de mots par jour, semaine, mois, total
+      mots les plus utilisés 
+
+    * Could have :
+
+    Templates
+    Nuage de mots
+    Localisation : interface de l'application en autre chose que français
+
+    * Won’t have :
+
+    Attribution automatique de catégories
+    Création automatisée de templates
 
 Étude concurrentielle :
  tableau sur une slide avec avantages et inconvénients
@@ -51,7 +101,8 @@ Objectif de l'application
 
 Gestion de projet
  1 Gantt
-   qu'est-ce qu'un GANTT
+   qu'est-ce qu'un GANTT ?
+     ...
    qu'est-ce qui le rend utile
      en général
        coordination d'une équipe
@@ -60,13 +111,15 @@ Gestion de projet
        planifier mes développements
        être réaliste
        éviter d'avancer à l'aveugle
- 2 méthodologie Agile
+ 2 méthode Agile
+   qu'est-ce que la méthode, et laquelle ?
+     ...
 
 Maquettage
  permet, avant de commencer la conception et le développement,
-   qu'on répond au besoins et attentes du client
+   de répondre aux besoins et attentes du client
    de faire des itérations rapides avant de s'engager sur un développement coûteux
-   que le client sait à qui s'attendre
+   au client de savoir à quoi s'attendre
  1 zoning : zones des pages, header, footer, etc 
  2 wireframes : squelettes de toutes les pages, sans contenu ni styles 
  3 (mini) charte graphique : styles avec couleurs et polices 
@@ -78,6 +131,8 @@ Maquettage
      autres développeurs
      product owner
      client
+ Lien sur la maquette :
+   ...
 
 Conception
   on utilise deux méthodes de conception
