@@ -11,8 +11,8 @@ Sommaire
         Problématique
         Objectif de l'application
         Cible et acteurs
-        Fonctionnalités
         Étude concurrentielle
+        Fonctionnalités
     2 Réalisation du projet :
         Gestion et suivi du projet
         Maquettage
@@ -31,6 +31,7 @@ Introduction
     2 illustrer l'application de cette compétence dans mon projet
 
 Expression de besoins
+  ...
   avoir une appli qui permet de prendre des notes privées
 
 Problématique
@@ -46,8 +47,39 @@ Objectif de l'application
   Rapide
   Possibilité de partager certaines notes
 
-Cible et acteurs
-  ...
+Cible
+  L'application est destinée à différents types de personnes :
+		→ qui veulent garder une trace de leurs activités
+		→ qui écrivent
+      soignant
+      secrétaire
+      chercheur
+      compositeur, écrivain
+      explorateur, navigateur de bateau
+      sportif
+      étudiant
+      n’importe qui voulant tenir un journal
+
+Acteurs
+  Qu'est-ce qu'un acteur ?
+  Deux types d’acteur :
+    les personnes qui écrivent
+      → peuvent être catégorisées en différents types
+    l’administrateur du site
+      → gère le site
+      → répond aux questions ou problèmes
+      → administre les différents types d’utilisateur
+              et leurs ressources : catégories, templates
+
+
+Étude concurrentielle :
+ tableau sur une slide avec avantages et inconvénients
+ permet de définir comment se situe l'application dans l'univers de ce qui est disponible
+ Jour de bord, outil de rédaction, se situe dans un milieu concurrentiel chargé
+ je choisis 3 exemples de concurrents de Jourdebord :
+   Google Docs
+   Notion
+   750words.com
 
 Fonctionnalités
   La méthode MoSCoW :
@@ -89,18 +121,16 @@ Fonctionnalités
 
     Attribution automatique de catégories
     Création automatisée de templates
-
-Étude concurrentielle :
- tableau sur une slide avec avantages et inconvénients
- permet de définir comment se situe l'application dans l'univers de ce qui est disponible
- Jour de bord, outil de rédaction, se situe dans un milieu concurrentiel chargé
- je choisis 3 exemples de concurrents de Jourdebord :
-   Google Docs
-   Notion
-   750words.com
+    Badges et gamification :
+      badge vous avez écrit 1000 mots
+      badge vous avez commencé à écrire tôt
+      badge vous avez écrit tous les jours depuis 1 semaine
+    l'admin ne doit pas pouvoir lire les textes des autres !
 
 Gestion de projet
- 1 Gantt
+ 1 Work Breakdown Structure
+   ...
+ 2 Gantt
    qu'est-ce qu'un GANTT ?
      ...
    qu'est-ce qui le rend utile
@@ -111,7 +141,7 @@ Gestion de projet
        planifier mes développements
        être réaliste
        éviter d'avancer à l'aveugle
- 2 méthode Agile
+ 3 méthode Agile
    qu'est-ce que la méthode, et laquelle ?
      ...
 
