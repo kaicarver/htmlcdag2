@@ -220,5 +220,7 @@ Notes de choses à rajouter à la présentation
         devops
         tests
         déploiement
-        localisation https://symfony.com/doc/current/the-fast-track/en/28-intl.html
+        localisation <a href="https://symfony.com/doc/current/the-fast-track/en/28-intl.html" target="_blank">Symfony: Localizing an Application</a>
+        <a href="https://raw.githack.com/kaicarver/htmlcdag2/master/projet/pres/blank.html">cette présentation en ligne</a>
+
         ... autre chose qui manque ?
