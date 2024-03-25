@@ -136,6 +136,7 @@ Gestion de projet
    ...
  2 Gantt
    qu'est-ce qu'un GANTT ?
+   	<img src="img/gantt.jpg" alt="exemple GANTT" width="50%">
      ...
    qu'est-ce qui le rend utile
      en général
