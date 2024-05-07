@@ -93,8 +93,8 @@ Fonctionnalités
     S should : à faire mais app livrble même si non réalisé
     C could :  à faire si on a le temps
     W won't :  ne sera pas fait -- cette fois-ci
-  Fonctionnalités MoSCoW :
 
+Fonctionnalités Must have
     * Must have :
 
     Authentification, inscription, login, logout
@@ -105,6 +105,7 @@ Fonctionnalités
       tous les textes, textes d’une certaine date
       résultats ordonnés par date de création, date de dernière mise à jour
 
+Fonctionnalités Should have
     * Should have :
 
     Affichages de texte :
@@ -115,12 +116,14 @@ Fonctionnalités
       nombre de mots par jour, semaine, mois, total
       mots les plus utilisés
 
+Fonctionnalités Could have
     * Could have :
 
     Templates
     Nuage de mots
     Localisation : interface de l'application en autre chose que français
 
+Fonctionnalités Won't have
     * Won’t have :
 
     Attribution automatique de catégories
