@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 # produire JUSTE des slides style S5 à partir de texte
 
-# usage: ./slidize.pl pres_skel.html plan_presentation_orale.txt > slides.html
+# usage: ./foo.pl s5-skel.html plan-pres.txt > s5-pres.html
 
 # voir aussi htmlize.pl pour une génération de doc HTML complet
 
