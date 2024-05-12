@@ -46,17 +46,18 @@ END
     print <<END;
   <li>$1</li>
 END
-  } elsif (/^\s+\S/) {
-    $level = 8; # 8 standing for infinity, ie all levels other than the previous
-    print 8,$_;
+  } elsif (/^\s+(\S.*)$/) {
+    handle_ul($level, 8);
+    $level = 8;
+    print <<END;
+  <li>$1</li>
+END
   } elsif (/^$/) {
     handle_ul($level, 0);
     $level = 0;
-    print ".<br>\n";
+    close_slide();
   }
 }
-
-close_all();
 
 print <<END;
 <!--   end $generation_info -->
@@ -82,8 +83,9 @@ END
 }
 
 
-sub close_all {
+sub close_slide {
     print <<END;
 </ul>
+</div>
 END
 }

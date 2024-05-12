@@ -1,39 +1,29 @@
 Présentation orale projet pour examen final
   Formation
     certification : Concepteur développeur d'applications
-    lien vers la page officielle définissant la formation RNCP37873
-    https://www.francecompetences.fr/recherche/rncp/37873/#:~:text=Comp%C3%A9tences%20attest%C3%A9es
-
+    <a href="https://www.francecompetences.fr/recherche/rncp/37873/#:~:text=Comp%C3%A9tences%20attest%C3%A9es" target="_blank">France compétences : la formation RNCP37873</a>
   Des anciennes versions de la présentation sont sur Google Slides :
-    <a href="https://docs.google.com/presentation/d/18ytHDqGZqmUqGuf2Ktm6isMzqtoDr9B58IoLIYCzKBs/edit?usp=sharing">Présentation initiale appli Jourdebord lundi 23 octobre 2023</a>
-    <a href="https://docs.google.com/presentation/d/1pTUpe-vBm6F2hxsJaPoRt_UPZLmqKl0uWmRhzaCCf6c/edit?usp=sharing">Présentation appli Jourdebord pour examen blanc jeudi 22 février 2024</a>
+    <a href="https://docs.google.com/presentation/d/18ytHDqGZqmUqGuf2Ktm6isMzqtoDr9B58IoLIYCzKBs/edit?usp=sharing" target="_blank">Présentation initiale appli Jourdebord lundi 23 octobre 2023</a>
+    <a href="https://docs.google.com/presentation/d/1pTUpe-vBm6F2hxsJaPoRt_UPZLmqKl0uWmRhzaCCf6c/edit?usp=sharing" target="_blank">Présentation appli Jourdebord pour examen blanc jeudi 22 février 2024</a>
 
 Sommaire
   Présentation en 3 parties :
     Introduction
     1 Préalable à la conception et au développement :
-        Expression de besoins
-        Problématique
-        Objectif de l'application
-        Cible et acteurs
-        Étude concurrentielle
-        Fonctionnalités
+        Expression de besoins,         Problématique,        Objectif de l'application,        Cible et acteurs,        Étude concurrentielle,         Fonctionnalités
     2 Réalisation du projet :
-        Gestion et suivi du projet
-        Maquettage
-        Conception
-        Technologies choisies
+        Gestion et suivi du projet,        Maquettage,        Conception,        Technologies choisies
     3 Résultat :
         Démo
-    Conclusion / Perspective
+    Conclusion / Perspectives
 
 Introduction
-  quel est le but de cette présentation ?
-    1 faire le point sur mes connaissances acquises dans le cours
-    2 montrer mon projet et comment j'ai appliqué ces connaissances
-  donc à chaque étape, deux parties :
-    1 résumer la compétence, en quoi elle consiste
-    2 illustrer l'application de cette compétence dans mon projet
+  Quel est le but de cette présentation ?
+    faire le point sur mes connaissances acquises dans le cours
+    montrer mon projet et comment j'ai appliqué ces connaissances
+  Donc à chaque étape, deux parties :
+    je résume la compétence, en quoi elle consiste
+    j'illustre son application dans mon projet
 
 Expression de besoins
   Expression de besoins
@@ -123,18 +113,16 @@ Fonctionnalités Should have
 Fonctionnalités Could have
   Could have :
     Templates
-    Nuage de mots
+    Nuages de mots
     Localisation : interface de l'application en autre chose que français
+    L'admin ne doit pas pouvoir lire les textes des autres !
 
 Fonctionnalités Won't have
   Won’t have :
     Attribution automatique de catégories
     Création automatisée de templates
     Badges et gamification :
-      badge vous avez écrit 1000 mots
-      badge vous avez commencé à écrire tôt
-      badge vous avez écrit tous les jours depuis 1 semaine
-    l'admin ne doit pas pouvoir lire les textes des autres !
+      badge vous avez écrit 1000 mots, vous avez commencé à écrire tôt, vous avez écrit tous les jours depuis 1 semaine, ...
 
 Gestion de projet
   1 Work Breakdown Structure
@@ -206,20 +194,22 @@ Technologies choisies
     git, VS Code, shell : Bash ou Powershell, Windows et Unix
 
 Démo
-  lien vers mon appli déployée en ligne :
-    https://main-bvxea6i-s4litt2o4idri.eu-5.platformsh.site/en/blog/
+  lien vers mon appli sur mon laptop:
+    <a href="http://127.0.0.1:8000/" target="_blank">Jourdebord en local</a>
+  lien vers l'appli en ligne:
+    <a href="https://main-bvxea6i-s4litt2o4idri.eu-5.platformsh.site/en/blog/" target="_blank">Jourdebord</a>
 
-Conclusion / Perspective
+Conclusion / Perspectives
   Conclusions :
     j'avais 2 objectifs avec ce cursus :
       1 quand quelqu'un me demande :
-	Pourrais-tu me faire un site Web ?
-	pouvoir répondre sans hésiter : Oui !
+	      Pourrais-tu me faire un site Web ?
+	      pouvoir répondre sans hésiter : Oui !
       2 faire un MVP de mon idée d'application Web Jourdebord
     j'ai l'impression d'avoir accompli ces 2 objectifs pendant ce cours
     j'ai hâte d'appliquer ce que j'ai appris concrètement :
-      1 dans le monde du travail
-      2 sur mon projet Jourdebord
+      dans le monde du travail
+      sur mon projet Jourdebord
 
 Notes de choses à rajouter à la présentation
   où parler de ces sujets ?
@@ -231,3 +221,4 @@ Notes de choses à rajouter à la présentation
     <a href="https://raw.githack.com/kaicarver/htmlcdag2/master/projet/pres/blank.html">cette présentation en ligne</a>
 
     ... autre chose qui manque ?
+
