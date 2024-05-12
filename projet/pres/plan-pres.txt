@@ -4,7 +4,7 @@ Présentation orale projet pour examen final
     lien vers la page officielle définissant la formation RNCP37873
     https://www.francecompetences.fr/recherche/rncp/37873/#:~:text=Comp%C3%A9tences%20attest%C3%A9es
 
-    Des anciennes versions de la présentation sont sur Google Slides :
+  Des anciennes versions de la présentation sont sur Google Slides :
     <a href="https://docs.google.com/presentation/d/18ytHDqGZqmUqGuf2Ktm6isMzqtoDr9B58IoLIYCzKBs/edit?usp=sharing">Présentation initiale appli Jourdebord lundi 23 octobre 2023</a>
     <a href="https://docs.google.com/presentation/d/1pTUpe-vBm6F2hxsJaPoRt_UPZLmqKl0uWmRhzaCCf6c/edit?usp=sharing">Présentation appli Jourdebord pour examen blanc jeudi 22 février 2024</a>
 

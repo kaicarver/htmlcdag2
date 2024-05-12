@@ -52,7 +52,7 @@ END
   } elsif (/^$/) {
     handle_ul($level, 0);
     $level = 0;
-    print "?",$_;
+    print ".<br>\n";
   }
 }
 
