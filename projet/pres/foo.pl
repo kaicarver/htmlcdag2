@@ -17,15 +17,17 @@ my $level = 0;
 
 # slurp the surrounding HTML
 my $contents = do { local(@ARGV, $/) = $skel; <> };
-my ($begin, $end) = split /\[GENERATED SLIDES\]/, $contents;
+my ($begin_skel, $end_skel) = split /\[GENERATED SLIDES\]/, $contents;
 
-print $begin;
+print $begin_skel;
 
 print <<END;
 <!-- begin $generation_info -->
 END
 while (<>) {
-  if (/^\S/) {
+  if (/^#/) {
+    ;
+  } elsif (/^\S/) {
     $level = 0;
     chomp;
     print <<END;
@@ -63,7 +65,7 @@ print <<END;
 <!--   end $generation_info -->
 END
 
-print $end;
+print $end_skel;
 
 sub handle_ul {
   my ($oldlevel, $newlevel) = @_;

@@ -1,1 +1,12 @@
-./slidize.pl plan_presentation_orale.txt > presentation.html
+Pour produire les slides de présentation 
+pour l'examen de La Grande Classe
+pour la formation Concepteur développeur d'applications RNCP37873 :
+
+  ./foo.pl s5-skel.html plan-pres.txt > s5-pres.html
+
+Et pour produire le document :
+
+  ?
+
+Anciennement :
+  ./slidize.pl plan_presentation_orale.txt > presentation.html

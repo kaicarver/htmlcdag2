@@ -1,63 +1,61 @@
-Présentation orale projet pour examen final
+Présentation projet pour examen
   Formation
     certification : Concepteur développeur d'applications
     <a href="https://www.francecompetences.fr/recherche/rncp/37873/#:~:text=Comp%C3%A9tences%20attest%C3%A9es" target="_blank">France compétences : la formation RNCP37873</a>
-  Des anciennes versions de la présentation sont sur Google Slides :
-    <a href="https://docs.google.com/presentation/d/18ytHDqGZqmUqGuf2Ktm6isMzqtoDr9B58IoLIYCzKBs/edit?usp=sharing" target="_blank">Présentation initiale appli Jourdebord lundi 23 octobre 2023</a>
-    <a href="https://docs.google.com/presentation/d/1pTUpe-vBm6F2hxsJaPoRt_UPZLmqKl0uWmRhzaCCf6c/edit?usp=sharing" target="_blank">Présentation appli Jourdebord pour examen blanc jeudi 22 février 2024</a>
+#  Des anciennes versions de la présentation sont sur Google Slides :
+#    <a href="https://docs.google.com/presentation/d/18ytHDqGZqmUqGuf2Ktm6isMzqtoDr9B58IoLIYCzKBs/edit?usp=sharing" target="_blank">Présentation initiale appli Jourdebord lundi 23 octobre 2023</a>
+#    <a href="https://docs.google.com/presentation/d/1pTUpe-vBm6F2hxsJaPoRt_UPZLmqKl0uWmRhzaCCf6c/edit?usp=sharing" target="_blank">Présentation appli Jourdebord pour examen blanc jeudi 22 février 2024</a>
 
 Sommaire
-  Présentation en 3 parties :
+  de quoi on va parler :
     Introduction
-    1 Préalable à la conception et au développement :
+    Préalable à la conception et au développement :
         Expression de besoins,         Problématique,        Objectif de l'application,        Cible et acteurs,        Étude concurrentielle,         Fonctionnalités
-    2 Réalisation du projet :
+    Réalisation du projet :
         Gestion et suivi du projet,        Maquettage,        Conception,        Technologies choisies
-    3 Résultat :
-        Démo
+    Résultat : Démonstration de l'application
     Conclusion / Perspectives
 
 Introduction
-  Quel est le but de cette présentation ?
-    faire le point sur mes connaissances acquises dans le cours
-    montrer mon projet et comment j'ai appliqué ces connaissances
-  Donc à chaque étape, deux parties :
-    je résume la compétence, en quoi elle consiste
-    j'illustre son application dans mon projet
+  But de cette présentation :
+    Décrire les compétences acquises dans le cours
+    Montrer le projet réalisé pendant le cours
+  Donc pour chaque compétence on verra deux choses :
+    en quoi consiste la compétence
+    la compétence appliquée à mon projet
 
-Expression de besoins
+Expression de besoins et problématique
   Expression de besoins
-    ...
     avoir une appli qui permet de prendre des notes privées
-
-Problématique
+    ...
   Problématique :
+    ?
     par ex. : si on n'a pas l'application, on va passer beaucoup de temps
       pour chercher/trouver l'information
     ...
 
-Objectif de l'application
-  Objectif de l'application
-    Sécurisé
-    Confiance
-    Privé
-    Facile
-    Rapide
-    Possibilité de partager certaines notes
+Objectifs de l'application
+  Application pour écrire :
+    Sécurisée, en confiance, privée
+    Facile et rapide
+    Organise ce qu'on écrit
+    Permet de partager certains textes
 
 Cible
-  À qui l'application est-elle destinée ?
-    L'application est destinée à différents types de personnes :
-		→ qui veulent garder une trace de leurs activités
-		→ qui écrivent
+  Application destinée à deux types de personnes :
+		    qui veulent garder une trace de leurs activités
+		    ou qui écrivent
+
+Cible
+  garder trace de ses activités :
       soignant
-      secrétaire
+      employé de bureau
       chercheur
-      compositeur, écrivain
-      explorateur, navigateur de bateau
       sportif
       étudiant
-      n’importe qui voulant tenir un journal
+  écrire :
+      compositeur, écrivain
+      n’importe qui voulant tenir un journal...
 
 Acteurs
   Qui sont les acteurs qui utilisent l'appli ?
