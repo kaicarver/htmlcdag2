@@ -21,12 +21,31 @@ my ($begin_skel, $end_skel) = split /\[GENERATED SLIDES\]/, $contents;
 
 print $begin_skel;
 
+my $handout = 0;
+
 print <<END;
 <!-- begin $generation_info -->
 END
 while (<>) {
+  if ($handout) {
+    if (/^\/handout/) {
+      print <<END;
+</div> <!-- end handout -->
+END
+      $handout = 0;
+    } else {
+      print;
+    }
+    next;
+  }
   if (/^#/) {
     ;
+  } elsif (/^handout/) {
+    print <<END;
+</ul></ul>
+<div class="handout">
+END
+    $handout = 1;
   } elsif (/^\S/) {
     $level = 0;
     chomp;
