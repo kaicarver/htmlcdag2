@@ -122,6 +122,10 @@ Work Breakdown Structure
 
 Permet de diviser les tâches à faire sur plusieurs niveaux.
 
+Le work breakdown structure (WBS), aussi appelé organigramme des tâches du projet décompose un projet en une hiérarchie des travaux nécessaires pour le réaliser.
+
+https://fr.wikipedia.org/wiki/Organigramme_des_t%C3%A2ches_du_projet
+
 Planification Gantt
 
 Un diagramme de Gantt permet d’avoir une vue d’ensemble de toutes les tâches de la conception et du développement de l’application, du temps prévu pour chacune des tâches, et des interdépendances entre ces tâches. Il donne à tous les participants (client, product owner, chef de projet, développeurs) une visibilité sur la progression du projet,
@@ -231,11 +235,42 @@ UML
 
 UML, le Unified Modeling Language, est le nom d’un type de modélisation objet qui est l’aboutissement de plusieurs efforts de rationaliser la modélisation objet.
 
-Identification des acteurs
+Son avantage principal par rapport à Merise est de ne pas séparer données et traitements, mais au contraire les unir dans la modélisation objet.
+
+UML : Identification des acteurs
 
 On peut commencer par identifier les acteurs au sens UML.
 
 Les acteurs sont des personnes (ou éventuellement entités non humaines) qui interagissent avec le système modélisé. 
+
+Il y a trois types d’acteur : l’internaute, l’auteur et l’administrateur.
+
+L’internaute est toute personne visitant le site sans s’être inscrit. C’est un auteur potentiel qui pourra utiliser le site pour s’informer sur l’appli et décider de s’inscrire.
+
+L’auteur est la personne à laquelle l’appli est destinée. Une fois inscrit et authentifié, un auteur pourra écrire des notes et consulter ce qu’il a écrit.
+
+L’administrateur gère le site et répond aux problèmes éventuels.
+
+UML : Diagramme des cas d’utilisation
+
+UML : Diagramme de séquence
+
+UML : Diagramme de classes
+
+Merise
+
+La méthodologie Merise permet de modéliser les données utilisées par un système : leur nature et leurs relations entre elles.
+
+Règles de gestion
+
+Dictionnaire de données
+
+Modèle conceptuel de données
+
+Modèle logique de données
+
+Modèle physique de données
+
 
 
 
