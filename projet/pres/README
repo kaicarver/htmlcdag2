@@ -1,3 +1,7 @@
+Pour produire le dossier projet :
+
+  pandoc -f markdown dossier-projet.md -o dossier-projet.pdf
+
 Pour produire les slides de présentation 
 pour l'examen de La Grande Classe
 pour la formation Concepteur développeur d'applications RNCP37873 :
