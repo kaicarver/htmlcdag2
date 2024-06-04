@@ -1,6 +1,14 @@
-Rapport du projet 
-JourDeBord
-
+---
+title: Rapport du projet Jourdebord
+author: Robert Carver
+header-includes: |
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhead[CO,CE]{Ceci est le fancyhead}
+    \fancyfoot[CO,CE]{Ceci est le fancyfoot}
+    \fancyfoot[LE,RO]{\thepage}
+abstract: Presentation du projet Jourdebord realise pour le titre professionnel Concepteur developpeur d'applications . . . 
+...
 
 Table des matières :
 
@@ -14,7 +22,7 @@ Ce document décrit l’ensemble du travail que j’ai réalisé pendant la form
 
 La conception et le développement de l’application ont suivi le chemin traité dans notre cours, partant d’une idée et d’une expression de besoins prenant la forme d’un cahier des charges rudimentaire, passant par une réponse sous la forme de spécification fonctionnelle, maquettage, modélisation via deux méthodologies différentes, choix de technologies, développement logiciel, tests, et mise en production, le tout dans le cadre d’une gestion de projet.
 
-# Présentation du projet
+# Présentation du projet / Expression des besoins
 
 Jourdebord est une application de prises de notes inspirée du journal de bord tenu par un capitaine de navire. 
 
