@@ -4,15 +4,12 @@ author: Robert Carver
 header-includes: |
     \usepackage{fancyhdr}
     \pagestyle{fancy}
-    \fancyhead[CO,CE]{Ceci est le fancyhead}
-    \fancyfoot[CO,CE]{Ceci est le fancyfoot}
+    \fancyhead[CO,CE]{ * }
+    \fancyfoot[CO,CE]{Projet Jourdebord}
     \fancyfoot[LE,RO]{\thepage}
 abstract: Presentation du projet Jourdebord realise pour le titre professionnel Concepteur developpeur d'applications . . . 
 ...
 
-Table des matières :
-
-[à calculer]
 
 ***
 
@@ -246,6 +243,12 @@ La méthodologie Merise permet de modéliser les données utilisées par un syst
 ### Dictionnaire de données
 
 ### Modèle conceptuel de données
+
+Le modèle conceptuel de données ...
+
+![Modèle conceptuel de données](./img/mcd.png)
+
+On voit les 4 entités du modèle : Texton, qui contient le texte, Tag, qui contient les catégories, Template, pour les templates, et Author qui contient les différents utilisateurs du système, soit les auteurs et l'administrateur.
 
 ### Modèle logique de données
 
