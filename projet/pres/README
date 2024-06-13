@@ -1,3 +1,12 @@
+Pour produire les dernières versions des docs, faire :
+
+     make
+
+et regarder dans makefile pour voir comment les docs sont générés.
+
+
+un peu vieux :
+
 Pour produire le dossier projet :
 
   pandoc --toc dossier-projet.md -o dossier-projet.pdf
