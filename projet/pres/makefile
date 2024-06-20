@@ -7,7 +7,7 @@ dossier-projet.pdf: dossier-projet.md
 
 # slides présentation projet
 s5-pres.html: s5-skel.html plan-pres.txt
-	echo ./foo.pl $^ \> $@
+	./foo.pl $^ > $@
 
 # for doc on make, see:
 #   https://www.gnu.org/software/make/manual/make.html#Automatic-Variables
