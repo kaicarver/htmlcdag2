@@ -89,12 +89,12 @@ handout
 Étude concurrentielle :
   Étude concurrentielle :
     permet de définir comment se situe l'application dans l'univers de ce qui est disponible
-    Jour de bord, outil de rédaction, se situe dans un milieu concurrentiel chargé
-    je choisis 3 exemples de concurrents de Jourdebord :
+  Jourdebord, outil de rédaction, se situe dans un milieu concurrentiel chargé
+    prenons 3 exemples de concurrents de Jourdebord :
       Google Docs
       Apple Notes
       750words.com
-    tableau sur une slide avec avantages et inconvénients
+    TODO: tableau sur une slide avec avantages et inconvénients
 handout
 .
 /handout
@@ -151,7 +151,7 @@ Fonctionnalités
     moyen de prioriser les tâches à accomplir
     termes plus parlants pour communiquer avec le client
     M must :   doit être fait, important mais pas indispensable
-    S should : à faire mais app livrble même si non réalisé
+    S should : à faire mais app livrable même si non réalisé
     C could :  à faire si on a le temps
     W won't :  ne sera pas fait -- cette fois-ci
 handout
@@ -206,7 +206,7 @@ handout
 /handout
 
 Maquettage
-  permet, avant de commencer la conception et le développement,
+  Permet, avant de commencer la conception et le développement,
     de répondre aux besoins et attentes du client
     de faire des itérations rapides avant de s'engager sur un développement coûteux
     au client de savoir à quoi s'attendre
@@ -232,7 +232,7 @@ Maquettage : l'outil de maquettage
       autres développeurs
       product owner
       client
-  Lien sur la maquette :
+  <a href="https://www.figma.com/proto/P4MsqvCSgqsKuR8MMkpc7T/Belle-%3A-Vente-en-ligne?type=design&node-id=10-396&scaling=scale-down-width&page-id=10%3A383&starting-point-node-id=10%3A448" target="_blank">Lien sur la maquette</a>
     ...
 handout
 .
@@ -286,7 +286,7 @@ handout
 .
 /handout
 
-Technologies choisies
+Technologies choisies 1
   PHP - langage
   Symfony - framework backend
     à quoi sert un framework ?
@@ -294,10 +294,15 @@ Technologies choisies
       bonnes pratiques
       évite de réinventer la roue
       maintenabilité
-    Bootstrap - framework CSS donc frontend
-    MySQL - base de données relationnelle
-    outils de développement :
-      git, VS Code, shell : Bash ou Powershell, Windows et Unix
+handout
+.
+/handout
+
+Technologies choisies 2
+  Bootstrap - framework CSS donc frontend
+  MySQL - base de données relationnelle
+  outils de développement :
+    git, VS Code, shell : Bash ou Powershell, Windows et Unix
 handout
 .
 /handout
@@ -306,7 +311,7 @@ Démo
   lien vers mon appli sur mon laptop:
     <a href="http://127.0.0.1:8000/" target="_blank">Jourdebord en local</a>
   futur lien vers l'appli en ligne:
-    <a href="https://main-bvxea6i-s4litt2o4idri.eu-5.platformsh.site/en/blog/" target="_blank">Jourdebord</a>
+    <a href="http://37.187.122.182/" target="_blank">Jourdebord</a>
 handout
 .
 /handout
@@ -314,7 +319,7 @@ handout
 Conclusion / Perspectives
   Conclusions :
     j'avais deux objectifs avec ce cursus :
-      quand quelqu'un me demande : Pourrais-tu me faire un site Web ? pouvoir répondre sans hésiter : Oui !
+      quand quelqu'un me demande : <br>Pourrais-tu me faire un site Web ? <br>pouvoir répondre sans hésiter : <br>Oui !
       faire un prototype de mon idée d'application Jourdebord
     j'ai hâte d'appliquer ce que j'ai appris concrètement :
       dans le monde du travail
