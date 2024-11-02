@@ -190,7 +190,7 @@ Pour la recherche dans les notes, l’interface doit faciliter la recherche rapi
 
 Graphisme
 
-Les couleurs et les polices de caractere sont sobres, élégants, et légèrement “rétro”, de style “manuscrit”, en accord avec le principe de l’écriture. Comme c’est un outil à utilisation très personnelle, il pourrait être souhaitable de pouvoir en configurer la présentation pour qu’elle soit conforme aux préférences esthétiques de l’auteur.
+Les couleurs et les polices de caractère sont sobres, élégants, et légèrement “rétro”, de style “manuscrit”, en accord avec le principe de l’écriture. Comme c’est un outil à utilisation très personnelle, il pourrait être souhaitable de pouvoir en configurer la présentation pour qu’elle soit conforme aux préférences esthétiques de l’auteur.
 
 Performances
 
@@ -210,15 +210,23 @@ On a étudié deux méthodes de conception partiellement redondantes mais aussi 
 
 ## Merise
 
-La méthodologie Merise permet de modéliser les données utilisées par un système : leur nature et leurs relations entre elles.
+La méthodologie Merise permet de modéliser les données utilisées par un système : leur nature et leurs relations entre elles. C'est une méthode d'analyse et de conception de systèmes d'information développée en France dans les années 1970. Elle repose sur une approche structurée et modulaire, permettant de modéliser les données, les traitements et l’organisation d’un système. Merise utilise trois niveaux de représentation : le niveau conceptuel, le niveau logique et le niveau physique. Le niveau conceptuel se concentre sur l’analyse des besoins et la modélisation des données, tandis que le niveau logique traduit ces concepts en modèles plus techniques, et le niveau physique est orienté vers la mise en œuvre concrète du système sur un support informatique. Cette méthode est particulièrement efficace pour gérer la complexité des projets, car elle sépare clairement les différentes étapes de la conception.
 
 ### Règles de gestion
 
+Dans la méthodologie Merise, les règles de gestion sont des contraintes et des conditions qui régissent le fonctionnement du système d’information, en définissant comment les données doivent être manipulées et traitées. Elles traduisent les exigences métiers et sont essentielles pour garantir que le système respecte les politiques et les processus de l'organisation. Ces règles peuvent porter sur des conditions de validité des données, des calculs, des autorisations d'accès, ou encore des enchaînements de traitements. Dans Merise, les règles de gestion sont spécifiées au niveau conceptuel, et sont ensuite prises en compte lors de la modélisation logique et physique pour s'assurer que le système développé réponde fidèlement aux besoins exprimés.
+
 ### Dictionnaire de données
+
+Dans la méthodologie Merise, le dictionnaire de données est un outil de documentation qui centralise et décrit l'ensemble des données utilisées dans le système d'information. Il détaille les caractéristiques de chaque donnée (comme le type, la taille, le format, les contraintes et les règles de validation) ainsi que leur signification métier. Le dictionnaire de données facilite la communication entre les différents intervenants du projet en fournissant une référence commune et contribue à assurer la cohérence des données tout au long du cycle de développement. Il est également utile pour identifier les dépendances entre les données et les traitements dans le système, ce qui est essentiel pour la maintenance et l'évolution du système.
 
 ### Modèle conceptuel de données
 
-Le modèle conceptuel de données ...
+Le Modèle Conceptuel de Données (MCD) est une étape clé de la méthodologie Merise, qui permet de représenter de manière abstraite les données d’un système d’information ainsi que leurs relations, indépendamment des contraintes techniques de mise en œuvre. Le MCD se concentre sur les objets métier, appelés entités, et leurs relations, en définissant également les attributs des entités (propriétés des données) et les cardinalités (règles de dépendance et d’association entre entités).
+
+L’objectif du MCD est de traduire les besoins métier en un modèle de données logique et compréhensible pour tous les intervenants, tout en assurant la cohérence des informations manipulées par le système. Les entités du MCD deviennent ensuite les tables de la base de données dans le modèle physique, tandis que les relations aident à établir les liens entre ces tables. En d'autres termes, le MCD est un outil d'abstraction permettant de concevoir une base de données stable et bien structurée avant de passer aux phases de conception technique.
+
+Ci-dessous un diagramme représentant le MCD de Jourdebord.
 
 ![Modèle conceptuel de données](./img/mcd.png)
 
@@ -226,7 +234,15 @@ On voit les 4 entités du modèle : Texton, qui contient le texte, Tag, qui cont
 
 ### Modèle logique de données
 
-### Modèle physique de données ?
+Le Modèle Logique de Données (MLD) est une étape de la méthodologie Merise qui traduit le Modèle Conceptuel de Données (MCD) en une représentation plus technique, proche de la structure de la base de données. Le MLD conserve la structure des entités et des relations définies dans le MCD, mais les adapte aux contraintes d'un Système de Gestion de Bases de Données (SGBD) relationnel. Concrètement, les entités du MCD deviennent des tables, les attributs des colonnes de ces tables, et les relations se transforment en clés étrangères permettant de relier les tables entre elles.
+
+Le MLD tient compte des spécificités techniques comme le type de données (entiers, chaînes de caractères, etc.), les index, les clés primaires et étrangères, et les contraintes d’intégrité (unicité, non-nullité, etc.). Il est donc essentiel pour préparer la création physique de la base de données en s’assurant que le modèle répond aux exigences de performance, de fiabilité et de cohérence. En résumé, le MLD est un modèle de transition entre le conceptuel (MCD) et le physique (implantation réelle dans un SGBD).
+
+### Modèle physique de données
+
+Le Modèle Physique de Données (MPD) est l'étape finale de la conception d'une base de données dans la méthodologie Merise. Il représente la mise en œuvre concrète de la structure de données sur un Système de Gestion de Bases de Données (SGBD) spécifique. À partir du Modèle Logique de Données (MLD), le MPD tient compte des contraintes et particularités techniques du SGBD choisi, comme le langage SQL, les types de données disponibles, l'organisation du stockage et les options de performance.
+
+Dans le MPD, les tables, colonnes, clés primaires et étrangères du MLD sont traduites en instructions de création de tables et d'index dans le langage du SGBD. On y définit aussi des éléments techniques comme les index (pour optimiser les recherches), les contraintes (pour assurer l’intégrité des données), et la gestion des espaces de stockage. Le MPD est donc la dernière étape avant l'implémentation et sert de plan de construction pour la base de données elle-même, en transformant la conception théorique en une structure prête à l’emploi dans l'environnement informatique réel.
 
 ## UML
 
