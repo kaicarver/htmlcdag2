@@ -208,6 +208,26 @@ C’est dans la phase d’analyse et de conception qu’on fait les choix qui af
 
 On a étudié deux méthodes de conception partiellement redondantes mais aussi relativement complémentaires, Merise et UML. Donc je présente ici l’application de ces deux méthodes et leurs diagrammes associés.
 
+## Merise
+
+La méthodologie Merise permet de modéliser les données utilisées par un système : leur nature et leurs relations entre elles.
+
+### Règles de gestion
+
+### Dictionnaire de données
+
+### Modèle conceptuel de données
+
+Le modèle conceptuel de données ...
+
+![Modèle conceptuel de données](./img/mcd.png)
+
+On voit les 4 entités du modèle : Texton, qui contient le texte, Tag, qui contient les catégories, Template, pour les templates, et Author qui contient les différents utilisateurs du système, soit les auteurs et l'administrateur.
+
+### Modèle logique de données
+
+### Modèle physique de données ?
+
 ## UML
 
 UML, le Unified Modeling Language, est le nom d’un type de modélisation objet qui est l’aboutissement de plusieurs efforts de rationaliser la modélisation objet.
@@ -233,26 +253,6 @@ L’administrateur gère le site et répond aux problèmes éventuels.
 ### UML : Diagramme de séquence
 
 ### UML : Diagramme de classes
-
-## Merise
-
-La méthodologie Merise permet de modéliser les données utilisées par un système : leur nature et leurs relations entre elles.
-
-### Règles de gestion
-
-### Dictionnaire de données
-
-### Modèle conceptuel de données
-
-Le modèle conceptuel de données ...
-
-![Modèle conceptuel de données](./img/mcd.png)
-
-On voit les 4 entités du modèle : Texton, qui contient le texte, Tag, qui contient les catégories, Template, pour les templates, et Author qui contient les différents utilisateurs du système, soit les auteurs et l'administrateur.
-
-### Modèle logique de données
-
-### Modèle physique de données ?
 
 # Mise en œuvre
 
