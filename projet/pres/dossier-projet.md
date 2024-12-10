@@ -210,7 +210,9 @@ On a étudié deux méthodes de conception partiellement redondantes mais aussi 
 
 ## Merise
 
-La méthodologie Merise permet de modéliser les données utilisées par un système : leur nature et leurs relations entre elles. C'est une méthode d'analyse et de conception de systèmes d'information développée en France dans les années 1970. Elle repose sur une approche structurée et modulaire, permettant de modéliser les données, les traitements et l’organisation d’un système. Merise utilise trois niveaux de représentation : le niveau conceptuel, le niveau logique et le niveau physique. Le niveau conceptuel se concentre sur l’analyse des besoins et la modélisation des données, tandis que le niveau logique traduit ces concepts en modèles plus techniques, et le niveau physique est orienté vers la mise en œuvre concrète du système sur un support informatique. Cette méthode est particulièrement efficace pour gérer la complexité des projets, car elle sépare clairement les différentes étapes de la conception.
+La méthodologie Merise est une méthode d'analyse et de conception de systèmes d'information. Elle repose sur une approche structurée et modulaire, permettant de modéliser les données, les traitements et l’organisation d’un système. Merise utilise trois niveaux de représentation : le niveau conceptuel, le niveau logique et le niveau physique. Le niveau conceptuel se concentre sur l’analyse des besoins et la modélisation des données, tandis que le niveau logique traduit ces concepts en modèles plus techniques, et le niveau physique est orienté vers la mise en œuvre concrète du système sur un support informatique. Cette méthode est particulièrement efficace pour gérer la complexité des projets, car elle sépare clairement les différentes étapes de la conception.
+
+Merise permet de modéliser les données utilisées par un système : leur nature et leurs relations entre elles. 
 
 ### Règles de gestion
 
