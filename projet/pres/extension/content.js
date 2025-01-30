@@ -5,7 +5,7 @@ document.addEventListener('input', function(event) {
     const cursorPosition = activeElement.selectionStart;
     const trigger = ':t ';
     if (value.substring(cursorPosition - trigger.length, cursorPosition) === trigger) {
-      const time = new Date().toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
+      const time = new Date().toLocaleTimeString([], {hour: 'numeric', minute: '2-digit'}) + ' ';
       const newValue = value.substring(0, cursorPosition - trigger.length) + time + value.substring(cursorPosition);
       activeElement.value = newValue;
       activeElement.selectionStart = activeElement.selectionEnd = cursorPosition - trigger.length + time.length;
