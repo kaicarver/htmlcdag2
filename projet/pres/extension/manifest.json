@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Time Inserter",
   "version": "1.0",
-  "description": "Inserts the current time when typing ':t '",
+  "description": "Inserts the current time when typing ':t ' in any text field. Used by Kai for Jourdebord / Mitra.",
   "permissions": ["activeTab", "scripting"],
   "background": {
     "service_worker": "background.js"
