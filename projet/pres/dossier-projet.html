@@ -4,16 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dossier projet</title>
+    <style>
+        .toggle-div {
+            display: none;
+            background-color: lightblue;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        .clickable-div {
+            cursor: pointer;
+            background-color: lightcoral;
+        }
+
+        .clickable-div:hover {
+            background-color: crimson;
+        }
+    </style>
 </head>
 <body>
     <h1>Dossier projet</h1>
     <h2>Présentation du projet Jourdebord</h2>
     <ul>
         <li>Intro</li>
-        <li>expression des besoins, cahier des charges</li>
+        <li class="clickable-div" id="clickDiv">expression des besoins, cahier des charges</li>
+        <p class="toggle-div" id="toggleDiv">expression des besoins, blab bla. cahier des charges, bla bla.</p>
         <li>conception détaillée</li>
         <li>réalisation, mise en prod, tests, démo</li>
         <li>Conclusion</li>
     </ul>
+    <script>
+        // Select the clickable div and the toggle div
+        const clickDiv = document.getElementById('clickDiv');
+        const toggleDiv = document.getElementById('toggleDiv');
+
+        // Add a click event listener to the clickable div
+        clickDiv.addEventListener('click', () => {
+            // Toggle the display property of the toggle div
+            if (toggleDiv.style.display === 'none' || toggleDiv.style.display === '') {
+                toggleDiv.style.display = 'block';
+            } else {
+                toggleDiv.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
