@@ -17,7 +17,7 @@ abstract: Présentation du projet Jourdebord réalisé pour le titre professionn
 
 Ce document décrit l’ensemble du travail que j’ai réalisé pendant la formation de Concepteur développeur d’applications pour produire l’application JourDeBord, une application pour l’écriture et la prise de notes.
 
-La conception et le développement de l’application ont suivi le chemin traité dans notre cours, partant d’une idée et d’une expression de besoins prenant la forme d’un cahier des charges rudimentaire, passant par une réponse sous la forme de spécification fonctionnelle, maquettage, modélisation via deux méthodologies différentes, choix de technologies, développement logiciel, tests, et mise en production, le tout dans le cadre d’une gestion de projet.
+La conception et le développement de l’application ont suivi le chemin traité dans notre cours, partant d’une idée et d’une expression de besoins prenant la forme d’un cahier des charges rudimentaire, passant par une réponse sous la forme de spécification fonctionnelle, puis de maquettage, modélisation via deux méthodologies différentes, choix de technologies, développement logiciel, tests, et mise en production, le tout dans le cadre d’une gestion de projet.
 
 # Présentation du projet / Expression des besoins
 
