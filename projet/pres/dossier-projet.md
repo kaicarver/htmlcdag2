@@ -77,7 +77,14 @@ Avantages : rapide et facile de prendre des notes, recherche et catégorisation 
 
 Désavantages : encore en phase de développement et de tests, fonctionnalités non encore implémentées, pas de business model
 
-[afficher tableau comparatif des 4 applis]
+### Tableau comparatif
+
+| Appli    | Avantages                              | Inconvénients                             | Commentaires                       |
+|-----------------|----------------------------------------|-------------------------------------------|------------------------------------|
+| Google Docs     | gratuit, en réseau, mise en page       | pas orienté recherche de texte, un peu lourd à utiliser pour prendre des notes |                                    |
+| Apple Notes     | disponible sur son téléphone, prise de notes rapides, graphiques et mise en page | peu disponible hors plateforme Apple, pas orienté recherche de texte |                                    |
+| 750words    | simplicité, suivi des statistiques, gamification | pas de recherche facile, pas de manière d’organiser ses notes autre que chronologique |                                    |
+| Jourdebord      | rapide et facile de prendre des notes, recherche et catégorisation des notes | encore en phase de développement et de tests, fonctionnalités non encore implémentées, pas de business model |                                    |
 
 # Conduite de projet
 
