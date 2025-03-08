@@ -1,53 +1,36 @@
-0 présentation projet full stack
 
-0.5 installer et configurer environnement de travail en fonction du projet
 
-1 HTML/CSS : bases et avancé
+1  présentation projet full stack
+2  installer et configurer environnement de travail en fonction du projet
+3  HTML/CSS : bases et avancé
+4  conception des applications Web : Merise, UML
+5  JavaScript client : bases, jQuery, jQuery UI, plugins
+6  JavaScript serveur : Node.js, framework Express.js
+7  NoSQL : MongoDB
+8  JavaScript client : React
+9  PHP sur serveur
+10 SQL : MySQL (via WampServer), interaction avec PHP
+11 concevoir et mettre en place une base de données relationnelle
+12 développer des composants d'accès de données SQL et NoSQL
+13 responsive design et Bootstrap
+14 prototypages UX/UI, design
+15 analyse de besoins, maquettage application
+16 interfaces utilisateur
+17 gestion de versions décentralisée : git
+18 atelier CV
+19 Devops, mise en production (Docker ? Kubernetes ?)
+20 veille technique et concurrentielle sur Internet
+21 architecture de l'information, ergonomie, livrables, UI/UX, tendances du design
+22 architecture logicielle d'une application
+23 contribuer à la gestion de projet informatique
+24 gestion de projet : Agile et Scrum, WBS, planning, budgetisation
+25 PHP avancé, programmation orientée objet
+26 framework Symfony
+27 cybersécurité, cryptographie, sécurité application Web
 
-2 conception des applications Web : Merise, UML
 
-3 JavaScript client : bases, jQuery, jQuery UI, plugins
+Le titulaire du titre sera capable de :
 
-3.5 JavaScript serveur : Node.js, framework Express.js
-
-4 NoSQL : MongoDB
-
-5 JavaScript client : React
-
-6 PHP sur serveur
-
-7 SQL : MySQL (via WampServer), interaction avec PHP
-
-7.5 concevoir et mettre en place une base de données relationnelle
-
-7.7 développer des composants d'accès de données SQL et NoSQL
-
-10 responsive design et Bootstrap
-
-11 prototypages UX/UI, design
-
-11.5 analyse de besoins, maquettage application
-
-11.7 interfaces utilisateur
-
-12 gestion de versions décentralisée : git
-
-13 atelier CV
-
-14 Devops, mise en production (Docker ? Kubernetes ?)
-
-15 veille technique et concurrentielle sur Internet
-
-16 architecture de l'information, ergonomie, livrables, UI/UX, tendances du design
-
-16.5 architecture logicielle d'une application
-
-17.5 contribuer à la gestion de projet informatique
-
-18 gestion de projet : Agile et Scrum, WBS, planning, budgetisation
-
-19 PHP avancé, programmation orientée objet
-
-20 framework Symfony
-
-21 cybersécurité, cryptographie, sécurité application Web
+1 développer une application sécurisée
+2 concevoir et développer une application sécurisée organisée en couches
+3 préparer le déploiement d'une application sécurisée
