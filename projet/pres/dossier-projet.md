@@ -171,17 +171,19 @@ Elle utilise des termes parlants pour communiquer avec le client :
 
 ### Spécifications Could have : 
 
-Nuages de mots
-Localisation : interface de l'application en autre chose que français
-L'admin ne doit pas pouvoir lire les textes des autres !
+- Nuages de mots
+- Localisation : interface de l'application en autre chose que français
+- L'admin ne doit pas pouvoir lire les textes des autres !
 
 ### Spécifications Won’t have : 
 
-Attribution automatique de catégories
-Création automatisée de templates
-Badges et gamification :
-badge vous avez écrit 1000 mots, vous avez commencé à écrire tôt, vous avez écrit tous les jours depuis 1 semaine, ...
-...
+- Attribution automatique de catégories
+- Création automatisée de templates
+- Badges et gamification :
+    - badge vous avez écrit 1000 mots, 
+    - vous avez commencé à écrire tôt, 
+    - vous avez écrit tous les jours depuis 1 semaine, ...
+    - ...
 
 ## Spécifications non fonctionnelles ou contraintes de qualité
 
