@@ -139,35 +139,35 @@ On fait la liste des fonctionnalités à réaliser, en les priorisant, car il y 
 La méthode MoSCoW est un moyen de prioriser les tâches à accomplir.
 Elle utilise des termes parlants pour communiquer avec le client : 
 
-M must : doit être fait, important mais pas indispensable
-S should : à faire mais app livrable même si non réalisé
-C could : à faire si on a le temps
-W won't : ne sera pas fait -- cette fois-ci
+- M must : doit être fait, important mais pas indispensable
+- S should : à faire mais app livrable même si non réalisé
+- C could : à faire si on a le temps
+- W won't : ne sera pas fait -- cette fois-ci
 
 ### Spécifications Must have :
 
-Authentification, inscription, login, logout
-Textes: création, consultation, mise à jour, suppression (CRUD)
-Tags : CRUD
+- Authentification, inscription, login, logout
+- Textes: création, consultation, mise à jour, suppression (CRUD)
+- Tags : CRUD
 
-Recherche de texte :
-recherche par date, par mot ou phrase
-tous les textes, textes d’une certaine date
-résultats ordonnés par date de création, date de dernière mise à jour
+- Recherche de texte :
+  - recherche par date, par mot ou phrase
+  - tous les textes, textes d’une certaine date
+  - résultats ordonnés par date de création, date de dernière mise à jour
 
 ### Spécifications Should have :
 
-Affichages de texte :
-afficher le texte par heure, jour, semaine, mois, total
-afficher texte complet, fragment de texte
+- Affichages de texte :
+  - afficher le texte par heure, jour, semaine, mois, total
+  - afficher texte complet, fragment de texte
 
-Templates : CRUD
+- Templates : CRUD
 
-Partage de texte : rendre un texte public avec une URL
+- Partage de texte : rendre un texte public avec une URL
 
-Statistiques de texte :
-nombre de mots par jour, semaine, mois, total
-mots les plus utilisés
+- Statistiques de texte :
+  - nombre de mots par jour, semaine, mois, total
+  - mots les plus utilisés
 
 ### Spécifications Could have : 
 
