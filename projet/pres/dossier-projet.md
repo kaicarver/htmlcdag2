@@ -277,9 +277,9 @@ Son avantage principal par rapport à Merise est de ne pas séparer données et 
 
 On peut commencer par identifier les acteurs au sens UML.
 
-Les acteurs sont des personnes (ou éventuellement entités non humaines) qui interagissent avec le système modélisé. 
+Les acteurs sont des personnes (ou éventuellement entités non humaines, comme des systèmes externes) qui interagissent avec le système modélisé. 
 
-Il y a trois types d’acteur : l’internaute, l’auteur et l’administrateur.
+Dans Jourdebord, il y a trois types d’acteur : l’internaute, l’auteur et l’administrateur.
 
 L’internaute est toute personne visitant le site sans s’être inscrit. C’est un auteur potentiel qui pourra utiliser le site pour s’informer sur l’appli et décider de s’inscrire.
 
@@ -288,6 +288,32 @@ L’auteur est la personne à laquelle l’appli est destinée. Une fois inscrit
 L’administrateur gère le site et répond aux problèmes éventuels.
 
 ### UML : Diagramme des cas d’utilisation
+
+TODO : rendre plus général, sans mentionner détail des noms d'objets ? Et c'est quoi un Measure au fait ?
+
+#### Authentification du User
+
+Le User saisit login et mot de passe. Si ces informations sont correctes, le User a accès aux fonctionnalités du système. Sinon, le système lui demande de saisir des informations correctes. Le User peut demander une aide pour se connecter, qui lui est envoyée à son adresse email.
+
+
+#### Le User crée et rédige un TextFragment dans une ou plusieurs Category spécifique(s).
+
+Pendant la rédaction du texte, les Template en rapport avec la ou les Category sont affichés disponibles, et les Measure en rapport avec la ou les Category sont affichés.
+
+
+#### Le User fait une recherche dans les TextFragment par date ou par pattern.
+
+Les TextFragment sont affichés de plusieurs manières : compact, plein texte, pour mise à jour, ou pour affichage (impression ou visualisation en ligne partagée ou non).
+
+
+#### Le User fait une mise à jour d'un TextFragment.
+
+La mise à jour peut se faire de la même manière que le User fait la rédaction du texte lors de la création. Les différentes versions du TextFragment sont préservées avec leur date de dernière modification.
+
+
+#### Le User fait une suppression d'un TextFragment.
+
+La suppression se fait après confirmation. Une fois supprimé, le TextFragment n'apparaît plus dans les recherches par date et par pattern. On pourra, pendant un certain temps, récupérer les TextFragment supprimés en les cherchant dans une "corbeille".
 
 ### UML : Diagramme de séquence
 
