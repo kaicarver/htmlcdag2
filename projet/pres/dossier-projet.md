@@ -187,9 +187,9 @@ Elle utilise des termes parlants pour communiquer avec le client :
 
 ## Spécifications non fonctionnelles ou contraintes de qualité
 
-Qualité de l’interface
+### Qualité de l’interface
 
-Ergonomie
+#### Ergonomie
 
 La mise en page du site pour son utilisation au jour le jour doit satisfaire deux critères ergonomiques, selon le type d’utilisation : 
 
@@ -197,19 +197,31 @@ Pour la prise de notes, l’interface du site doit quasiment disparaître pour l
 
 Pour la recherche dans les notes, l’interface doit faciliter la recherche rapide selon un vaste nombre de critères
 
-Graphisme
+#### Graphisme
 
-Les couleurs et les polices de caractère sont sobres, élégants, et légèrement “rétro”, de style “manuscrit”, en accord avec le principe de l’écriture. Comme c’est un outil à utilisation très personnelle, il pourrait être souhaitable de pouvoir en configurer la présentation pour qu’elle soit conforme aux préférences esthétiques de l’auteur.
+Les couleurs et les polices de caractère sont sobres, élégants, et légèrement “rétro”, de style “manuscrit”, en accord avec le principe de l’écriture.
 
-Performances
+Comme c’est un outil à utilisation très personnelle, il pourrait être souhaitable de pouvoir en configurer la présentation pour qu’elle soit conforme aux préférences esthétiques de l’auteur.
 
-L’application doit être disponible à tout moment, avec un temps de réponse instantané, ne pas avoir de ralentissements, et doit pouvoir fonctionner hors ligne, sans connection Internet. Les éventuels conflits dans les données doivent être traités. L’intégrité des données textuelles doit être préservée, et il ne faut jamais risquer perdre des données.
+### Performances
 
-Sécurité
+L’application doit être disponible à tout moment, avec un temps de réponse instantané, ne pas avoir de ralentissements, et doit pouvoir fonctionner hors ligne, sans connection Internet. 
 
-Les données textuelles de chaque utilisateur doivent n’être visibles que par cet utilisateur, et personne d’autre. Idéalement, même l’administrateur de l’application ne devrait pas pouvoir lire les données des utilisateurs. 
+Les éventuels conflits dans les données doivent être traités. 
 
-Le site et ses données doivent être protégées contre toute attaque. Le site de l’application doit appliquer toutes les bonnes pratiques pour être protégé contre les hackers : sécurité des mots de passe, etc. Même en cas de pénétration, les données doivent être inaccessibles à tout agent malveillant.
+L’intégrité des données textuelles doit être préservée, et il ne faut jamais risquer de perdre des données.
+
+### Sécurité
+
+Les données textuelles de chaque utilisateur doivent n’être visibles que par cet utilisateur, et personne d’autre.
+
+Idéalement, même l’administrateur de l’application ne devrait pas pouvoir lire les données des utilisateurs.
+
+Le site et ses données doivent être protégés contre toute attaque. 
+
+Le site de l’application doit appliquer toutes les bonnes pratiques pour être protégé contre les hackers : sécurité des mots de passe, etc. 
+
+Même en cas de pénétration, les données doivent être inaccessibles à tout agent malveillant.
 
 # Analyse et conception
 
