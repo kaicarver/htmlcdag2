@@ -25,7 +25,7 @@ Jourdebord est une application de prises de notes inspirée entre autres du jour
 
 ## Contexte du projet
 
-Nos vies contiennent plein d’événements dont nous pouvons vouloir garder la trace. Garder une trace de ces événements permet de se souvenir et de prévoir.
+Nos vies contiennent beaucoup d’événements dont nous pouvons vouloir garder la trace. Garder une trace de ces événements permet de se souvenir et de prévoir.
 
 Nous utilisons divers outils électroniques ou non pour gérer nos vies, en garder des traces, et prévoir. Appareil à photo, agenda, calepin, etc. Nous avons aussi des messageries et des réseaux sociaux où nous publions des informations parfois publiques et parfois restreintes à certains publics proches. Et il peut arriver de faire des notes personnelles, par exemple dans le contexte de son occupation professionnelle ou lors d’un voyage.
 
@@ -33,11 +33,13 @@ Jourdebord ambitionne d’être un outil de prise de notes textuelles qui répon
 
 ## Objectifs de l’outil
 
-Facile et rapide à utiliser : rend possible de prendre une note de manière quasi instantanée sur tous types d’appareils allant de l’ordinateur de bureau au téléphone portable.
+Facile et rapide à utiliser : Jourdebord doit rendre possible de prendre une note de manière quasi instantanée sur tous types d’appareils allant de l’ordinateur de bureau au téléphone portable.
 
-Sécurisé et confidentiel : garantit pour chaque utilisateur la confidentialité et la sécurité des données qu’il ou elle enregistre dans l’application.
+Sécurisé et confidentiel : Jourdebord garantit à son utilisateur la confidentialité et la sécurité des données qu’il ou elle enregistre dans l’application.
 
-Recherche facile : permet de facilement retrouver des informations, présentées de manière pratique et lisible.
+Recherche facile : Jourdebord permet de facilement et rapidement retrouver les informations qui lui sont confiées, présentées de manière pratique et lisible.
+
+Intégrable avec d'autres applications : Jourdebord peut intégrer un événement enregistré par une autre application, comme par exemple un voyage guidé par un logiciel de navigation, une invitation par message, ou l'utilisation d'un appareil connecté.
 
 ## Étude de l’existant
 
