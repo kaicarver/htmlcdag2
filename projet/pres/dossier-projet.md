@@ -21,7 +21,7 @@ La conception et le développement de l’application ont suivi le chemin trait�
 
 # Présentation du projet / Expression des besoins
 
-Jourdebord est une application de prises de notes inspirée du journal de bord tenu par un capitaine de navire. 
+Jourdebord est une application de prises de notes inspirée entre autres du journal de bord tenu par un capitaine de navire ou de vaisseau spatial.
 
 ## Contexte du projet
 
