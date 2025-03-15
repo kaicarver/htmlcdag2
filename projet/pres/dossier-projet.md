@@ -343,15 +343,45 @@ La suppression se fait après confirmation. Une fois supprimé, le TextFragment 
 
 # Conclusion
 
-La conclusion...
+## Objectifs
 
+J'avais trois objectifs avec ce cursus :
 
+## 1. Savoir répondre à une question fréquente
 
+Quand quelqu'un me demande :
 
+> Pourrais-tu me faire un site Web ?
 
+pouvoir répondre sans hésiter : Oui !
 
+C'est une question fréquente. J'ai déjà, par le passé, contribué à réaliser des sites Web professionnellement, en collaboration avec d'autres et en travaillant dans une société qui m'employait comme salarié.
 
+Mais grâce à ce cursus, j'ai plus de confiance sur comment répondre à cette question de manière professionnelle. Je pense maintenant être capable de m'engager personnellement et indépendamment sur un résultat chiffrable au niveau de la conception, de la technique, et des délais.
 
+## 2. Faire un prototype de mon idée d'application
 
+Ce prototype Jourdebord, je suis heureux d'en disposer de manière fiable pour ma propre utilisation, en remplacement des outils que j'utilisais précédemment, dont certains sont mentionnés dans la section ci-dessus, ["Étude de l'existant"](#Étude de l’existant)
 
+J'aimerais aussi pouvoir partager cet outil avec des proches, que cela pourrait intéresser à différents titres. C'est un outil qui, espérons-le, pourrait leur être utile. Ce serait également une forme de bêta-test pour un outil qui n'a encore véritablement été testé que par moi-même.
+
+Enfin, dans un avenir légèrement plus lointain, une fois l'appli éprouvée avec succès par quelques volontaires bienveillants, pourquoi ne pas mettre l'appli à disposition d'un plus large public ? Ceci dans un cadre à définir, avec une solution réaliste de financement durable.
+
+## 3. Obtenir un diplôme en informatique
+
+Je souhaiterais pouvoir justifier de mes compétences, pas juste par mon expérience professionnelle d'autodidacte, mais aussi au niveau académique.
+
+Et si l'occasion se présentait, pouvoir éventuellement poursuivre plus loin mes études en informatique.
+
+Un diplôme me permettrait aussi d'envisager de partager mes connaissances en les enseignant.
+
+## En somme
+
+J'espère avoir modestement réussi à accomplir tous ces objectifs ambitieux.
+
+Et en résumé, j'ai hâte d'appliquer ce que j'ai appris concrètement
+
+* dans le monde du travail,
+
+* et sur mon projet Jourdebord.
 
