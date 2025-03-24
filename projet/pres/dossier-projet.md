@@ -331,7 +331,11 @@ Ci-dessous le diagramme de cas d'utilisation. TODO: mettre le bon diagramme !
 
 ### UML : Diagramme de séquence
 
-Le diagramme de séquence ajoute une dimension temporelle et dynamiqu au cas d'utilisation.
+Le diagramme de séquence ajoute une dimension temporelle et dynamique au cas d'utilisation.
+
+Ci-dessous un diagramme de séquence pour Jourdebord.
+
+![Diagramme de séquence](./img/dseq.png)
 
 ### UML : Diagramme de classes
 
