@@ -291,9 +291,17 @@ L’administrateur gère le site et répond aux problèmes éventuels.
 
 ### UML : Diagramme des cas d’utilisation
 
-TODO : rendre plus général, sans mentionner détail des noms d'objets ? Et c'est quoi un Measure au fait ?
+Le diagramme de cas d'utilisation représente les interactions entre les acteurs et le système, ce qui en détaille les fonctionnalités.
 
-#### Authentification du User
+Les cas d'utilisation servent à décrire ce que le système doit faire sans entrer dans le détail de comment le système le fait. En phase de conception du projet, il identifie les besoins fonctionnels et permet la communication entre les différentes personnes qui participent à la conception : client, concepteur, designer.
+
+Avant de faire le diagramme, on peut décrire les cas d'utilisation de manière textuelle.
+
+Nous listons ici 5 cas d'utilisation pour Jourdebord, définissant les quelques fonctionnalités principales et essentielles de l'application.
+
+TODO : rendre les descriptions plus générales, sans mentionner détail des noms d'objets. Et c'est quoi un Measure au fait ?
+
+#### Authentification du User.
 
 Le User saisit login et mot de passe. Si ces informations sont correctes, le User a accès aux fonctionnalités du système. Sinon, le système lui demande de saisir des informations correctes. Le User peut demander une aide pour se connecter, qui lui est envoyée à son adresse email.
 
@@ -317,7 +325,13 @@ La mise à jour peut se faire de la même manière que le User fait la rédactio
 
 La suppression se fait après confirmation. Une fois supprimé, le TextFragment n'apparaît plus dans les recherches par date et par pattern. On pourra, pendant un certain temps, récupérer les TextFragment supprimés en les cherchant dans une "corbeille".
 
+Ci-dessous le diagramme de cas d'utilisation. TODO: mettre le bon diagramme !
+
+![Modèle conceptuel de données](./img/mcd.png)
+
 ### UML : Diagramme de séquence
+
+Le diagramme de séquence ajoute une dimension temporelle et dynamiqu au cas d'utilisation.
 
 ### UML : Diagramme de classes
 
