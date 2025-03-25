@@ -333,6 +333,20 @@ Ci-dessous le diagramme de cas d'utilisation. TODO: mettre le bon diagramme !
 
 Le diagramme de séquence ajoute une dimension temporelle et dynamique au cas d'utilisation.
 
+En complement au "quoi" des cas d'utilisation, le diagramme de sequence montre “comment” les éléments du système collaborent pour réaliser un cas d’utilisation, en détaillant l’ordre des messages ou des appels.
+
+Comme dans le diagramme de cas d’utilisation, les acteurs sont souvent a l'origine des interactions.
+
+L’axe vertical du diagramme représente la progression chronologique, du haut vers le bas.
+
+Les elements du systeme, acteurs ou objets, sont représentés par des rectangles verticaux, avec une ligne de vie montrant leur existence dans le temps.
+
+Des flèches horizontales entre les lignes verticales représentent les échanges entre les acteurs et les eleemnts du systeme. Ces echanges peuvent etre sous la forme d'appels de méthodes ou de réponses. Ils peuvent être synchrones (attente de réponse) ou asynchrones.
+
+Des barres fines sur les lignes de vie, montrent quand un objet est actif ou traite une demande.
+
+Ce diagramme sert a analyser les cas d'utilisation, valider la logique des interactions et faciliter la conception technique.
+
 Ci-dessous un diagramme de séquence pour Jourdebord.
 
 ![Diagramme de séquence](./img/dseq.png)
