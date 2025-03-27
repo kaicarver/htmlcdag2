@@ -349,7 +349,7 @@ Ce diagramme sert a analyser les cas d'utilisation, valider la logique des inter
 
 Ci-dessous un diagramme de séquence pour Jourdebord.
 
-![Diagramme de séquence](./img/dseq.png)
+![Diagramme de séquence TODO: mettre à jour](./img/dseq.png)
 
 ### UML : Diagramme de classes
 
