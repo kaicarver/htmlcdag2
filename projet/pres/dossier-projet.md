@@ -357,7 +357,23 @@ Ci-dessous un diagramme de séquence pour Jourdebord.
 
 ## Définition de l’architecture utilisée
 
-## Outils et frameworks utilisées
+Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page.
+
+Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page.
+
+Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page.
+
+Etc...
+
+## Outils et frameworks utilisés
+
+Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page.
+
+Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page.
+
+Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page.
+
+Et allez encore un chouïa.
 
 ## Interfaces de l’application 
 
