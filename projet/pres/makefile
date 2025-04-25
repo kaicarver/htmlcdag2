@@ -7,6 +7,7 @@ all: dossier-projet.pdf dossier-projet.html s5-pres.html
 # dossier projet
 dossier-projet.pdf: dossier-projet.md
 	pandoc --toc $? -o $@
+	./countpages.sh > countpages.`date +"%Y-%m-%d-%I-%p"`.out
 
 dossier-projet.html: dossier-projet.md
 	pandoc --toc $? -o $@
