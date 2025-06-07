@@ -15,9 +15,11 @@ abstract: Présentation du projet Jourdebord réalisé pour le titre professionn
 
 # Introduction
 
-Ce document décrit l’ensemble du travail que j’ai réalisé pendant la formation de Concepteur développeur d’applications pour produire l’application JourDeBord, une application pour l’écriture et la prise de notes.
+Ce document décrit l’ensemble du travail que j’ai réalisé pendant la formation de Concepteur développeur d’applications pour produire l’application Jourdebord, une application pour l’écriture et la prise de notes.
 
-La conception et le développement de l’application ont suivi le chemin traité dans notre cours, partant d’une idée et d’une expression de besoins prenant la forme d’un cahier des charges rudimentaire, passant par une réponse sous la forme de spécification fonctionnelle, puis de maquettage, modélisation via deux méthodologies différentes, choix de technologies, développement logiciel, tests, et mise en production, le tout dans le cadre d’une gestion de projet.
+La conception et le développement de l’application ont suivi le chemin traité dans notre cours, un parcours itératif commençant avec une idée et une expression de besoins sous forme de cahier des charges rudimentaire, passant par une réponse sous la forme de spécification fonctionnelle, puis de maquettage, ensuite de modélisation via deux méthodologies différentes, puis un choix d'architecture et de technologies, du développement logiciel, des tests, et la mise en production, le tout dans le cadre d’une gestion de projet.
+
+Tout au long de ce document, on présente deux choses en parallèle : la théorie générale de la conception et du développent d'applications enseignée pendant le cours, et son application spécifique pour la réalisation de l'application Jourdebord.
 
 # Présentation du projet / Expression des besoins
 
@@ -355,39 +357,43 @@ Ci-dessous un diagramme de séquence pour Jourdebord.
 
 # Mise en œuvre
 
+[à remplir]
+
 ## Définition de l’architecture utilisée
 
-Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page.
-
-Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page.
-
-Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page. Je dois écrire une page.
-
-Etc...
+[à remplir]
 
 ## Outils et frameworks utilisés
 
-Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page.
+[à remplir]
 
-Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page.
+## Interfaces de l’application
 
-Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page. Je continue, je dois écrire une page.
-
-Et allez encore un chouïa.
-
-## Interfaces de l’application 
+[à remplir, et je dois essayer de déterminer ce que ça veut dire ça...]
 
 # Veille technique et vulnérabilités
 
+[à remplir]
+
 ## Veille marketing
+
+[à remplir]
 
 ## Vulnérabilités de sécurité
 
+[à remplir]
+
 # Veille technologique / Recherche anglophone
+
+[à remplir ou à supprimer ce chapitre ?]
 
 ## Explication de la recherche
 
-## Traduction de la recherche 
+[à remplir]
+
+## Traduction de la recherche
+
+[à remplir]
 
 # Conclusion
 
