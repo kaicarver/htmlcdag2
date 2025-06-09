@@ -95,7 +95,7 @@ Page Web de l'école décrivant la formation :
 
 > https://lagrandeclasse.fr/concepteur-developpeur-dapplication/
 
-# Idée, contexte, objectifs, existant
+# Idée, contexte, objectifs, existant, cible
 
 ## L'idée
 
@@ -172,71 +172,15 @@ Désavantages : encore en phase de développement et de tests, fonctionnalités 
 | 750words    | simplicité, suivi des statistiques, gamification | pas de recherche facile, pas de manière d’organiser ses notes autre que chronologique |                                    |
 | Jourdebord      | rapide et facile de prendre des notes, recherche et catégorisation des notes | encore en phase de développement et de tests, fonctionnalités non encore implémentées, pas de business model |                                    |
 
-# Conduite de projet
+## Cible
 
-La conception et le développement du projet s’est faite en 3 parties : 
+L'application cible deux types de personnes : 
 
-Pré-étude : 
+1. Les personnes qui veulent garder une trace de leurs activités.
 
-Détermination du cahier des charges, identification des besoins, étude concurrentielle de l’existant.
+2. Les personnes qui souhaitent écrire.
 
-Conception de l’application : 
-
-Spécification des fonctionnalités et contraintes de qualité (spécifications dites “non fonctionnelles”), maquettage, modélisation UML et Merise.
-
-Développement de l’application : 
-
-Choix des technologies et outils de développement, développement, tests, mise en production.
-
-Work Breakdown Structure
-
-Permet de diviser les tâches à faire sur plusieurs niveaux.
-
-Le work breakdown structure (WBS), aussi appelé organigramme des tâches du projet décompose un projet en une hiérarchie des travaux nécessaires pour le réaliser.
-
-https://fr.wikipedia.org/wiki/Organigramme_des_t%C3%A2ches_du_projet
-
-Planification Gantt
-
-Un diagramme de Gantt permet d’avoir une vue d’ensemble de toutes les tâches de la conception et du développement de l’application, du temps prévu pour chacune des tâches, et des interdépendances entre ces tâches. Il donne à tous les participants (client, product owner, chef de projet, développeurs) une visibilité sur la progression du projet,
-
-Il peut être complété par un diagramme de PERT pour clarifier les dépendances entre les différentes tâches et les points critiques du projet.
-
-[diagramme de Gantt de Jourdebord]
-
-Méthodologie Agile
-
-L'utilisation d’une méthode dite Agile permet de réaliser le projet avec une visibilité pour tous les participants et une réactivité au cours du projet.
-
-# Maquettage
-
-Le maquettage permet de visualiser la conception et les fonctionnalités de l’application avant de la développer. C’est un outil de communication entre les différents participants du projet : le client, le product owner, le chef de projet, le designer et les développeurs.
-
-Avec l’outil Figma, j’ai réalisé le zoning, les wireframes, la charte graphique (couleurs et polices), les maquettes de pages et un prototype montrant les transitions entre pages.
-
-## Zoning
-
-[ràf]
-
-## Wireframes
-
-[ràf]
-
-## Charte graphique
-
-Effet désiré : outil d'écriture (style ancien ou moderne ou les deux ?), couleurs, polices, ...
-
-[ràf]
-
-## Maquettes de pages
-
-[ràf]
-
-## Prototype avec transitions entre pages
-
-[ràf]
-
-# Étude fonctionnelle
+# Étude fonctionnelle et non fonctionnelle
 
 On veut spécifier les fonctionnalités et les contraintes de qualité que doit satisfaire l’application.
 
@@ -330,6 +274,34 @@ Le site et ses données doivent être protégés contre toute attaque.
 Le site de l’application doit appliquer toutes les bonnes pratiques pour être protégé contre les hackers : sécurité des mots de passe, etc. 
 
 Même en cas de pénétration, les données doivent être inaccessibles à tout agent malveillant.
+
+# Maquettage
+
+Le maquettage permet de visualiser la conception et les fonctionnalités de l’application avant de la développer. C’est un outil de communication entre les différents participants du projet : le client, le product owner, le chef de projet, le designer et les développeurs.
+
+Avec l’outil Figma, j’ai réalisé le zoning, les wireframes, la charte graphique (couleurs et polices), les maquettes de pages et un prototype montrant les transitions entre pages.
+
+## Zoning
+
+[ràf]
+
+## Wireframes
+
+[ràf]
+
+## Charte graphique
+
+Effet désiré : outil d'écriture (style ancien ou moderne ou les deux ?), couleurs, polices, ...
+
+[ràf]
+
+## Maquettes de pages
+
+[ràf]
+
+## Prototype avec transitions entre pages
+
+[ràf]
 
 # Analyse et conception
 
@@ -475,11 +447,43 @@ Ci-dessous un diagramme de séquence pour Jourdebord.
 
 [à remplir, et je dois essayer de déterminer ce que ça veut dire ça...]
 
-# Veille technique et vulnérabilités
+# Conduite de projet
 
-[à remplir]
+La conception et le développement du projet s’est faite en 3 parties : 
 
-## Veille marketing
+Pré-étude : 
+
+Détermination du cahier des charges, identification des besoins, étude concurrentielle de l’existant.
+
+Conception de l’application : 
+
+Spécification des fonctionnalités et contraintes de qualité (spécifications dites “non fonctionnelles”), maquettage, modélisation UML et Merise.
+
+Développement de l’application : 
+
+Choix des technologies et outils de développement, développement, tests, mise en production.
+
+Work Breakdown Structure
+
+Permet de diviser les tâches à faire sur plusieurs niveaux.
+
+Le work breakdown structure (WBS), aussi appelé organigramme des tâches du projet décompose un projet en une hiérarchie des travaux nécessaires pour le réaliser.
+
+https://fr.wikipedia.org/wiki/Organigramme_des_t%C3%A2ches_du_projet
+
+Planification Gantt
+
+Un diagramme de Gantt permet d’avoir une vue d’ensemble de toutes les tâches de la conception et du développement de l’application, du temps prévu pour chacune des tâches, et des interdépendances entre ces tâches. Il donne à tous les participants (client, product owner, chef de projet, développeurs) une visibilité sur la progression du projet,
+
+Il peut être complété par un diagramme de PERT pour clarifier les dépendances entre les différentes tâches et les points critiques du projet.
+
+[diagramme de Gantt de Jourdebord]
+
+Méthodologie Agile
+
+L'utilisation d’une méthode dite Agile permet de réaliser le projet avec une visibilité pour tous les participants et une réactivité au cours du projet.
+
+# Sécurité
 
 [à remplir]
 
@@ -487,15 +491,29 @@ Ci-dessous un diagramme de séquence pour Jourdebord.
 
 [à remplir]
 
-# Veille technologique / Recherche anglophone
-
-[à remplir ou à supprimer ce chapitre ?]
-
-## Explication de la recherche
+# Devops, tests, déploiement, validation client
 
 [à remplir]
 
-## Traduction de la recherche
+# Veille ?
+
+[à remplir ???]
+
+## Veille marketing
+
+[à remplir ???]
+
+## Veille technologique
+
+[à remplir ou à supprimer ce chapitre ?]
+
+## Recherche anglophone
+
+### Explication
+
+[à remplir]
+
+### Traduction
 
 [à remplir]
 
@@ -517,9 +535,9 @@ C'est une question fréquente. J'ai déjà, par le passé, contribué à réalis
 
 Mais grâce à ce cursus, j'ai plus de confiance sur comment répondre à cette question de manière professionnelle. Je pense maintenant être capable de m'engager personnellement et indépendamment sur un résultat chiffrable au niveau de la conception, de la technique, et des délais.
 
-## 2. Faire un prototype de mon idée d'application
+## 2. Faire de mon idée d'application un prototype
 
-Ce prototype Jourdebord, je suis heureux d'en disposer de manière fiable pour ma propre utilisation, en remplacement des outils que j'utilisais précédemment, dont certains sont mentionnés dans la section ci-dessus, ["Étude de l'existant"](#Étude de l’existant)
+Ce prototype Jourdebord, je suis heureux d'en disposer de manière fiable pour ma propre utilisation, en remplacement des outils que j'utilisais précédemment, dont certains sont mentionnés dans la section ci-dessus, ["Étude de l’existant"](#étude-de-lexistant)
 
 J'aimerais aussi pouvoir partager cet outil avec des proches, que cela pourrait intéresser à différents titres. C'est un outil qui, espérons-le, pourrait leur être utile. Ce serait également une forme de bêta-test pour un outil qui n'a encore véritablement été testé que par moi-même.
 
@@ -531,15 +549,15 @@ Je souhaiterais pouvoir justifier de mes compétences, pas juste par mon expéri
 
 Et si l'occasion se présentait, pouvoir éventuellement poursuivre plus loin mes études en informatique.
 
-Un diplôme me permettrait aussi d'envisager de partager mes connaissances en les enseignant.
+Un diplôme me permettrait aussi de justifier de ma capacité à partager mes connaissances en les enseignant.
 
 ## En somme
 
-J'espère avoir modestement réussi à accomplir tous ces objectifs ambitieux.
+J'espère avoir modestement réussi à accomplir ces objectifs.
 
-Et en résumé, j'ai hâte d'appliquer ce que j'ai appris concrètement
+Et j'ai hâte d'appliquer ce que j'ai appris concrètement :
 
 * dans le monde du travail,
 
-* et sur mon projet Jourdebord.
+* et pour mon projet Jourdebord.
 
