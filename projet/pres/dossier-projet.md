@@ -212,6 +212,28 @@ Le maquettage permet de visualiser la conception et les fonctionnalités de l’
 
 Avec l’outil Figma, j’ai réalisé le zoning, les wireframes, la charte graphique (couleurs et polices), les maquettes de pages et un prototype montrant les transitions entre pages.
 
+## Zoning
+
+[ràf]
+
+## Wireframes
+
+[ràf]
+
+## Charte graphique
+
+Effet désiré : outil d'écriture (style ancien ou moderne ou les deux ?), couleurs, polices, ...
+
+[ràf]
+
+## Maquettes de pages
+
+[ràf]
+
+## Prototype avec transitions entre pages
+
+[ràf]
+
 # Étude fonctionnelle
 
 On veut spécifier les fonctionnalités et les contraintes de qualité que doit satisfaire l’application.
