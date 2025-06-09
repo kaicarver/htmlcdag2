@@ -1,1 +1,1 @@
-grep FlateDecode countpages.latest.*.out | perl -ane 'print "\n ---> Longueur estimée du mémoire : ", $F[0] - 30, " pages <---\n\n"'
+grep FlateDecode cnt/countpages.latest.*.out | perl -ane 'print "\n ---> Longueur estimée du mémoire : ", $F[0] - 30, " pages <---\n\n"'
