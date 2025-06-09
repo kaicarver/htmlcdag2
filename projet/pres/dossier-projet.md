@@ -95,7 +95,7 @@ Page Web de l'école décrivant la formation :
 
 > https://lagrandeclasse.fr/concepteur-developpeur-dapplication/
 
-# Présentation du projet / Expression des besoins
+# Idée, contexte, objectifs, existant
 
 ## L'idée
 
@@ -103,7 +103,9 @@ Jourdebord est une application de prises de notes inspirée entre autres du jour
 
 Plus précisément, le "elevator pitch" c'est :
 
-> une appli Web de prise de notes recherchables (interrogeables) avec tracking (contrôle) d'habitudes (de pratiques) 
+> une appli Web de prise de notes recherchables (interrogeables) avec tracking (contrôle) d'habitudes (de pratiques)
+
+Le projet commence avec une idée qui revient à une expression des besoins.
 
 ## Contexte du projet
 
