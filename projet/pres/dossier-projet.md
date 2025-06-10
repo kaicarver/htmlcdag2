@@ -7,7 +7,7 @@ header-includes: |
     \fancyhead[CO,CE]{ * }
     \fancyfoot[CO,CE]{Projet Jourdebord}
     \fancyfoot[LE,RO]{\thepage}
-abstract: Présentation du projet Jourdebord, une application de prises de notes réalisée pour le titre professionnel de Concepteur développeur d'applications.
+abstract: Présentation du projet Jourdebord, une application de prise de notes réalisée pour le titre professionnel de Concepteur développeur d'applications.
 ...
 
 
@@ -298,6 +298,8 @@ On définit et positionne les différentes zones fonctionnelles de la page web.
 On identifie les grandes zones de l'interface, comme l'en-tête, le menu, le contenu principal, et le pied de page.
 On positionne ces zones pour faciliter l'expérience utilisateur et pour que l'interface et la navigation soient lisibles et régulières.
 
+Le zoning de Jourdebord est relativement simple : il spécifie une en-tête en haut de la page, une zone de contenu, et un pied de page. L'en-tête contient des informations et des liens utiles à tout moment d'utilisation de l'application. La zone de contenu varie selon la page : soit un contenu de texte, éditable ou non, soit une liste de textes ou d'items en rapport avec le texte comme des catégories ou des templates. Le pied de page contient des liens vers des pages d'information sur l'application : la société qui gère le site de l'application et les conditions générales d'utilisation (CGU) du site.
+
 ## Wireframe
 
 Le wireframe ajoute des détails au zoning en précisant la disposition des éléments sans préciser l'aspect graphique.
@@ -306,17 +308,21 @@ de l'application puissent avoir une représentation commune du futur produit.
 
 ## Charte graphique
 
-Effet désiré : outil d'écriture (style ancien ou moderne ou les deux ?), couleurs, polices, ...
+Une charte graphique de site web regroupe les règles visuelles du site internet. Elle inclut le logo, les couleurs, les typographies, et des éléments tels que les boutons, icônes ou images. Elle assure la cohérence de l'identité visuelle de l'application dans toutes les pages du site.
 
-[ràf]
+Pour Jourdebord, la charte graphique et les couleurs sont choisies avec un effet désiré de suggérer un outil d'écriture (style ancien ou moderne ou les deux ?). Les couleurs doivent suggérer le papier, et les polices, un livre imprimé. Néanmoins, on évite un look trop "rétro", puisqu'il s'agit d'une application à ambitions modernes, pas un manuscrit.
 
 ## Maquettes de pages
 
-[ràf]
+L'ensemble des maquettes de pages de l'application constitue une représentation visuelle de ce à quoi ressemblera l'application une fois terminée. Il sert de plan directeur et guide le processus de développement en aidant à visualiser le produit final avant même de commencer à le construire. Il facilite la communication des idées entre designers, développeurs et clients. Il assure également la cohérence visuelle et ergonomique des différentes parties de l'application.
+
+Pour Jourdebord, toutes les pages principales sont maquettées pour une vue d'ensemble de l'application.
 
 ## Prototype avec transitions entre pages
 
-[ràf]
+Les maquettes de pages peuvent être regroupées dans un prototype interactif qui donne une impression réaliste de ce que sera l'expérience utilisateur (UX) de l'application. Le prototype sert à valider les propositions d'interface utilisateur (UI) et d'expérience utilisateur (UX) et à les affiner grâce aux retours des parties prenantes.
+
+Pour Jourdebord, le prototype démontre l'enchaînement des pages de l'application, en commençant par la page d'accueil, pour aller à la page principale d'écriture de texte, avec la page de recherche. Il y a aussi une simulation de l'expérience de login et de l'inscription d'un nouvel utilisateur du site.
 
 # Analyse et conception
 
