@@ -7,7 +7,7 @@ header-includes: |
     \fancyhead[CO,CE]{ * }
     \fancyfoot[CO,CE]{Projet Jourdebord}
     \fancyfoot[LE,RO]{\thepage}
-abstract: Présentation du projet Jourdebord réalisé pour le titre professionnel de Concepteur développeur d'applications . . .
+abstract: Présentation du projet Jourdebord, une application de prises de notes réalisée pour le titre professionnel de Concepteur développeur d'applications.
 ...
 
 
@@ -17,7 +17,7 @@ abstract: Présentation du projet Jourdebord réalisé pour le titre professionn
 
 Ce document décrit l’ensemble du travail que j’ai réalisé pendant la formation de Concepteur développeur d’applications pour produire l’application Jourdebord, une application pour l’écriture et la prise de notes.
 
-La conception et le développement de l’application ont suivi le chemin traité dans notre cours, un parcours itératif commençant avec une idée et une expression de besoins sous forme de cahier des charges rudimentaire, passant par une réponse sous la forme de spécification fonctionnelle, puis de maquettage, ensuite de modélisation via deux méthodologies différentes, puis un choix d'architecture et de technologies, du développement logiciel, des tests, et la mise en production, le tout dans le cadre d’une gestion de projet.
+La conception et le développement de l’application ont suivi le chemin traité dans notre cours, un parcours itératif commençant avec une idée et une expression de besoins sous forme de cahier des charges rudimentaire, passant par une réponse sous la forme de spécification fonctionnelle, puis de maquettage, ensuite de modélisation via deux méthodologies différentes, suivie d'un choix d'architecture, de technologies et d'outils, puis du développement logiciel, des tests, et de la mise en production, le tout dans le cadre d’une gestion de projet.
 
 Tout au long de ce document, on présente deux choses en parallèle : la théorie générale de la conception et du développent d'applications enseignée pendant le cours, et son application spécifique pour la réalisation de l'application Jourdebord.
 
@@ -464,21 +464,25 @@ Ci-dessous un diagramme de séquence pour Jourdebord.
 
 # Conduite de projet
 
-La conception et le développement du projet s’est faite en 3 parties : 
+## Développement en trois phases
 
-Pré-étude : 
+La conception et le développement du projet se fait en 3 parties :
+
+### 1. Pré-étude :
 
 Détermination du cahier des charges, identification des besoins, étude concurrentielle de l’existant.
 
-Conception de l’application : 
+### 2. Conception de l’application :
 
 Spécification des fonctionnalités et contraintes de qualité (spécifications dites “non fonctionnelles”), maquettage, modélisation UML et Merise.
 
-Développement de l’application : 
+### 3. Développement de l’application :
 
 Choix des technologies et outils de développement, développement, tests, mise en production.
 
-Work Breakdown Structure
+## Outils et méthodes de gestion et de suivi de projet
+
+###  Work Breakdown Structure
 
 Permet de diviser les tâches à faire sur plusieurs niveaux.
 
@@ -486,17 +490,27 @@ Le work breakdown structure (WBS), aussi appelé organigramme des tâches du pro
 
 https://fr.wikipedia.org/wiki/Organigramme_des_t%C3%A2ches_du_projet
 
-Planification Gantt
+###  Planification Gantt et diagramme de PERT
 
 Un diagramme de Gantt permet d’avoir une vue d’ensemble de toutes les tâches de la conception et du développement de l’application, du temps prévu pour chacune des tâches, et des interdépendances entre ces tâches. Il donne à tous les participants (client, product owner, chef de projet, développeurs) une visibilité sur la progression du projet,
 
-Il peut être complété par un diagramme de PERT pour clarifier les dépendances entre les différentes tâches et les points critiques du projet.
+Le diagramme de Gantt peut être complété par un diagramme de PERT pour clarifier les dépendances entre les différentes tâches et les points critiques du projet.
 
 [diagramme de Gantt de Jourdebord]
 
-Méthodologie Agile
+### Développement itératif
 
-L'utilisation d’une méthode dite Agile permet de réaliser le projet avec une visibilité pour tous les participants et une réactivité au cours du projet.
+Au lieu d'un développement traditionnel en "cascade", l'utilisation d’une méthode dite "agile" ou itérative permet de réaliser le projet avec une visibilité pour tous les participants et une réactivité au cours du projet.
+
+Un développement itératif utilise un cycle PDCA consistant en 4 étapes : planning, design, check, ajustement.
+
+Ce cycle itératif a les avantages suivants: flexibilité, implication du client, identification des risques, livraison rapide, tests en continu, expérimentations.
+
+### Communications
+
+How do you let the stakeholder know the current status, the schedule, the risk, the next step, the deliverables.
+
+Regular meetings, standup meeting, meeting memos, emails, code repository e.g. git, defect/bug tracking, weekly status (for customer).
 
 # Sécurité
 
