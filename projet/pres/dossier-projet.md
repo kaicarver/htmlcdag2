@@ -95,7 +95,9 @@ Page Web de l'école décrivant la formation :
 
 > https://lagrandeclasse.fr/concepteur-developpeur-dapplication/
 
-# Idée, contexte, objectifs, existant, cible
+# Idée d'application : cahier des charges
+
+Idée, contexte, objectifs, existant, cible...
 
 ## L'idée
 
@@ -180,15 +182,19 @@ L'application cible deux types de personnes :
 
 2. Les personnes qui souhaitent écrire.
 
-# Étude fonctionnelle et non fonctionnelle
+# Spécifications fonctionnelles
 
-On veut spécifier les fonctionnalités et les contraintes de qualité que doit satisfaire l’application.
+La réponse au cahier des charges (idée) prend la forme de spécifications.
 
-## Spécifications fonctionnelles
+Dans cette phase et la phase suivante de maquettage, on rédige, en échangeant avec le client, une espèce de manuel utilisateur de la future application que l'on va s'engager à développer.
 
-On fait la liste des fonctionnalités à réaliser, en les priorisant, car il y a toujours plus de fonctionnalités envisageables qu’il est possible de réaliser.
+On commence par aller dans le détail en spécifiant les fonctionnalités et les contraintes de qualité que doit satisfaire l’application.
 
-La méthode MoSCoW est un moyen de prioriser les tâches à accomplir.
+## Fonctionnalités
+
+On fait la liste des fonctionnalités à réaliser en les priorisant, car il y a toujours plus de fonctionnalités envisageables qu’il n'est possible de réaliser.
+
+La méthode dite "MoSCoW" est un moyen de prioriser les tâches à accomplir.
 Elle utilise des termes parlants pour communiquer avec le client : 
 
 - M must : doit être fait, important mais pas indispensable
@@ -196,7 +202,7 @@ Elle utilise des termes parlants pour communiquer avec le client :
 - C could : à faire si on a le temps
 - W won't : ne sera pas fait -- cette fois-ci
 
-### Spécifications Must have :
+### Fonctionnalités Must have :
 
 - Authentification, inscription, login, logout
 - Textes: création, consultation, mise à jour, suppression (CRUD)
@@ -207,7 +213,7 @@ Elle utilise des termes parlants pour communiquer avec le client :
   - tous les textes, textes d’une certaine date
   - résultats ordonnés par date de création, date de dernière mise à jour
 
-### Spécifications Should have :
+### Fonctionnalités Should have :
 
 - Affichages de texte :
   - afficher le texte par heure, jour, semaine, mois, total
@@ -221,13 +227,17 @@ Elle utilise des termes parlants pour communiquer avec le client :
   - nombre de mots par jour, semaine, mois, total
   - mots les plus utilisés
 
-### Spécifications Could have : 
+- API, accès "headless" pour d'autres interfaces, par exemple :
+  - création via bouton
+  - affichage de type tableau de bord
+
+### Fonctionnalités Could have :
 
 - Nuages de mots
 - Localisation : interface de l'application en autre chose que français
 - L'admin ne doit pas pouvoir lire les textes des autres !
 
-### Spécifications Won’t have : 
+### Fonctionnalités Won’t have :
 
 - Attribution automatique de catégories
 - Création automatisée de templates
