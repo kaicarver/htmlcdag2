@@ -283,11 +283,16 @@ Avec l’outil Figma, j’ai réalisé le zoning, les wireframes, la charte grap
 
 ## Zoning
 
-[ràf]
+Le zoning consiste à définir et positionner les différentes zones fonctionnelles communes à la plupart des pages web de l'appli.
+On définit et positionne les différentes zones fonctionnelles de la page web.
+On identifie les grandes zones de l'interface, comme l'en-tête, le menu, le contenu principal, et le pied de page.
+On positionne ces zones pour faciliter l'expérience utilisateur et pour que l'interface et la navigation soient lisibles et régulières.
 
-## Wireframes
+## Wireframe
 
-[ràf]
+Le wireframe ajoute des détails au zoning en précisant la disposition des éléments sans préciser l'aspect graphique.
+Le wireframe établit un squelette du site. C'est une représentation minimale du site pour que les participants au développement
+de l'application puissent avoir une représentation commune du futur produit.
 
 ## Charte graphique
 
