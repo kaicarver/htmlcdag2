@@ -1,17 +1,30 @@
 ---
 title: Rapport du projet Jourdebord
 author: Robert Carver
+toc-title: "Table des matières"
 header-includes: |
     \usepackage{fancyhdr}
     \pagestyle{fancy}
-    \fancyhead[CO,CE]{ * }
+    \fancyhead[CO,CE]{ }
     \fancyfoot[CO,CE]{Projet Jourdebord}
     \fancyfoot[LE,RO]{\thepage}
-abstract: Présentation du projet Jourdebord, une application de prise de notes réalisée pour le titre professionnel de Concepteur développeur d'applications.
+abstract: Présentation du projet Jourdebord, une application de prise de notes réalisée pour le titre professionnel de Concepteur développeur d'applications RNCP 37873.
 ...
 
+\thispagestyle{empty}
 
-***
+\newpage
+\pagenumbering{roman}
+
+\fancyfoot[CO,CE]{Table des matières}
+
+\renewcommand{\contentsname}{}
+\tableofcontents
+
+\fancyfoot[CO,CE]{Projet Jourdebord}
+
+\newpage
+\pagenumbering{arabic}
 
 # Introduction
 
@@ -450,11 +463,15 @@ Ce diagramme sert a analyser les cas d'utilisation, valider la logique des inter
 
 Ci-dessous un diagramme de séquence pour Jourdebord.
 
-![Diagramme de séquence TODO: mettre à jour](./img/dseq.png)
+![Diagramme de séquence TODO: mettre à jour](./img/dseq.png){.nonfloat}
+
+\newpage
 
 ### UML : Diagramme de classes
 
 Qu'est-ce qu'un diagramme de classes ?
+
+\newpage
 
 # Mise en œuvre
 
@@ -557,6 +574,8 @@ Regular meetings, standup meeting, meeting memos, emails, code repository e.g. g
 ### Traduction
 
 [à remplir]
+
+\newpage
 
 # Conclusion
 

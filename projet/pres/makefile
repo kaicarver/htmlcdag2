@@ -7,7 +7,7 @@ all: dossier-projet.pdf dossier-projet.html s5-pres.html
 
 # dossier projet
 dossier-projet.pdf: dossier-projet.md
-	pandoc --toc $? -o $@
+	pandoc $? -o $@
 	./countpages.sh > cnt/countpages.`date +"%Y-%m-%d-%I-%p"`.out
 	rm -f cnt/countpages.latest.*.out
 	cp cnt/countpages.`date +"%Y-%m-%d-%I-%p"`.out cnt/countpages.latest.`date +"%Y-%m-%d-%I-%p"`.out
