@@ -306,6 +306,8 @@ Le wireframe ajoute des détails au zoning en précisant la disposition des él�
 Le wireframe établit un squelette du site. C'est une représentation minimale du site pour que les participants au développement
 de l'application puissent avoir une représentation commune du futur produit.
 
+Pour Jourdebord, les wireframes decrivent la page de texte, les listes, le login, l'inscription.
+
 ## Charte graphique
 
 Une charte graphique de site web regroupe les règles visuelles du site internet. Elle inclut le logo, les couleurs, les typographies, et des éléments tels que les boutons, icônes ou images. Elle assure la cohérence de l'identité visuelle de l'application dans toutes les pages du site.
@@ -452,27 +454,31 @@ Ci-dessous un diagramme de séquence pour Jourdebord.
 
 ### UML : Diagramme de classes
 
+Qu'est-ce qu'un diagramme de classes ?
+
 # Mise en œuvre
 
-[à remplir]
+Choix d’architecture, de technologies et d’outils.
+
+Ensuite développement.
 
 ## Définition de l’architecture utilisée
 
-[à remplir]
+Architecture Web MVC modèle-vue-contrôleur avec une base de donnée relationnelle pour stocker les données du modèle.
 
-## Outils et frameworks utilisés
+## Technologies
 
-[à remplir]
+PHP, Symfony, MySQL
 
-## Interfaces de l’application
+## Outils
 
-[à remplir, et je dois essayer de déterminer ce que ça veut dire ça...]
+VS Code, Emacs, git
 
 # Conduite de projet
 
 ## Développement en trois phases
 
-La conception et le développement du projet se fait en 3 parties :
+La conception et le développement du projet se font en 3 parties :
 
 ### 1. Pré-étude :
 
