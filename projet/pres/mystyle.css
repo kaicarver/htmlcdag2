@@ -1,0 +1,7 @@
+/* Forcer un saut de page après la table des matières à l'impression */
+@media print {
+  #TOC {
+    page-break-after: always;
+    break-after: page;
+  }
+}

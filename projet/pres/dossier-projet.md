@@ -8,7 +8,7 @@ header-includes: |
     \fancyhead[CO,CE]{ }
     \fancyfoot[CO,CE]{Projet Jourdebord}
     \fancyfoot[LE,RO]{\thepage}
-abstract: Présentation du projet Jourdebord, une application de prise de notes réalisée pour le titre professionnel de Concepteur développeur d'applications RNCP 37873.
+abstract: Présentation du projet Jourdebord, la réalisation d'une application de prise de notes effectuée pour le titre professionnel de Concepteur développeur d'applications, RNCP 37873.
 ...
 
 \thispagestyle{empty}
