@@ -2,13 +2,14 @@
 title: Rapport du projet Jourdebord
 author: Robert Carver
 toc-title: "Table des matières"
+abstract-title: "Résumé"
 header-includes: |
     \usepackage{fancyhdr}
     \pagestyle{fancy}
     \fancyhead[CO,CE]{ }
     \fancyfoot[CO,CE]{Projet Jourdebord}
     \fancyfoot[LE,RO]{\thepage}
-abstract: Présentation du projet Jourdebord, la réalisation d'une application de prise de notes effectuée pour le titre professionnel de Concepteur développeur d'applications, RNCP 37873.
+abstract: Présentation du projet Jourdebord, la réalisation d'une application de prise de notes, effectuée pour le titre professionnel de Concepteur développeur d'applications, RNCP 37873.
 ...
 
 \thispagestyle{empty}
