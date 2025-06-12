@@ -13,7 +13,7 @@ dossier-projet.pdf: dossier-projet.md
 	cp cnt/countpages.`date +"%Y-%m-%d-%I-%p"`.out cnt/countpages.latest.`date +"%Y-%m-%d-%I-%p"`.out
 
 dossier-projet.html: dossier-projet.md
-	pandoc --toc $? -o $@
+	pandoc --toc --standalone $? -o $@
 
 # slides présentation projet
 s5-pres.html: s5-skel.html plan-pres.txt
