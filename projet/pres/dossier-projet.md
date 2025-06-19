@@ -550,11 +550,51 @@ Regular meetings, standup meeting, meeting memos, emails, code repository e.g. g
 
 # Sécurité
 
-[à remplir]
+Les principaux enjeux de sécurité pour une application web MVC développée avec **Symfony** et une base de données **MySQL** concernent la protection des données, la prévention des attaques courantes et la gestion des vulnérabilités inhérentes aux applications web. Voici une analyse concise des enjeux clés :
 
-## Vulnérabilités de sécurité
+1. **Injection SQL** :
+   - **Enjeu** : Les requêtes mal sécurisées vers MySQL peuvent permettre à un attaquant d'exécuter des commandes SQL malveillantes, compromettant les données.
+   - **Solution dans Symfony** : Utiliser **Doctrine ORM** ou des requêtes préparées pour éviter les injections. Symfony encourage l'utilisation de paramètres liés plutôt que de concaténer des entrées utilisateur dans les requêtes.
 
-[à remplir]
+2. **Cross-Site Scripting (XSS)** :
+   - **Enjeu** : Des entrées utilisateur non échappées affichées dans les vues (par exemple, via des templates Twig) peuvent exécuter des scripts malveillants dans le navigateur des utilisateurs.
+   - **Solution dans Symfony** : Twig échappe automatiquement les variables par défaut. Toujours activer l'échappement (`{{ variable | e }}`) et valider/sanitizer les entrées utilisateur côté serveur.
+
+3. **Cross-Site Request Forgery (CSRF)** :
+   - **Enjeu** : Un attaquant peut inciter un utilisateur authentifié à effectuer des actions non désirées (par exemple, modifier un profil) via une requête falsifiée.
+   - **Solution dans Symfony** : Symfony fournit des **tokens CSRF** intégrés dans les formulaires. Toujours inclure et valider ces tokens (`{{ csrf_token('form_name') }}`) pour les requêtes POST, PUT, DELETE.
+
+4. **Authentification et autorisation** :
+   - **Enjeu** : Une mauvaise gestion des sessions, mots de passe faibles ou des permissions mal configurées peut permettre un accès non autorisé.
+   - **Solution dans Symfony** : Utiliser le composant **Symfony Security** pour gérer l'authentification (via des providers comme Doctrine) et les autorisations (rôles et voters). Stocker les mots de passe avec un algorithme fort comme `bcrypt` ou `argon2` (configuré par défaut dans Symfony).
+
+5. **Fuites de données sensibles** :
+   - **Enjeu** : Une mauvaise configuration de MySQL ou de Symfony peut exposer des informations sensibles (par exemple, clés API, mots de passe) via des erreurs ou des fichiers accessibles.
+   - **Solution** : Configurer les environnements correctement (utiliser `.env` pour les secrets), désactiver le mode debug en production (`APP_ENV=prod`), et limiter les permissions MySQL (utilisateur avec accès restreint).
+
+6. **Attaques par force brute** :
+   - **Enjeu** : Les formulaires de connexion peuvent être ciblés pour deviner les identifiants.
+   - **Solution** : Implémenter des limites de tentatives de connexion (rate limiting) et utiliser des captchas (par exemple, via un bundle comme `EWZRecaptchaBundle`). Configurer des politiques de mots de passe robustes.
+
+7. **Mauvaise gestion des dépendances** :
+   - **Enjeu** : Les bibliothèques ou bundles Symfony obsolètes peuvent contenir des vulnérabilités connues.
+   - **Solution** : Utiliser **Composer** pour maintenir les dépendances à jour et vérifier les vulnérabilités avec des outils comme `symfony check:security`.
+
+8. **Sécurité réseau et transport** :
+   - **Enjeu** : Les données transitant entre le client, le serveur Symfony et MySQL peuvent être interceptées si elles ne sont pas chiffrées.
+   - **Solution** : Activer **HTTPS** avec un certificat SSL/TLS, utiliser des connexions sécurisées pour MySQL (SSL ou tunnel SSH), et configurer des en-têtes de sécurité (par exemple, HSTS, Content-Security-Policy).
+
+9. **Manipulation des fichiers uploadés** :
+   - **Enjeu** : Les fichiers envoyés par les utilisateurs (par exemple, images) peuvent contenir du code malveillant ou exploiter des failles si mal gérés.
+   - **Solution** : Valider les types de fichiers, limiter leur taille, et stocker les fichiers hors de la racine web avec des noms aléatoires. Utiliser des bibliothèques comme `LiipImagineBundle` pour traiter les images.
+
+10. **Exposition des métadonnées ou erreurs** :
+    - **Enjeu** : Les messages d'erreur détaillés ou les routes non protégées (comme `/admin`) peuvent révéler des informations sur l'application.
+    - **Solution** : Personnaliser les pages d'erreur en production, masquer les détails techniques, et sécuriser les routes sensibles avec des restrictions d'accès via le composant Security.
+
+En résumé, les outils intégrés offerts par Symfony (Security, Twig, Doctrine) pour atténuent les risques de sécurité, associés avec une configuration rigoureuse et des bonnes pratiques. Les enjeux de sécurité ont donc été abordés dès la conception. 
+
+On surveille la sécurité tout au long du cycle de vie de l'application avec des audits réguliers et des mises à jour. Ces audits réguliers nécessitent une combinaison d’outils automatisés (Symfony check:security, OWASP ZAP), de revues manuelles (inspection humain détaillée du code), et de tests proactifs (pentests). En intégrant ces pratiques dans le cycle de développement et en maintenant une veille continue, on peut espérer que l'application Jourdebord peut rester sécurisée dans un environnement où de nouvelles menaces apparaissent constamment.
 
 # Devops, tests, déploiement, validation client
 
