@@ -476,19 +476,25 @@ Qu'est-ce qu'un diagramme de classes ?
 
 # Mise en œuvre
 
-Choix d’architecture, de technologies et d’outils.
-
-Ensuite développement.
+Pour la mise en oeuvre, j'ai opté pour une architecture classique Web MVC avec une base de données relationnelle.
 
 ## Définition de l’architecture utilisée
 
-Architecture Web MVC modèle-vue-contrôleur avec une base de donnée relationnelle pour stocker les données du modèle.
+Le modèle MVC sépare la logique métier (Modèle), l'interface utilisateur (Vue) et la gestion des requêtes (Contrôleur), facilitant la collaboration, les tests et les évolutions du code. 
 
-## Technologies
+La base de données relationnelle, quant à elle, offre une structure robuste pour stocker et gérer des données complexes avec des relations bien définies, garantissant l'intégrité et la cohérence des données.
+
+Cette combinaison, couplée à un framework comme Symfony, accélère le développement grâce à des outils comme l'ORM Doctrine, tout en assurant sécurité, modularité et performance pour des applications de toutes tailles. Ceci permet de développer une application web structurée, maintenable et scalable.
+
+J'aurais pu opter pour une architecture plus moderne basée sur React et une base NoSQL comme MongoDB. Ceci aurait facilité la mise en oeuvre d'une interface utilisateur dynamique et réactive grâce à React en front end. Et cela permettrait un schéma de données plus flexible grâce à une base de données aconçue pour être adaptable.
+
+Mais j'ai choisi une architecture plus classique parce que j'avais plus d'expérience de réalisations avec elle et parce que le projet avait pour objet d'être relativement simple.
+
+## Détail des technologies
 
 PHP, Symfony, MySQL
 
-## Outils
+## Autres outils
 
 VS Code, Emacs, git
 
