@@ -550,47 +550,49 @@ Regular meetings, standup meeting, meeting memos, emails, code repository e.g. g
 
 # Sécurité
 
-Les principaux enjeux de sécurité pour une application web MVC développée avec **Symfony** et une base de données **MySQL** concernent la protection des données, la prévention des attaques courantes et la gestion des vulnérabilités inhérentes aux applications web. Voici une analyse concise des enjeux clés :
+Les principaux enjeux de sécurité pour cette application web MVC concernent la protection des données, la prévention des attaques courantes et la gestion des vulnérabilités inhérentes aux applications web. 
 
-1. **Injection SQL** :
+Voici une liste des principales questions de sécurité auquelles il faut veiller.
+
+## **Injection SQL** :
    - **Enjeu** : Les requêtes mal sécurisées vers MySQL peuvent permettre à un attaquant d'exécuter des commandes SQL malveillantes, compromettant les données.
    - **Solution dans Symfony** : Utiliser **Doctrine ORM** ou des requêtes préparées pour éviter les injections. Symfony encourage l'utilisation de paramètres liés plutôt que de concaténer des entrées utilisateur dans les requêtes.
 
-2. **Cross-Site Scripting (XSS)** :
+## **Cross-Site Scripting (XSS)** :
    - **Enjeu** : Des entrées utilisateur non échappées affichées dans les vues (par exemple, via des templates Twig) peuvent exécuter des scripts malveillants dans le navigateur des utilisateurs.
    - **Solution dans Symfony** : Twig échappe automatiquement les variables par défaut. Toujours activer l'échappement (`{{ variable | e }}`) et valider/sanitizer les entrées utilisateur côté serveur.
 
-3. **Cross-Site Request Forgery (CSRF)** :
+## **Cross-Site Request Forgery (CSRF)** :
    - **Enjeu** : Un attaquant peut inciter un utilisateur authentifié à effectuer des actions non désirées (par exemple, modifier un profil) via une requête falsifiée.
    - **Solution dans Symfony** : Symfony fournit des **tokens CSRF** intégrés dans les formulaires. Toujours inclure et valider ces tokens (`{{ csrf_token('form_name') }}`) pour les requêtes POST, PUT, DELETE.
 
-4. **Authentification et autorisation** :
+## **Authentification et autorisation** :
    - **Enjeu** : Une mauvaise gestion des sessions, mots de passe faibles ou des permissions mal configurées peut permettre un accès non autorisé.
    - **Solution dans Symfony** : Utiliser le composant **Symfony Security** pour gérer l'authentification (via des providers comme Doctrine) et les autorisations (rôles et voters). Stocker les mots de passe avec un algorithme fort comme `bcrypt` ou `argon2` (configuré par défaut dans Symfony).
 
-5. **Fuites de données sensibles** :
+## **Fuites de données sensibles** :
    - **Enjeu** : Une mauvaise configuration de MySQL ou de Symfony peut exposer des informations sensibles (par exemple, clés API, mots de passe) via des erreurs ou des fichiers accessibles.
    - **Solution** : Configurer les environnements correctement (utiliser `.env` pour les secrets), désactiver le mode debug en production (`APP_ENV=prod`), et limiter les permissions MySQL (utilisateur avec accès restreint).
 
-6. **Attaques par force brute** :
+## **Attaques par force brute** :
    - **Enjeu** : Les formulaires de connexion peuvent être ciblés pour deviner les identifiants.
    - **Solution** : Implémenter des limites de tentatives de connexion (rate limiting) et utiliser des captchas (par exemple, via un bundle comme `EWZRecaptchaBundle`). Configurer des politiques de mots de passe robustes.
 
-7. **Mauvaise gestion des dépendances** :
+## **Mauvaise gestion des dépendances** :
    - **Enjeu** : Les bibliothèques ou bundles Symfony obsolètes peuvent contenir des vulnérabilités connues.
    - **Solution** : Utiliser **Composer** pour maintenir les dépendances à jour et vérifier les vulnérabilités avec des outils comme `symfony check:security`.
 
-8. **Sécurité réseau et transport** :
+## **Sécurité réseau et transport** :
    - **Enjeu** : Les données transitant entre le client, le serveur Symfony et MySQL peuvent être interceptées si elles ne sont pas chiffrées.
    - **Solution** : Activer **HTTPS** avec un certificat SSL/TLS, utiliser des connexions sécurisées pour MySQL (SSL ou tunnel SSH), et configurer des en-têtes de sécurité (par exemple, HSTS, Content-Security-Policy).
 
-9. **Manipulation des fichiers uploadés** :
+## **Manipulation des fichiers uploadés** :
    - **Enjeu** : Les fichiers envoyés par les utilisateurs (par exemple, images) peuvent contenir du code malveillant ou exploiter des failles si mal gérés.
    - **Solution** : Valider les types de fichiers, limiter leur taille, et stocker les fichiers hors de la racine web avec des noms aléatoires. Utiliser des bibliothèques comme `LiipImagineBundle` pour traiter les images.
 
-10. **Exposition des métadonnées ou erreurs** :
-    - **Enjeu** : Les messages d'erreur détaillés ou les routes non protégées (comme `/admin`) peuvent révéler des informations sur l'application.
-    - **Solution** : Personnaliser les pages d'erreur en production, masquer les détails techniques, et sécuriser les routes sensibles avec des restrictions d'accès via le composant Security.
+## **Exposition des métadonnées ou erreurs** :
+  - **Enjeu** : Les messages d'erreur détaillés ou les routes non protégées (comme `/admin`) peuvent révéler des informations sur l'application.
+  - **Solution** : Personnaliser les pages d'erreur en production, masquer les détails techniques, et sécuriser les routes sensibles avec des restrictions d'accès via le composant Security.
 
 En résumé, les outils intégrés offerts par Symfony (Security, Twig, Doctrine) pour atténuent les risques de sécurité, associés avec une configuration rigoureuse et des bonnes pratiques. Les enjeux de sécurité ont donc été abordés dès la conception. 
 
@@ -598,7 +600,98 @@ On surveille la sécurité tout au long du cycle de vie de l'application avec de
 
 # Devops, tests, déploiement, validation client
 
-[à remplir]
+DevOps est une approche collaborative qui combine le développement (Dev) et les opérations (Ops) pour accélérer la livraison de logiciels de qualité via l’automatisation, l’intégration continue (CI) et le déploiement continu (CD). Autant par le passé on séparait les fonctions de développement, avec des développeurs chargés de produire le logiciel, et les fonctions des opérations, chargées de mettre en production le logiciel à disposition des utilisateurs, ces métiers et les technologies disponibles ont permis de combiner les rôles pour qu'une même personne puisse accomplir les deux types de fonction.
+
+## **DevOps et ses principes**
+DevOps vise à réduire les silos entre les équipes de développement et d’exploitation en favorisant une culture de collaboration, d’automatisation et d’amélioration continue. Les pratiques clés incluent :
+- **Intégration Continue (CI)** : Les développeurs intègrent fréquemment leur code dans un référentiel central (par exemple, Git). Chaque intégration déclenche des tests automatisés pour détecter les erreurs tôt.
+- **Déploiement Continu (CD)** : Les modifications validées sont automatiquement déployées dans des environnements comme staging ou production, réduisant les délais de mise en production.
+- **Automatisation** : Les processus (tests, déploiements, monitoring) sont automatisés pour minimiser les erreurs humaines.
+- **Monitoring et feedback** : Les systèmes en production sont surveillés pour identifier les problèmes et intégrer les retours des clients.
+
+## **Environnements : Dev, Staging, Production**
+On peut distinguer 4 types d'environnement correspondant à des étapes distinctes du cycle de vie du logiciel, chaque environnement ayant un rôle spécifique :
+- **Environnement de développement local** :
+  - Utilisé par chaque développeurs pour coder et tester localement.
+  - Contient les versions du code sur lequel le développeur travaille, et suffisamment de code d'autres développeurs pour faire tourner le code en développement.
+  - Le développeur se charge des test unitaires et d'intégration des modules dont il est responsable.
+- **Environnement de développement (Dev)** :
+  - Réplique autant que possible, à plus petite échelle, l’environnement de production (infrastructure, configuration, et données représentatives).
+  - Utilisé par les développeurs pour intégrer et tester dans un environnement partagé ressemblant autant que possible à l'environnement de production.
+  - Contient les dernières versions du code, souvent instables.
+  - Des tests unitaires et d’intégration et de non régression y sont exécutés pour valider les fonctionnalités développées.
+- **Environnement de staging** :
+  - Réplique l’environnement de production (infrastructure, configuration, données, éventuellement anonymisées).
+  - Sert à valider le comportement de l’application dans des conditions proches de la production.
+  - **Tests en staging** :
+    - **Tests fonctionnels** : Vérifient que les fonctionnalités répondent aux exigences.
+    - **Tests de performance** : Mesurent la vitesse et la scalabilité (par exemple, JMeter, Locust).
+    - **Stress tests** : Poussent l’application à ses limites (par exemple, surcharge de requêtes) pour identifier les points de rupture.
+    - **Tests de sécurité** : Vérifient les vulnérabilités (par exemple, scans OWASP).
+    - **Tests de compatibilité** : Valident le comportement sur différents navigateurs ou appareils.
+  - Une fois les tests réussis, l’application est prête pour la production.
+- **Environnement du serveur de production** :
+  - Environnement final où l’application est accessible aux utilisateurs.
+  - Doit être stable, sécurisé et surveillé en continu.
+  - **Gestion du feedback client** :
+    - Les problèmes signalés par les clients (bugs, erreurs, suggestions) sont collectés via :
+      - **Systèmes de ticketing** : Outils comme Jira, Zendesk ou ServiceNow pour suivre les incidents.
+      - **Field issues** : Problèmes signalés par les utilisateurs sur le terrain, souvent via des formulaires ou des applications.
+      - **Gestion des bugs** : Les bugs sont priorisés, assignés aux développeurs et corrigés via des hotfixes ou des mises à jour planifiées.
+    - Les métriques (temps de réponse, taux d’erreur, satisfaction client) sont collectées via des outils comme Prometheus, Grafana ou des enquêtes utilisateur.
+
+## **CI/CD : Intégration et déploiement continus**
+- **Pipeline CI/CD** :
+  - **CI** : Chaque commit déclenche un pipeline automatisé (par exemple, via Jenkins, GitLab CI/CD, GitHub Actions) qui :
+    - Compile le code.
+    - Exécute des tests unitaires et d’intégration.
+    - Génère des rapports de qualité (par exemple, couverture de code avec SonarQube).
+  - **CD** : Si les tests passent, le code est automatiquement déployé dans staging ou production, selon la configuration (déploiement continu ou déploiement sur validation manuelle).
+- **Outils CI/CD** : Jenkins, GitLab CI, CircleCI, GitHub Actions, Azure DevOps.
+- **Avantages** : Réduction des erreurs manuelles, déploiement rapide, feedback immédiat.
+
+## **Validation client**
+- **En staging** : Avant le déploiement en production, la validation client peut inclure :
+  - **Tests d’acceptation utilisateur (UAT)** : Les clients ou utilisateurs finaux testent l’application dans l’environnement de staging pour confirmer qu’elle répond aux attentes.
+  - **Démonstrations** : Présentations des nouvelles fonctionnalités aux parties prenantes.
+- **En production** : La validation client se fait via :
+  - **Feedback direct** : Collecté via des formulaires, enquêtes ou systèmes de ticketing.
+  - **Monitoring utilisateur** : Outils comme Hotjar ou Google Analytics pour analyser le comportement des utilisateurs.
+  - **Itérations** : Les retours sont intégrés dans les prochaines versions via le cycle DevOps.
+
+## **Gestion des bugs et feedback en production**
+- **Systèmes de ticketing** :
+  - Les utilisateurs signalent les problèmes via des outils comme Jira, Zendesk ou Trello.
+  - Les tickets sont catégorisés (bug, amélioration, urgence) et assignés aux équipes.
+- **Field issues** :
+  - Problèmes rencontrés sur le terrain (par exemple, crashs d’application) sont signalés via des journaux d’erreurs (logs) ou des formulaires.
+  - Les outils comme Sentry ou LogRocket capturent automatiquement les erreurs en production.
+- **Gestion des bugs** :
+  - **Priorisation** : Les bugs critiques (impactant les utilisateurs ou la sécurité) sont corrigés en priorité.
+  - **Hotfixes** : Correctifs rapides déployés en production sans passer par un cycle complet.
+  - **Amélioration continue** : Les bugs récurrents sont analysés pour identifier les causes profondes (root cause analysis).
+- **Monitoring proactif** :
+  - Outils comme New Relic, Datadog ou Prometheus surveillent les performances et détectent les anomalies.
+  - Les alertes automatisées informent les équipes des problèmes en temps réel.
+
+## **Exemple de flux DevOps**
+1. Un développeur pousse du code dans un référentiel Git.
+2. Le pipeline CI/CD (par exemple, GitHub Actions) compile, teste et valide le code.
+3. Le code est déployé automatiquement dans l’environnement de staging.
+4. Des stress tests et tests fonctionnels sont exécutés en staging.
+5. Une validation client (UAT) est effectuée.
+6. Une fois validé, le code est déployé en production.
+7. Les utilisateurs signalent des bugs via un système de ticketing (Jira).
+8. Les développeurs corrigent les bugs, qui repassent par le pipeline CI/CD.
+
+## **Bonnes pratiques**
+- **Automatisation maximale** : Tests, déploiements et monitoring doivent être automatisés pour réduire les erreurs.
+- **Environnements cohérents** : Staging doit être une réplique fidèle de la production.
+- **Feedback rapide** : Les retours clients et les métriques doivent être intégrés rapidement dans le cycle de développement.
+- **Sécurité** : Intégrer des scans de sécurité dans le pipeline CI/CD (par exemple, Snyk, Dependabot).
+- **Documentation** : Maintenir une trace des incidents, corrections et retours clients pour l’amélioration continue.
+
+En résumé, DevOps orchestre le cycle de vie du logiciel de manière fluide, en automatisant les tests et déploiements, tout en intégrant les retours clients via des systèmes structurés comme le ticketing et la gestion des bugs. Les environnements dev, staging et production permettent de valider chaque étape, avec des stress tests en staging pour garantir la robustesse et une gestion proactive des feedbacks en production pour assurer la satisfaction client.
 
 # Veille ?
 
@@ -666,5 +759,5 @@ Et j'ai hâte d'appliquer ce que j'ai appris concrètement :
 
 * dans le monde du travail,
 
-* et pour mon projet Jourdebord.
+* et pour faire évoluer l'application Jourdebord.
 
