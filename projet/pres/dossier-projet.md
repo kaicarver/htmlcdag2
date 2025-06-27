@@ -366,12 +366,6 @@ Le Modèle Conceptuel de Données (MCD) est une étape clé de la méthodologie 
 
 L’objectif du MCD est de traduire les besoins métier en un modèle de données logique et compréhensible pour tous les intervenants, tout en assurant la cohérence des informations manipulées par le système. Les entités du MCD deviennent ensuite les tables de la base de données dans le modèle physique, tandis que les relations aident à établir les liens entre ces tables. En d'autres termes, le MCD est un outil d'abstraction permettant de concevoir une base de données stable et bien structurée avant de passer aux phases de conception technique.
 
-Ci-dessous un diagramme représentant le MCD de Jourdebord.
-
-![Modèle conceptuel de données](./img/mcd.png)
-
-On voit les 4 entités du modèle : Texton, qui contient le texte, Tag, qui contient les catégories, Template, pour les templates, et Author qui contient les différents utilisateurs du système, soit les auteurs et l'administrateur.
-
 ### Modèle logique de données
 
 Le Modèle Logique de Données (MLD) est une étape de la méthodologie Merise qui traduit le Modèle Conceptuel de Données (MCD) en une représentation plus technique, proche de la structure de la base de données. Le MLD conserve la structure des entités et des relations définies dans le MCD, mais les adapte aux contraintes d'un Système de Gestion de Bases de Données (SGBD) relationnel. Concrètement, les entités du MCD deviennent des tables, les attributs des colonnes de ces tables, et les relations se transforment en clés étrangères permettant de relier les tables entre elles.
@@ -383,6 +377,172 @@ Le MLD tient compte des spécificités techniques comme le type de données (ent
 Le Modèle Physique de Données (MPD) est l'étape finale de la conception d'une base de données dans la méthodologie Merise. Il représente la mise en œuvre concrète de la structure de données sur un Système de Gestion de Bases de Données (SGBD) spécifique. À partir du Modèle Logique de Données (MLD), le MPD tient compte des contraintes et particularités techniques du SGBD choisi, comme le langage SQL, les types de données disponibles, l'organisation du stockage et les options de performance.
 
 Dans le MPD, les tables, colonnes, clés primaires et étrangères du MLD sont traduites en instructions de création de tables et d'index dans le langage du SGBD. On y définit aussi des éléments techniques comme les index (pour optimiser les recherches), les contraintes (pour assurer l’intégrité des données), et la gestion des espaces de stockage. Le MPD est donc la dernière étape avant l'implémentation et sert de plan de construction pour la base de données elle-même, en transformant la conception théorique en une structure prête à l’emploi dans l'environnement informatique réel.
+
+## Modèle Merise de l'application Jourdebord
+
+### 1. Modèle Conceptuel de Données (MCD)
+
+Le MCD représente les entités principales du domaine et leurs associations :
+
+- Un **Author** crée plusieurs **Textons**.
+- Un **Texton** appartient à un seul **Author**.
+- Un **Texton** peut avoir plusieurs **Tags**.
+- Un **Tag** peut être associé à plusieurs **Textons**.
+- Un **Tag** est lié à un **Template** (1 seul).
+- Un **Author** peut choisir plusieurs **Tags**.
+
+#### Entités
+
+- **Author** (`id`, `login`, `type`)
+- **Texton** (`id`, `contenu`, `dateCreation`, `dateModification`)
+- **Tag** (`id`, `nomCat`)
+- **Template** (`idtemplate`, `nomTemplate`, `contenu`)
+
+#### Associations
+
+- `avoir` (Author - Texton)
+- `appartenir` (Texton - Tag)
+- `avoir` (Tag - Template)
+- `choisir` (Author - Tag)
+
+---
+
+### 2. Modèle Logique de Données (MLD)
+
+| Table            | Attributs                                              | Clés                                               |
+|------------------|--------------------------------------------------------|----------------------------------------------------|
+| **AUTHOR**       | `id`, `login`, `type`                                  | PK: `id`                                           |
+| **TEXTON**       | `id`, `contenu`, `dateCreation`, `dateModification`    | PK: `id`                                           |
+| **TAG**          | `id`, `nomCat`                                         | PK: `id`                                           |
+| **TEMPLATE**     | `idtemplate`, `nomTemplate`, `contenu`                 | PK: `idtemplate`                                   |
+| **AUTHOR_TEXTON**| `id_author`, `id_texton`                               | PK: (`id_author`, `id_texton`), FK vers AUTHOR et TEXTON |
+| **TEXTON_TAG**   | `id_texton`, `id_tag`                                  | PK: (`id_texton`, `id_tag`)                        |
+| **TAG_TEMPLATE** | `id_tag`, `idtemplate`                                 | PK: (`id_tag`, `idtemplate`)                       |
+| **AUTHOR_TAG**   | `id_author`, `id_tag`                                  | PK: (`id_author`, `id_tag`)                        |
+
+---
+
+Ci-dessous un diagramme représentant le MCD de Jourdebord.
+
+![Modèle conceptuel de données](./img/mcd.png)
+
+On voit les 4 entités du modèle : Texton, qui contient le texte, Tag, qui contient les catégories, Template, pour les templates, et Author qui contient les différents utilisateurs du système, soit les auteurs et l'administrateur.
+
+### 3. Modèle Physique de Données (MPD)
+
+```sql
+CREATE TABLE Author (
+  id INT PRIMARY KEY,
+  login VARCHAR(50) NOT NULL,
+  type VARCHAR(20)
+);
+
+CREATE TABLE Texton (
+  id INT PRIMARY KEY,
+  contenu TEXT,
+  dateCreation DATE,
+  dateModification DATE
+);
+
+CREATE TABLE Tag (
+  id INT PRIMARY KEY,
+  nomCat VARCHAR(50)
+);
+
+CREATE TABLE Template (
+  idtemplate INT PRIMARY KEY,
+  nomTemplate VARCHAR(100),
+  contenu TEXT
+);
+
+CREATE TABLE Author_Texton (
+  id_author INT,
+  id_texton INT,
+  PRIMARY KEY(id_author, id_texton),
+  FOREIGN KEY(id_author) REFERENCES Author(id),
+  FOREIGN KEY(id_texton) REFERENCES Texton(id)
+);
+
+CREATE TABLE Texton_Tag (
+  id_texton INT,
+  id_tag INT,
+  PRIMARY KEY(id_texton, id_tag),
+  FOREIGN KEY(id_texton) REFERENCES Texton(id),
+  FOREIGN KEY(id_tag) REFERENCES Tag(id)
+);
+
+CREATE TABLE Tag_Template (
+  id_tag INT,
+  idtemplate INT,
+  PRIMARY KEY(id_tag, idtemplate),
+  FOREIGN KEY(id_tag) REFERENCES Tag(id),
+  FOREIGN KEY(idtemplate) REFERENCES Template(idtemplate)
+);
+
+CREATE TABLE Author_Tag (
+  id_author INT,
+  id_tag INT,
+  PRIMARY KEY(id_author, id_tag),
+  FOREIGN KEY(id_author) REFERENCES Author(id),
+  FOREIGN KEY(id_tag) REFERENCES Tag(id)
+);
+```
+
+---
+
+### 4. Dictionnaire de Données
+
+| Attribut           | Description                                  | Type     | Taille | Obligatoire | Contraintes                         |
+|--------------------|----------------------------------------------|----------|--------|-------------|-------------------------------------|
+| `id`               | Identifiant unique                           | INT      | —      | Oui         | Clé primaire                        |
+| `login`            | Identifiant de connexion de l’auteur         | VARCHAR  | 50     | Oui         | Unique                              |
+| `type`             | Rôle ou profil de l’auteur                   | VARCHAR  | 20     | Non         | —                                   |
+| `contenu`          | Contenu textuel du texte ou template         | TEXT     | —      | Non         | —                                   |
+| `dateCreation`     | Date de création du texte                    | DATE     | —      | Oui         | Format ISO                          |
+| `dateModification` | Dernière modification du texte               | DATE     | —      | Non         | Format ISO                          |
+| `nomCat`           | Nom d’une catégorie                          | VARCHAR  | 50     | Oui         | —                                   |
+| `nomTemplate`      | Nom du template                              | VARCHAR  | 100    | Oui         | —                                   |
+
+---
+
+### 5. Règles de Gestion
+
+| ID    | Règle de gestion                                                                 | Type         |
+|-------|----------------------------------------------------------------------------------|--------------|
+| RG01  | Un auteur peut créer plusieurs textes, mais chaque texte appartient à un seul auteur. | Structure    |
+| RG02  | Un texte peut avoir plusieurs tags, et un tag peut être utilisé dans plusieurs textes. | Structure    |
+| RG03  | Chaque tag est lié à un seul template.                                           | Structure    |
+| RG04  | Un auteur peut choisir plusieurs catégories (tags) pour son espace de travail.  | Traitement   |
+| RG05  | Lors de la création d’un texte, la date de création est obligatoire.            | Intégrité    |
+| RG06  | Le contenu d’un texte peut être vide au début, mais doit être modifiable.       | Traitement   |
+
+---
+
+### 6. Modèle Conceptuel des Traitements (MCT)
+
+#### Scénario principal : création d’un texte
+
+```plaintext
+[Démarrer]
+   ↓
+[Création du texte (contenu vide, dateCreation)]
+   ↓
+[Ajout de tags à ce texte]
+   ↓
+[Lien avec un template (via les tags)]
+   ↓
+[Modification possible]
+   ↓
+[Fin]
+```
+
+#### Autres traitements :
+
+- Créer un auteur
+- Modifier un texte
+- Supprimer un tag
+- Associer un tag à un template
+- Lister tous les textes liés à un tag
 
 ## UML
 
