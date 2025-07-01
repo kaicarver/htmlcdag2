@@ -303,6 +303,8 @@ Même en cas de pénétration, les données doivent être inaccessibles à tout 
 
 Le maquettage permet de visualiser la conception et les fonctionnalités de l’application avant de la développer. C’est un outil de communication entre les différents participants du projet : le client, le product owner, le chef de projet, le designer et les développeurs.
 
+C'est une manière de visualiser, à différents niveaux de détail, l'ensemble de l'application ou du site web. Cette visualisation préliminaire de la future application permet d'y réfléchir et de faire des choix de conception de manière itérative avec les différentes parties prenantes, avant de débuter la phase de développement.
+
 Avec l’outil Figma, j’ai réalisé le zoning, les wireframes, la charte graphique (couleurs et polices), les maquettes de pages et un prototype montrant les transitions entre pages.
 
 ## Zoning
@@ -312,7 +314,13 @@ On définit et positionne les différentes zones fonctionnelles de la page web.
 On identifie les grandes zones de l'interface, comme l'en-tête, le menu, le contenu principal, et le pied de page.
 On positionne ces zones pour faciliter l'expérience utilisateur et pour que l'interface et la navigation soient lisibles et régulières.
 
-Le zoning de Jourdebord est relativement simple : il spécifie une en-tête en haut de la page, une zone de contenu, et un pied de page. L'en-tête contient des informations et des liens utiles à tout moment d'utilisation de l'application. La zone de contenu varie selon la page : soit un contenu de texte, éditable ou non, soit une liste de textes ou d'items en rapport avec le texte comme des catégories ou des templates. Le pied de page contient des liens vers des pages d'information sur l'application : la société qui gère le site de l'application et les conditions générales d'utilisation (CGU) du site.
+Le zoning de Jourdebord est relativement simple et homogène entre les différentes pages de l'application : il spécifie une en-tête en haut de la page, une zone de contenu, et un pied de page. L'en-tête contient des informations et des liens utiles à tout moment d'utilisation de l'application. La zone de contenu varie selon la page : soit un contenu de texte, éditable ou non, soit une liste de textes ou d'items en rapport avec le texte comme des catégories ou des templates, soit une page d'édition d'une entité particulière, soit une page spécifique avec une série de libellés, de champs, et de boutons pour des démarches comme l'inscription et le login. Le pied de page contient des liens vers des pages d'information sur l'application : une page "À Propos", des informations sur la société qui gère le site de l'application, et les conditions générales d'utilisation (CGU) du site.
+
+Ci-dessous un schéma du zoning de Jourdebord :
+
+![Zoning de Jourdebord](./img/zoning.jpg)
+
+\newpage
 
 ## Wireframe
 
@@ -320,7 +328,7 @@ Le wireframe ajoute des détails au zoning en précisant la disposition des él�
 Le wireframe établit un squelette du site. C'est une représentation minimale du site pour que les participants au développement
 de l'application puissent avoir une représentation commune du futur produit.
 
-Pour Jourdebord, les wireframes decrivent la page de texte, les listes, le login, l'inscription.
+Pour Jourdebord, les wireframes decrivent la page de texte, les listes, le login, et l'inscription.
 
 ## Charte graphique
 
@@ -330,7 +338,7 @@ Pour Jourdebord, la charte graphique et les couleurs sont choisies avec un effet
 
 ## Maquettes de pages
 
-L'ensemble des maquettes de pages de l'application constitue une représentation visuelle de ce à quoi ressemblera l'application une fois terminée. Il sert de plan directeur et guide le processus de développement en aidant à visualiser le produit final avant même de commencer à le construire. Il facilite la communication des idées entre designers, développeurs et clients. Il assure également la cohérence visuelle et ergonomique des différentes parties de l'application.
+L'ensemble des maquettes de pages de l'application constitue une représentation visuelle de ce à quoi ressemblera l'application une fois terminée. Il sert de plan directeur et guide le processus de développement en aidant à visualiser le produit final avant même de commencer à le construire. Il facilite la communication des idées entre designers, développeurs et clients. Il assure également la cohérence visuelle et ergonomique des différentes parties de l'application. Et les maquettes de pages sont suffisamment précises et détailler pour permettre au développeur d'implémenter les pages en HTML et CSS.
 
 Pour Jourdebord, toutes les pages principales sont maquettées pour une vue d'ensemble de l'application.
 
@@ -853,17 +861,43 @@ On peut distinguer 4 types d'environnement correspondant à des étapes distinct
 
 En résumé, DevOps orchestre le cycle de vie du logiciel de manière fluide, en automatisant les tests et déploiements, tout en intégrant les retours clients via des systèmes structurés comme le ticketing et la gestion des bugs. Les environnements dev, staging et production permettent de valider chaque étape, avec des stress tests en staging pour garantir la robustesse et une gestion proactive des feedbacks en production pour assurer la satisfaction client.
 
-# Veille ?
+# Veille
 
-[à remplir ???]
+La **veille** pour un **Concepteur Développeur d'Applications** désigne une activité essentielle visant à maintenir et actualiser les compétences techniques et professionnelles du concepteur développeur face aux évolutions rapides du secteur informatique. Voici une description détaillée basée sur les informations disponibles :
 
-## Veille marketing
+## Définition et objectifs de la veille
+La veille consiste à **suivre en continu les évolutions technologiques, réglementaires et méthodologiques** dans le domaine du développement d'applications. Elle permet au professionnel de :
+- **Rester informé** des nouvelles technologies, langages de programmation, frameworks, outils de développement, et pratiques émergentes (par exemple, DevOps, nouvelles normes de sécurité, ou architectures web).
+- **Anticiper les problématiques de sécurité** en identifiant les vulnérabilités potentielles des technologies utilisées et en adoptant les meilleures pratiques de cybersécurité, comme celles recommandées par l’**ANSSI** (Agence nationale de la sécurité des systèmes d'information).
+- **S’adapter aux évolutions réglementaires** liées à la conception responsable de services numériques, comme l’éco-conception ou la conformité aux normes en vigueur.
+- **Maintenir une capacité opérationnelle** en restant à jour sur les outils et méthodologies, notamment dans des environnements agiles ou pour des projets multicouches (présentation, métier, persistance).
 
-[à remplir ???]
+## Modalités de la veille
+Pour le concepteur développeur, la veille s’appuie sur plusieurs pratiques concrètes :
+- **Recherche active d’informations** : Consultation de **documentations techniques** (souvent en anglais, niveau B1 requis pour la compréhension écrite et orale, A2 pour l’expression orale), articles spécialisés, blogs, forums, ou publications sur des plateformes comme GitHub, Stack Overflow, ou des sites de référence (ex. : MDN Web Docs, documentation officielle des frameworks).
+- **Auto-formation** : Apprentissage autonome via des tutoriels, MOOCs, ou formations en ligne pour maîtriser de nouvelles technologies ou approfondir des compétences existantes.
+- **Échanges professionnels** : Collaboration avec d’autres développeurs, participation à des communautés techniques, ou échanges avec des experts (parfois à l’international, nécessitant des compétences en anglais).
+- **Suivi des appels d’offres et projets** : Identifier les opportunités de projets innovants ou les besoins spécifiques des clients pour orienter son développement de compétences.
 
-## Veille technologique
+## Contexte d’application dans la formation RNCP 37873
+Dans le cadre de cette formation, la veille est intégrée comme une **compétence transversale** essentielle. Le concepteur développeur doit :
+- **Analyser les évolutions** pour adapter ses pratiques aux standards de l’industrie (ex. : nouvelles versions de langages comme JavaScript, Python, ou frameworks comme React, Angular).
+- **Intégrer les recommandations de sécurité** dans toutes les étapes de conception et de développement (interfaces, bases de données, applications multicouches).
+- **Collaborer avec des interlocuteurs variés** (clients, chefs de projet, équipes agiles) en s’appuyant sur une connaissance actualisée des outils et méthodologies.
 
-[à remplir ou à supprimer ce chapitre ?]
+## Importance pour le métier
+La veille est cruciale pour :
+- **Garantir la pertinence des solutions développées** en répondant aux attentes des utilisateurs et aux contraintes du marché.
+- **Assurer la compétitivité** du professionnel dans un secteur où les technologies évoluent rapidement.
+- **Contribuer à la qualité et à la sécurité** des applications, en évitant l’obsolescence des outils ou l’introduction de vulnérabilités.
+
+## Sources et outils de veille
+- **Sources techniques** : Documentation officielle, blogs technologiques (ex. : Medium, Dev.to), newsletters spécialisées.
+- **Réseaux professionnels** : Événements, meetups, conférences (ex. : DevFest, Web Summit).
+- **Réglementations** : Suivi des publications de France Compétences, de l’ANSSI, ou des normes européennes (ex. : RGPD pour la protection des données).
+- **Outils Qualiopi** : Pour les organismes de formation, des solutions comme **Veille Formation** aident à structurer la veille légale, technologique, et pédagogique pour répondre aux exigences du référentiel Qualiopi.[](https://www.veilleformation.com/)
+
+En résumé, pour la formation RNCP 37873, la veille est une démarche proactive et structurée permettant au concepteur développeur de rester à la pointe des innovations technologiques, de garantir la sécurité des applications, et de répondre aux besoins évolutifs des clients et du marché. Cette compétence est évaluée dans le cadre de la certification, notamment via des mises en situation professionnelle et la rédaction d’un dossier professionnel.[](https://www.francecompetences.fr/recherche/rncp/31678/)[](https://www.cefim.eu/formations/concepteur-developpeur-dapplications/)[](https://educentre.fr/articles/reac-rc-re-RNCP31678-concepteur-developpeur-dapplications-qjq)
 
 ## Recherche anglophone
 
@@ -902,6 +936,8 @@ Ce prototype Jourdebord, je suis heureux d'en disposer de manière fiable pour m
 J'aimerais aussi pouvoir partager cet outil avec des proches, que cela pourrait intéresser à différents titres. C'est un outil qui, espérons-le, pourrait leur être utile. Ce serait également une forme de bêta-test pour un outil qui n'a encore véritablement été testé que par moi-même.
 
 Enfin, dans un avenir légèrement plus lointain, une fois l'appli éprouvée avec succès par quelques volontaires bienveillants, pourquoi ne pas mettre l'appli à disposition d'un plus large public ? Ceci dans un cadre à définir, avec une solution réaliste de financement durable.
+
+Mais avant de tenter une distribution plus large de l'application, si le temps et les ressources le permettent, il est probable que je repasserai par un cycle de conception et de développement, quitte à complètment réécrire l'application. Ceci pour tenter de profiter des enseignements provenant de l'utilisation de l'application. Je pourrais notamment envisager un autre système de stockage des données textuelles que le système actuel de base de données relationnelle. Une telle réécriture "from scratch" serait néanmoins faite en tentant d'échapper à l'écueil fréquent appelé "syndrome du deuxième système", où l'on perd les avantages de l'application existante en tentant de la reconcevoir, résultant en une nouvelle version de l'application éventuellement plus complexe, moins efficace, avec des nouveaux bugs, etc.
 
 ## 3. Obtenir un diplôme en informatique
 
