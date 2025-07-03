@@ -314,7 +314,13 @@ On définit et positionne les différentes zones fonctionnelles de la page web.
 On identifie les grandes zones de l'interface, comme l'en-tête, le menu, le contenu principal, et le pied de page.
 On positionne ces zones pour faciliter l'expérience utilisateur et pour que l'interface et la navigation soient lisibles et régulières.
 
-Le zoning de Jourdebord est relativement simple et homogène entre les différentes pages de l'application : il spécifie une en-tête en haut de la page, une zone de contenu, et un pied de page. L'en-tête contient des informations et des liens utiles à tout moment d'utilisation de l'application. La zone de contenu varie selon la page : soit un contenu de texte, éditable ou non, soit une liste de textes ou d'items en rapport avec le texte comme des catégories ou des templates, soit une page d'édition d'une entité particulière, soit une page spécifique avec une série de libellés, de champs, et de boutons pour des démarches comme l'inscription et le login. Le pied de page contient des liens vers des pages d'information sur l'application : une page "À Propos", des informations sur la société qui gère le site de l'application, et les conditions générales d'utilisation (CGU) du site.
+Le zoning de Jourdebord est relativement simple et homogène entre les différentes pages de l'application : il spécifie une en-tête en haut de la page, une zone de contenu, et un pied de page. 
+
+L'en-tête contient des informations et des liens utiles à tout moment d'utilisation de l'application. 
+
+La zone de contenu varie selon la page : soit un contenu de texte, éditable ou non, soit une liste de textes ou d'items en rapport avec le texte comme des catégories ou des templates, soit une page d'édition d'une entité particulière, soit une page spécifique avec une série de libellés, de champs, et de boutons pour des démarches comme l'inscription et le login. 
+
+Le pied de page contient des liens vers des pages d'information sur l'application : une page "À Propos", des informations sur la société qui gère le site de l'application, et les conditions générales d'utilisation (CGU) du site.
 
 Ci-dessous un schéma du zoning de Jourdebord :
 
@@ -330,11 +336,29 @@ de l'application puissent avoir une représentation commune du futur produit.
 
 Pour Jourdebord, les wireframes decrivent la page de texte, les listes, le login, et l'inscription.
 
+### Wireframe Page d'Accueil
+
+La page d'accueil du site a
+
+![Wireframe page Accueil de Jourdebord](./img/wireframe_accueil.jpg)
+
+### Wireframe Page Liste des Textes
+
+![Wireframe page Liste de textes de Jourdebord](./img/wireframe_listetextes.jpg)
+
+### Wireframe Page Écriture
+
+![Wireframe page Écriture de Jourdebord](./img/wireframe_ecriture.jpg)
+
+TODO: comment on each of the wireframes
+
 ## Charte graphique
 
 Une charte graphique de site web regroupe les règles visuelles du site internet. Elle inclut le logo, les couleurs, les typographies, et des éléments tels que les boutons, icônes ou images. Elle assure la cohérence de l'identité visuelle de l'application dans toutes les pages du site.
 
 Pour Jourdebord, la charte graphique et les couleurs sont choisies avec un effet désiré de suggérer un outil d'écriture (style ancien ou moderne ou les deux ?). Les couleurs doivent suggérer le papier, et les polices, un livre imprimé. Néanmoins, on évite un look trop "rétro", puisqu'il s'agit d'une application à ambitions modernes, pas un manuscrit.
+
+TODO: describe and needs a picture
 
 ## Maquettes de pages
 
@@ -342,11 +366,27 @@ L'ensemble des maquettes de pages de l'application constitue une représentation
 
 Pour Jourdebord, toutes les pages principales sont maquettées pour une vue d'ensemble de l'application.
 
+### Maquette Page d'Accueil
+
+![Maquette page Accueil de Jourdebord](./img/maquette_accueil.png)
+
+### Maquette Page Liste des Textes
+
+![Maquette page Liste de textes de Jourdebord](./img/maquette_listetextes.png)
+
+### Maquette Page Écriture
+
+![Maquette page Écriture de Jourdebord](./img/maquette_ecriture.png)
+
+TODO: needs three screenshots and comments
+
 ## Prototype avec transitions entre pages
 
 Les maquettes de pages peuvent être regroupées dans un prototype interactif qui donne une impression réaliste de ce que sera l'expérience utilisateur (UX) de l'application. Le prototype sert à valider les propositions d'interface utilisateur (UI) et d'expérience utilisateur (UX) et à les affiner grâce aux retours des parties prenantes.
 
 Pour Jourdebord, le prototype démontre l'enchaînement des pages de l'application, en commençant par la page d'accueil, pour aller à la page principale d'écriture de texte, avec la page de recherche. Il y a aussi une simulation de l'expérience de login et de l'inscription d'un nouvel utilisateur du site.
+
+TODO: make this more matching what I want to say
 
 # Analyse et conception
 
