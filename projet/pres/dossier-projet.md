@@ -338,11 +338,23 @@ Pour Jourdebord, les wireframes decrivent la page de texte, les listes, le login
 
 ### Wireframe Page d'Accueil
 
-La page d'accueil du site a
+La page d'accueil du site contient une introduction brève sur l'application et des liens vers des actions possibles.
+
+L'introduction et les liens diffèrent selon le type de l'utilisateur.
+
+Un utlisateur non inscrit voit une présentation brève sur l'intérêt de l'application et des liens vers des pages permettant d'en savoir plus, ainsi qu'un lien lui proposant de s'inscrire sur le site.
+
+Un utilisateur inscrit, ou Author, voit une présentation générale en rapport avec son utilisation du site, des liens vers de l'aide en ligne documentant les fonctionnalités de l'application, et des liens vers les fonctions principales d'utilisation du site, comme l'écriture de texte, la consultation de texte déjà écrit, les categories, les templates, etc.
+
+L'administrateur voit une page d'accueil similaire à celle de tout utilisateur inscrit, car il est lui-même un Author, mais avec des informations et des liens supplémentaires en rapport avec ses responsabilités en tant qu'administrateur, comme la liste des utilisateurs, la liste complète de catégories et de templates, et des statistiques d'utilisation de l'application.
+
+La zone en-tête diffère également selon le type d'utilisateur. La zone pied de page est identique pour tous types d'utilisateur.
 
 ![Wireframe page Accueil de Jourdebord](./img/wireframe_accueil.jpg)
 
 ### Wireframe Page Liste des Textes
+
+La page liste des textes 
 
 ![Wireframe page Liste de textes de Jourdebord](./img/wireframe_listetextes.jpg)
 
