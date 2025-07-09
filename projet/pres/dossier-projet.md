@@ -354,7 +354,9 @@ La zone en-tête diffère également selon le type d'utilisateur. La zone pied d
 
 ### Wireframe Page Liste des Textes
 
-La page liste des textes 
+La page liste des textes contient, sous forme tabulaire, une liste de textes.
+
+
 
 ![Wireframe page Liste de textes de Jourdebord](./img/wireframe_listetextes.jpg)
 
